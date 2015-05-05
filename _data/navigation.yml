@@ -63,7 +63,7 @@
 
 - title: Blog
   url: "/blog/"
-  side: right
+  side: left
   dropdown:
   - title: Blog
     url: "/blog/"
