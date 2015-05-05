@@ -7,7 +7,7 @@
 layout: frontpage
 title: "Feeling Responsive – A Jekyll Theme Based On Foundation"
 header:
-   image_fullwidth: "header_unsplash_12.jpg"
+
 widget-1:
     title: "Blog"
     url: 'http://gerane.github.io/blog/'
