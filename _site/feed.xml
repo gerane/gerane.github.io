@@ -443,17 +443,84 @@ image:
 
 &lt;h3 class=&quot;t60&quot; id=&quot;all-header-styles&quot;&gt;All Header-Styles&lt;/h3&gt;
 
-&lt;ul class=&quot;side-nav&quot;&gt;
+&lt;div class=&quot;posts&quot;&gt;
+  
+    &lt;article class=&quot;post&quot;&gt;
+
+      &lt;h1&gt;&lt;a href=&quot;/design/typography/&quot;&gt;Wonderful Typography&lt;/a&gt;&lt;/h1&gt;
+
+      &lt;div class=&quot;entry&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;medium-4 medium-push-8 columns&quot;&gt;
+          &lt;div class=&quot;panel radius&quot;&gt;
+            &lt;p id=&quot;toc&quot;&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#all-header-styles&quot; id=&quot;markdown-toc-all-header-styles&quot;&gt;All Header-Styles&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+          &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- /.medium-4.columns --&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;a href=&quot;/design/typography/&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;
+    
+  
+    &lt;article class=&quot;post&quot;&gt;
+
+      &lt;h1&gt;&lt;a href=&quot;/no-header-but-image/&quot;&gt;No Header but Article Image&lt;/a&gt;&lt;/h1&gt;
+
+      &lt;div class=&quot;entry&quot;&gt;
+        &lt;p&gt;First turn of the header with &lt;code&gt;header: no&lt;/code&gt;. Than add an image to with the following code. The caption is optional.&lt;/p&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;a href=&quot;/no-header-but-image/&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;
+    &lt;/article&gt;
+  
+    &lt;article class=&quot;post&quot;&gt;
+
+      &lt;h1&gt;&lt;a href=&quot;/design/gallery/&quot;&gt;A Beautiful Gallery&lt;/a&gt;&lt;/h1&gt;
+
+      &lt;div class=&quot;entry&quot;&gt;
+        &lt;p&gt;You just need to choose a template like the [&lt;code&gt;page&lt;/code&gt;][3]- or [&lt;code&gt;page-fullwidth&lt;/code&gt;][4]-template and than use some foundation magic.&lt;/p&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;a href=&quot;/design/gallery/&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;
+    &lt;/article&gt;
+  
+    &lt;article class=&quot;post&quot;&gt;
+
+      &lt;h1&gt;&lt;a href=&quot;/powershell/&quot;&gt;Grid &amp;amp; Colors&lt;/a&gt;&lt;/h1&gt;
+
+      &lt;div class=&quot;entry&quot;&gt;
+        &lt;p&gt;&lt;em&gt;Feeling Responsive&lt;/em&gt; is built on Foundation. And of course, we make use of the wonderful grid system and so can you. Find out more about [constructing  beautiful layouts][1] in the foundation documentation.&lt;/p&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;a href=&quot;/powershell/&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;
+    &lt;/article&gt;
+  
+&lt;/div&gt;
+
+&lt;!-- &lt;ul class=&quot;side-nav&quot;&gt;
 
   
 
     
-      &lt;li&gt;&lt;a href=&quot;http://localhost:4000/no-header-but-image/&quot;&gt;Headers With Style &amp;middot; &lt;strong&gt;No Header but Article Image&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://localhost:4000/no-header-but-image/&quot;&gt;&lt;strong&gt;No Header but Article Image&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
     
 
   
 &lt;/ul&gt;
+ --&gt;
 
+&lt;/article&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 12 Mar 2015 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/no-header-but-image/</link>
@@ -462,7 +529,7 @@ image:
     
       <item>
         <title>A Beautiful Gallery</title>
-        <description>&lt;p&gt;You just need to choose a template like the &lt;a href=&quot;http://localhost:4000/design/page/&quot;&gt;&lt;code&gt;page&lt;/code&gt;&lt;/a&gt;- or &lt;a href=&quot;http://localhost:4000/design/page-fullwidth/&quot;&gt;&lt;code&gt;page-fullwidth&lt;/code&gt;&lt;/a&gt;-template and than use some foundation magic.&lt;/p&gt;
+        <description>&lt;p&gt;You just need to choose a template like the [&lt;code&gt;page&lt;/code&gt;][3]- or [&lt;code&gt;page-fullwidth&lt;/code&gt;][4]-template and than use some foundation magic.&lt;/p&gt;
 
 &lt;ul class=&quot;clearing-thumbs small-block-grid-3&quot; data-clearing=&quot;&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;http://localhost:4000/images/unsplash_1.jpg&quot;&gt;&lt;img data-caption=&quot;All images by Unsplash.com&quot; class=&quot;th&quot; src=&quot;http://localhost:4000/images/unsplash_1_thumb.jpg&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
@@ -475,7 +542,7 @@ image:
 
 &lt;h2 id=&quot;clearing-lightbox-code&quot;&gt;Clearing Lightbox Code&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://foundation.zurb.com/docs/components/clearing.html&quot;&gt;Clearing Lightbox&lt;/a&gt; is so flexible especially when using the &lt;a href=&quot;http://foundation.zurb.com/docs/components/block_grid.html&quot;&gt;block grid&lt;/a&gt;. For extensive documentation visit the &lt;a href=&quot;http://foundation.zurb.com/docs/components/clearing.html&quot;&gt;foundation docs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;[Clearing Lightbox][1] is so flexible especially when using the [block grid][2]. For extensive documentation visit the [foundation docs][1].&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;clearing-thumbs small-block-grid-3&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-clearing&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;path/to/your/img&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;data-caption=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;caption 1&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;path/to/your/thumbnail&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
@@ -485,7 +552,73 @@ image:
 
 &lt;h2 class=&quot;t60&quot; id=&quot;other-post-formats&quot;&gt;Other Post Formats&lt;/h2&gt;
 
-&lt;ul class=&quot;side-nav&quot;&gt;
+&lt;div class=&quot;posts&quot;&gt;
+  
+    &lt;article class=&quot;post&quot;&gt;
+
+      &lt;h1&gt;&lt;a href=&quot;/design/typography/&quot;&gt;Wonderful Typography&lt;/a&gt;&lt;/h1&gt;
+
+      &lt;div class=&quot;entry&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;medium-4 medium-push-8 columns&quot;&gt;
+          &lt;div class=&quot;panel radius&quot;&gt;
+            &lt;p id=&quot;toc&quot;&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#clearing-lightbox-code&quot; id=&quot;markdown-toc-clearing-lightbox-code&quot;&gt;Clearing Lightbox Code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#other-post-formats&quot; id=&quot;markdown-toc-other-post-formats&quot;&gt;Other Post Formats&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+          &lt;/div&gt;
+        &lt;/div&gt;&lt;!-- /.medium-4.columns --&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;a href=&quot;/design/typography/&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;
+    
+  
+    &lt;article class=&quot;post&quot;&gt;
+
+      &lt;h1&gt;&lt;a href=&quot;/no-header-but-image/&quot;&gt;No Header but Article Image&lt;/a&gt;&lt;/h1&gt;
+
+      &lt;div class=&quot;entry&quot;&gt;
+        First turn of the header with `header: no`. Than add an image to with the following code. The caption is optional.
+
+
+      &lt;/div&gt;
+
+      &lt;a href=&quot;/no-header-but-image/&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;
+    &lt;/article&gt;
+  
+    &lt;article class=&quot;post&quot;&gt;
+
+      &lt;h1&gt;&lt;a href=&quot;/design/gallery/&quot;&gt;A Beautiful Gallery&lt;/a&gt;&lt;/h1&gt;
+
+      &lt;div class=&quot;entry&quot;&gt;
+        &lt;p&gt;You just need to choose a template like the [&lt;code&gt;page&lt;/code&gt;][3]- or [&lt;code&gt;page-fullwidth&lt;/code&gt;][4]-template and than use some foundation magic.&lt;/p&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;a href=&quot;/design/gallery/&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;
+    &lt;/article&gt;
+  
+    &lt;article class=&quot;post&quot;&gt;
+
+      &lt;h1&gt;&lt;a href=&quot;/powershell/&quot;&gt;Grid &amp;amp; Colors&lt;/a&gt;&lt;/h1&gt;
+
+      &lt;div class=&quot;entry&quot;&gt;
+        &lt;p&gt;&lt;em&gt;Feeling Responsive&lt;/em&gt; is built on Foundation. And of course, we make use of the wonderful grid system and so can you. Find out more about [constructing  beautiful layouts][1] in the foundation documentation.&lt;/p&gt;
+
+
+      &lt;/div&gt;
+
+      &lt;a href=&quot;/powershell/&quot; class=&quot;read-more&quot;&gt;Read More&lt;/a&gt;
+    &lt;/article&gt;
+  
+&lt;/div&gt;
+
+&lt;!-- &lt;ul class=&quot;side-nav&quot;&gt;
 
   
 
@@ -495,7 +628,16 @@ image:
 
   
 &lt;/ul&gt;
+ --&gt;
 
+
+
+
+ [1]: http://foundation.zurb.com/docs/components/clearing.html
+ [2]: http://foundation.zurb.com/docs/components/block_grid.html
+ [3]: http://localhost:4000/design/page/
+ [4]: http://localhost:4000/design/page-fullwidth/
+&lt;/article&gt;&lt;/div&gt;
 </description>
         <pubDate>Mon, 15 Sep 2014 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/design/gallery/</link>
