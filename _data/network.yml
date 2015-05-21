@@ -1,7 +1,7 @@
-- menu_name: "Dankeschön"
+- menu_name: "Find Me"
 
-- name: "Icons by Daniel Bruce"
-  url: "http://entypo.com/"
+- name: "Twitter"
+  url: "https://twitter.com/BrandonPadgett"
   class: "network-entypo"
   title: "Icons by Daniel Bruce"
 

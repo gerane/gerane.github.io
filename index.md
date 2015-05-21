@@ -12,7 +12,7 @@ widget-1:
     title: "Blog"
     url: 'http://gerane.github.io/blog/'
     text: 'Write-Words'
-    image: PoshBlog.png
+    image: PoshBlog.jpg
 widget-2:
     title: "Github"
     url: 'http://github.com/gerane'
