@@ -5,31 +5,22 @@
 # this work, you have to use › layout: frontpage
 #
 layout: frontpage
-title: "Feeling Responsive – A Jekyll Theme Based On Foundation"
+title: "Brandon Padgett"
 header:
 
 widget-1:
     title: "Blog"
     url: 'http://gerane.github.io/blog/'
     text: 'Write-Words'
-    image: unsplash_9-302x182.jpg
+    image: PoshBlog.png
 widget-2:
     title: "Github"
     url: 'http://github.com/gerane'
-    text: 'Be gentle..'
-    image: github-303x182.jpg
-    
+    text: 'Github Repos'
+    image: github-303x182.jpg    
 widget-3:
     title: "Twitter"
     url: 'https://twitter.com/BrandonPadgett'
-    text: 'Feel free to reach out'
-    video: '<a href="#" data-reveal-id="videoModal"><img src="http://phlow.github.io/feeling-responsive/images/start-video-feeling-responsive-302x182.jpg" width="302" height="182" alt=""></a>'
+    text: 'Find me on Twitter'
+    image: twitterimage.png
 ---
-
-
-<div id="videoModal" class="reveal-modal large" data-reveal="">
-  <div class="flex-video widescreen vimeo" style="display: block;">
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/3b5zCFSmVvU" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
-</div>

@@ -23,6 +23,11 @@
   class: icon-github
   title: Code...
 
+# - name: Google+
+#   url: https://plus.google.com/+BrandonPadgett
+#   class: "fa fa-google+"
+#   title: "Google+"
+
 # - name: Instagram
 #   url: http://instagram.com/phlowmedia
 #   class: icon-instagram
