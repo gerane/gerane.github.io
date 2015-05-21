@@ -1,4 +1,4 @@
-- title: About
+- title: Home
   url: "/"
   side: left
 
@@ -74,6 +74,6 @@
   url: "/search/"
   side: right
 
-- title: "Contact"
-  url: "/contact/"
+- title: "About"
+  url: "/about/"
   side: right

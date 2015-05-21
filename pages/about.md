@@ -4,7 +4,7 @@ title: "About"
 subheadline: "Proud Father, Husband and SysAdmin"
 show_meta: false
 teaser: ""
-permalink: "/info/"
+permalink: "/about/"
 header:
 
 ---

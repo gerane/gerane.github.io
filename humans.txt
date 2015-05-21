@@ -6,6 +6,10 @@
 
 # TEAM
 
+Name: Brandon Padgett
+Role: Owner of Website
+Site: http://brandonpadgett.com/
+Twitter: @brandonpadgett
 
 
 # THANKS
@@ -22,6 +26,3 @@ Last Updated: {{ site.time | date:"%Y/%m/%d" }}
 Standards: HTML5, CSS3
 Software: Sublime Text, Chrome, Jekyll, Git, Imageoptim, JPEGMini, Gulp.js, Sass
 Components: Modernizr, jQuery, Backstretch.js, Reveal, Foundation Framework
-
-
-
