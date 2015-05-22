@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<ColorOptions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ShareFontForConsole>false</ShareFontForConsole>
+  <ScriptPaneFontFamily>ubuntumono-r.ttf#Ubuntu Mono</ScriptPaneFontFamily>
+  <ScriptPaneFontSize>12</ScriptPaneFontSize>
+  <ConsolePaneFontFamily>sourcecodepro-regular.ttf#Source Code Pro</ConsolePaneFontFamily>
+  <ConsolePaneFontSize>10</ConsolePaneFontSize>
+  <ConsolePaneForegroundColor>#FFEEEEEC</ConsolePaneForegroundColor>
+  <ConsolePaneBackgroundColor>#FF212121</ConsolePaneBackgroundColor>
+  <ConsolePaneErrorForegroundColor>#FFEF2929</ConsolePaneErrorForegroundColor>
+  <ConsolePaneErrorBackgroundColor>#00FFFFFF</ConsolePaneErrorBackgroundColor>
+  <ConsolePaneWarningForegroundColor>#FFC4A000</ConsolePaneWarningForegroundColor>
+  <ConsolePaneWarningBackgroundColor>#00FFFFFF</ConsolePaneWarningBackgroundColor>
+  <ConsolePaneVerboseForegroundColor>#FF06989A</ConsolePaneVerboseForegroundColor>
+  <ConsolePaneVerboseBackgroundColor>#00FFFFFF</ConsolePaneVerboseBackgroundColor>
+  <ScriptPaneBackgroundColor>#FF212121</ScriptPaneBackgroundColor>
+  <CapitalizeMainMenuHeaders>false</CapitalizeMainMenuHeaders>
+  <ActiveSelection>#B1F92672</ActiveSelection>
+  <InactiveSelection>#FFBFCDDB</InactiveSelection>
+  <MenuBarMonochrome>true</MenuBarMonochrome>
+  <MenuBarColor1>#FFA8A8A8</MenuBarColor1>
+  <MenuBarColor2>#FFE6F0FA</MenuBarColor2>
+  <MenuBarColor3>#FFF8FAFC</MenuBarColor3>
+  <MenuBarColor4>#FFDCE6F4</MenuBarColor4>
+  <MenuBarColor5>#FFE1ECF9</MenuBarColor5>
+  <MenuBarColor6>#FFF8FAFC</MenuBarColor6>
+  <ScriptSquareTabs>true</ScriptSquareTabs>
+  <ScriptSelectedMonochrome>true</ScriptSelectedMonochrome>
+  <ScriptSelectedColor1>#FFA8A8A8</ScriptSelectedColor1>
+  <ScriptSelectedColor2>#FFFFFFFF</ScriptSelectedColor2>
+  <ScriptSelectedColor3>#FFDFE9FC</ScriptSelectedColor3>
+  <ScriptSelectedColor4>#FFE1EEFC</ScriptSelectedColor4>
+  <ScriptUnselectedMonochrome>true</ScriptUnselectedMonochrome>
+  <ScriptUnselectedColor1>#FFB6B6B6</ScriptUnselectedColor1>
+  <ScriptUnselectedColor2>#FFEBEBEB</ScriptUnselectedColor2>
+  <ScriptUnselectedColor3>#FFDDDDDD</ScriptUnselectedColor3>
+  <ScriptUnselectedColor4>#FFCDCDCD</ScriptUnselectedColor4>
+  <ToolbarOverflowButtonBackground>#FFA5A5A5</ToolbarOverflowButtonBackground>
+  <ToolbarOverflowButtonBackgroundForRunCode>#FFA8A8A8</ToolbarOverflowButtonBackgroundForRunCode>
+  <ToolbarOverflowButtonBackgroundForDebugger>#FFA8A8A8</ToolbarOverflowButtonBackgroundForDebugger>
+  <ToolbarGroupBackground>#FFA8A8A8</ToolbarGroupBackground>
+  <ToolbarGroupBackgroundForRunCode>#FFA8A8A8</ToolbarGroupBackgroundForRunCode>
+  <ToolbarGroupBackgroundForDebugger>#FFA8A8A8</ToolbarGroupBackgroundForDebugger>
+  <RunspaceBarBackground>#FFA8A8A8</RunspaceBarBackground>
+  <ScriptExpanderMonochrome>true</ScriptExpanderMonochrome>
+  <ScriptExpanderColor1>#FFD4D4D4</ScriptExpanderColor1>
+  <ScriptExpanderColor2>#FFD4D4D4</ScriptExpanderColor2>
+  <ScriptExpanderColor3>#FFC5C5C5</ScriptExpanderColor3>
+  <ScriptExpanderColor4>#FFC5C5C5</ScriptExpanderColor4>
+  <ScriptExpanderColor5>#FFB6B6B6</ScriptExpanderColor5>
+  <ScriptExpanderColor6>#FFB6B6B6</ScriptExpanderColor6>
+  <EditorTabControlMonochrome>true</EditorTabControlMonochrome>
+  <EditorTabControlColor1>#FF3B3B3B</EditorTabControlColor1>
+  <EditorTabControlColor2>#FFE6F0FA</EditorTabControlColor2>
+  <EditorTabControlBackground>#FF3B3B3B</EditorTabControlBackground>
+  <DebuggerMarginUnsavedScript>#FFF92672</DebuggerMarginUnsavedScript>
+  <DebuggerMarginSavedScript>#FF333333</DebuggerMarginSavedScript>
+  <DebuggerMarginDebuggerActive>#FFBAC023</DebuggerMarginDebuggerActive>
+  <DebuggerMarginDebuggerActiveBackground>#FF000000</DebuggerMarginDebuggerActiveBackground>
+  <CurrentLineAdornmentBorder>#0047E7C1</CurrentLineAdornmentBorder>
+  <CurrentLineAdornmentFill>#FF565657</CurrentLineAdornmentFill>
+  <SquiggleSyntaxError>#FFFF0000</SquiggleSyntaxError>
+  <SquiggleMinorWarning>#FF008000</SquiggleMinorWarning>
+  <SquiggleCriticalWarning>#FF0000FF</SquiggleCriticalWarning>
+  <SquiggleIncompatibility>#FFFEFF00</SquiggleIncompatibility>
+  <TrackChangesBeforeSave>#FFDAA520</TrackChangesBeforeSave>
+  <TrackChangesAfterSave>#FF2E8B57</TrackChangesAfterSave>
+  <TrackRevertedChanges>#FF0000FF</TrackRevertedChanges>
+  <LineNumberMarginSize>13</LineNumberMarginSize>
+  <LineNumberMarginForegroundColor>#4CF0F0F0</LineNumberMarginForegroundColor>
+  <LineNumberMarginSelectedForegroundColor>#FFFD971F</LineNumberMarginSelectedForegroundColor>
+  <LineNumberMarginBookmarkColor>#B400DC00</LineNumberMarginBookmarkColor>
+  <LineNumberMarginFunctionForegroundColor>#FFA6E22E</LineNumberMarginFunctionForegroundColor>
+  <LineNumberMarginCurrentForegroundColor>#FFF92672</LineNumberMarginCurrentForegroundColor>
+  <LineNumberMarginFontFamily>Segoe UI</LineNumberMarginFontFamily>
+  <FunctionReferenceSize>10</FunctionReferenceSize>
+  <FunctionReferenceFontFamily>DIN</FunctionReferenceFontFamily>
+  <SnippetFontFamily>Segoe UI</SnippetFontFamily>
+  <SnippetFontSize>8</SnippetFontSize>
+  <FunctionReferenceInactive>#FFD3D3D3</FunctionReferenceInactive>
+  <FunctionReferenceActive>#FFAE81FF</FunctionReferenceActive>
+  <FunctionReferenceHoverBackground>#6433EBBF</FunctionReferenceHoverBackground>
+  <SnippetHeader>#FFADD8E6</SnippetHeader>
+  <SnippetDescription>#FFADD8E6</SnippetDescription>
+  <SnippetBorder>#FFADD8E6</SnippetBorder>
+  <StatusBarBackgroundInactive>#FF3B3B3B</StatusBarBackgroundInactive>
+  <StatusBarBackgroundActive>#FF3B3B3B</StatusBarBackgroundActive>
+  <StatusBarForegroundColorActive>#FFFFFFFF</StatusBarForegroundColorActive>
+  <StatusBarForegroundColorInactive>#FFFFFFFF</StatusBarForegroundColorInactive>
+  <StatusBarHyperlinkDefaultColor>#FFF5DEB3</StatusBarHyperlinkDefaultColor>
+  <StatusBarHyperlinkHoverColor>#FFFAFAD2</StatusBarHyperlinkHoverColor>
+  <StatusBarHyperlinkUnderlineAlways>false</StatusBarHyperlinkUnderlineAlways>
+  <StatusBarHyperlinkUnderlineOnHover>false</StatusBarHyperlinkUnderlineOnHover>
+  <CollapsedTextColor>#FF59646F</CollapsedTextColor>
+  <CollapseBarColor>#FFFF980F</CollapseBarColor>
+  <CollapseSelectionBackground>#17FFFFFF</CollapseSelectionBackground>
+  <CollapseSquareBackground>#FF66D9EF</CollapseSquareBackground>
+  <FunctionComboCollapsedFill>#FF3B3B3B</FunctionComboCollapsedFill>
+  <FunctionComboExpandedFill>#FF3B3B3B</FunctionComboExpandedFill>
+  <FunctionComboForeground>#AAFFFFFF</FunctionComboForeground>
+  <FunctionComboForegroundStatic>#FFD3D3D3</FunctionComboForegroundStatic>
+  <VerticalSplitterMonochrome>true</VerticalSplitterMonochrome>
+  <VerticalSplitterBorder>#FF272827</VerticalSplitterBorder>
+  <VerticalSplitterColor1>#FF272827</VerticalSplitterColor1>
+  <VerticalSplitterColor2>#FFA2CBF3</VerticalSplitterColor2>
+  <VerticalSplitterColor3>#FFB7CEF5</VerticalSplitterColor3>
+  <VerticalSplitterColor4>#FFC6D2DE</VerticalSplitterColor4>
+  <HorizontalSplitterMonochrome>true</HorizontalSplitterMonochrome>
+  <HorizontalSplitterBorder>#FF272827</HorizontalSplitterBorder>
+  <HorizontalSplitterColor1>#FF272827</HorizontalSplitterColor1>
+  <HorizontalSplitterColor2>#FFA2CBF3</HorizontalSplitterColor2>
+  <HorizontalSplitterColor3>#FFB7CEF5</HorizontalSplitterColor3>
+  <HorizontalSplitterColor4>#FFC6D2DE</HorizontalSplitterColor4>
+  <DefaultTextColor>#FFFFFFFF</DefaultTextColor>
+  <DefaultTokenColor>#FFFFFFFF</DefaultTokenColor>
+  <PowerShellScriptToken>
+    <Token Name="Attribute" Color="#F92672" />
+    <Token Name="Command" Color="#66D9EF" />
+    <Token Name="CommandArgument" Color="#A6E22E" />
+    <Token Name="CommandParameter" Color="#FFF5F5F5" />
+    <Token Name="Comment" Color="#75715E" />
+    <Token Name="GroupEnd" Color="#FFF5F5F5" />
+    <Token Name="GroupStart" Color="#FFF5F5F5" />
+    <Token Name="Keyword" Color="#F92672" />
+    <Token Name="LineContinuation" Color="#FFF5F5F5" />
+    <Token Name="LoopLabel" Color="#FFE0FFFF" />
+    <Token Name="Member" Color="#FFF5F5F5" />
+    <Token Name="NewLine" Color="#FFF5F5F5" />
+    <Token Name="Number" Color="#AE81FF" />
+    <Token Name="Operator" Color="#FFD3D3D3" />
+    <Token Name="Position" Color="#FFF5F5F5" />
+    <Token Name="StatementSeparator" Color="#FFF5F5F5" />
+    <Token Name="String" Color="#E6DB74" />
+    <Token Name="Type" Color="#A6E22E" />
+    <Token Name="Unknown" Color="#FFF5F5F5" />
+    <Token Name="Variable" Color="#FD971F" />
+  </PowerShellScriptToken>
+  <PowerShellConsoleToken>
+    <Token Name="Attribute" Color="#F92672" />
+    <Token Name="Command" Color="#66D9EF" />
+    <Token Name="CommandArgument" Color="#A6E22E" />
+    <Token Name="CommandParameter" Color="#FFF5F5F5" />
+    <Token Name="Comment" Color="#75715E" />
+    <Token Name="GroupEnd" Color="#FFF5F5F5" />
+    <Token Name="GroupStart" Color="#FFF5F5F5" />
+    <Token Name="Keyword" Color="#F92672" />
+    <Token Name="LineContinuation" Color="#FFF5F5F5" />
+    <Token Name="LoopLabel" Color="#FFE0FFFF" />
+    <Token Name="Member" Color="#FFF5F5F5" />
+    <Token Name="NewLine" Color="#FFF5F5F5" />
+    <Token Name="Number" Color="#AE81FF" />
+    <Token Name="Operator" Color="#FFD3D3D3" />
+    <Token Name="Position" Color="#FFF5F5F5" />
+    <Token Name="StatementSeparator" Color="#FFF5F5F5" />
+    <Token Name="String" Color="#E6DB74" />
+    <Token Name="Type" Color="#A6E22E" />
+    <Token Name="Unknown" Color="#FFF5F5F5" />
+    <Token Name="Variable" Color="#FD971F" />
+  </PowerShellConsoleToken>
+  <XMLToken>
+    <Token Name="Comment" Color="#FF6E715E" />
+    <Token Name="CommentDelimiter" Color="#FFFFFFFF" />
+    <Token Name="ElementName" Color="#FFFD971F" />
+    <Token Name="MarkupExtension" Color="#FFFD971F" />
+    <Token Name="Attribute" Color="#FFA6E22E" />
+    <Token Name="Quote" Color="#FFFFFFFF" />
+    <Token Name="QuotedString" Color="#FFE6DB74" />
+    <Token Name="Tag" Color="#FFFFFFFF" />
+    <Token Name="Text" Color="#FFFFFFFF" />
+    <Token Name="CharacterData" Color="#FFFFFFFF" />
+  </XMLToken>
+  <BraceMatchingFill>#B1F92672</BraceMatchingFill>
+  <BraceMatchingBorder>#FFF92672</BraceMatchingBorder>
+  <ASTDashLineColor>#AAFFE4B5</ASTDashLineColor>
+  <ASTSiblingBorder>#00F7C93C</ASTSiblingBorder>
+  <ASTSiblingFill>#4E6EA6CC</ASTSiblingFill>
+  <ASTScopeBorder>#64FFE4B5</ASTScopeBorder>
+  <ASTScopeFill>#22E5008E</ASTScopeFill>
+  <ASTPipelineBorder>#50C8C814</ASTPipelineBorder>
+  <ASTPipelineFill>#00F0F0E6</ASTPipelineFill>
+  <SnippetInsertionBorder>#FF038567</SnippetInsertionBorder>
+  <SnippetInsertionFill>#FFAE81FF</SnippetInsertionFill>
+  <ConsoleAdminWarningColor1>#60FF9600</ConsoleAdminWarningColor1>
+  <ConsoleAdminWarningColor2>#0047E7C1</ConsoleAdminWarningColor2>
+  <ConsoleAdminWarningStripeOffset>5</ConsoleAdminWarningStripeOffset>
+  <PaletteColor1>#FF012456</PaletteColor1>
+  <PaletteColor2>#FF283855</PaletteColor2>
+  <PaletteColor3>#FFA9A9AB</PaletteColor3>
+  <PaletteColor4>#FFC0D8EF</PaletteColor4>
+  <PaletteColor5>#FFFFE1CE</PaletteColor5>
+  <PaletteColor6>#FFE6F0FA</PaletteColor6>
+  <PaletteColor7>#FFBAC023</PaletteColor7>
+  <PaletteColor8>#FFFFE169</PaletteColor8>
+  <PaletteColor9>#FF0079CC</PaletteColor9>
+  <PaletteColor10>#FFD5D5D5</PaletteColor10>
+  <PaletteColor11>#FFFF980F</PaletteColor11>
+  <PaletteColor12>#FFDCDCDC</PaletteColor12>
+  <PaletteColor13>#FFF5DEB3</PaletteColor13>
+  <PaletteColor14>#FF557299</PaletteColor14>
+</ColorOptions>
