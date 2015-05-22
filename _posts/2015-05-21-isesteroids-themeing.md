@@ -145,7 +145,6 @@ This is color when above selection is not focused
 
 
 
-
 This changes the color of the dropdown overflow arrow on thie toolbar. You will notice that some are controlled by other settings. It is controlled by the next setting
 <ToolbarOverflowButtonBackground>#FF007D11</ToolbarOverflowButtonBackgrou
 
