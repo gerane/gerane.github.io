@@ -130,20 +130,36 @@ The Settings and Values used for Gradient Tab Colors are:
   * **ScriptSelectedColor3** = #**ColorCode**
   * **ScriptSelectedColor4** = #**ColorCode**
 
+#### Tab Background Color
 
-Unselected Tabs follow the same 
+The colors for the Tab Background function similar to the other color settings. Here you can find the settings that apply:
 
-This is the selection color
-<ActiveSelection>#FFFF0000</ActiveSelection>
-This is color when above selection is not focused
-<InactiveSelection>#FFBFCDDB</InactiveSelection>
+{% highlight xml %}
+<!-- For Solid Color or Gradient Color Background -->
+<EditorTabControlMonochrome>false</EditorTabControlMonochrome>
 
+<!-- If Monochrome = True this is the Background Color -->
+<!-- If Monochrome = False this is the first Gradient Color -->
+<EditorTabControlColor1>#FF122C09</EditorTabControlColor1>
 
+<!-- Used for the second Gradient Color if Monochrome = False -->
+<EditorTabControlColor2>#FF000000</EditorTabControlColor2>
 
+<!-- Border Trim Color -->
+<EditorTabControlBackground>#FF273800</EditorTabControlBackground>
+{% endhighlight %}
 
+You can the Background with a gradient in the following image:
 
+![Gradient Tab Background]({{ site.urlimg }}/isesteroids/EditorTabControl.PNG)
 
+The *EditorTabControlBackground* Setting had a somewhat confusing name. It actually seemed to control the border color of the Editor. You can see the border in the following image:
 
+![Tab Background Border Color]({{ site.urlimg }}/isesteroids/EditorTabControlBackground.PNG)
+
+### Toolbar Settings
+
+The Toolbars are the sets of buttons in the Menu Bar. 
 
 This changes the color of the dropdown overflow arrow on thie toolbar. You will notice that some are controlled by other settings. It is controlled by the next setting
 <ToolbarOverflowButtonBackground>#FF007D11</ToolbarOverflowButtonBackgrou
@@ -160,6 +176,17 @@ By default, these group backgrounds are heavily transparent. This gives the grou
 This colors the outline of the top menu bars
 <RunspaceBarBackground>#FF275321</RunspaceBarBackground>
 
+
+
+
+This is the selection color
+<ActiveSelection>#FFFF0000</ActiveSelection>
+This is color when above selection is not focused
+<InactiveSelection>#FFBFCDDB</InactiveSelection>
+
+
+
+
 This is the menu that is hidden unless you maximize the console
 monochrome and gradient works the same as before
 <ScriptExpanderMonochrome>false</ScriptExpanderMonochrome>
@@ -170,12 +197,7 @@ monochrome and gradient works the same as before
 <ScriptExpanderColor5>#FFE1ECF9</ScriptExpanderColor5>
 <ScriptExpanderColor6>#FFF8FAFC</ScriptExpanderColor6>
 
-This functions the same, and controls the backgroun behind the tabs
-<EditorTabControlMonochrome>false</EditorTabControlMonochrome>
-<EditorTabControlColor1>#FF122C09</EditorTabControlColor1>
-<EditorTabControlColor2>#FF000000</EditorTabControlColor2>
-This controls the color of the trim around the border
-<EditorTabControlBackground>#FF273800</EditorTabControlBackground>
+
 
 This controls the margin color on the left when a script has not been saved
 <DebuggerMarginUnsavedScript>#FFFF0000</DebuggerMarginUnsavedScript>
