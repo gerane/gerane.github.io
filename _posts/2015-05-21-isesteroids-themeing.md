@@ -81,7 +81,7 @@ For Inactive Tabs:
 {% highlight xml %}
 <!-- Inactive Tabs -->
 
-<!-- For Solid Background Color or Gradient Color Brackground -->
+<!-- For Solid Background Color or Gradient Color Background -->
 <ScriptUnselectedMonochrome>true</ScriptUnselectedMonochrome>
 
 <!-- For Solid Color Background if Monochrome = True -->
@@ -159,22 +159,96 @@ The *EditorTabControlBackground* Setting had a somewhat confusing name. It actua
 
 ### Toolbar Settings
 
-The Toolbars are the sets of buttons in the Menu Bar. 
+The Toolbars are the sets of buttons in the Menu Bar. They have several options that can be customized. Here is a list of the Toolbar Options:
 
-This changes the color of the dropdown overflow arrow on thie toolbar. You will notice that some are controlled by other settings. It is controlled by the next setting
-<ToolbarOverflowButtonBackground>#FF007D11</ToolbarOverflowButtonBackgrou
-
-These next few settings setting controls the last overflow buttons on in the previous image for Run Code Group.
-<ToolbarOverflowButtonBackgroundForRunCode>#FFFF0000</ToolbarOverflowButtonBackgroundForRunCode>
-<ToolbarOverflowButtonBackgroundForDebugger>#FFEEF5FD</ToolbarOverflowButtonBackgroundForDebugger>
-
-By default, these group backgrounds are heavily transparent. This gives the groups just a slighty lighter background color
+{% highlight xml %}
+<!-- Color of the Button Groups Background -->
 <ToolbarGroupBackground>#27EEF5FD</ToolbarGroupBackground>
+
+<!-- This is the Group Background Color for the Run/Debug Group  -->
 <ToolbarGroupBackgroundForRunCode>#90B6FD43</ToolbarGroupBackgroundForRunCode>
 <ToolbarGroupBackgroundForDebugger>#00FFB98B</ToolbarGroupBackgroundForDebugger>
 
-This colors the outline of the top menu bars
+<!-- Used for the Arrow in the Group Overflow -->
+<ToolbarOverflowButtonBackground>#FF007D11</ToolbarOverflowButtonBackground>
+
+<!-- This is the Button Group Background Color for the Run/Debug Area -->
+<ToolbarOverflowButtonBackgroundForRunCode>#FFFF0000</ToolbarOverflowButtonBackgroundForRunCode>
+<ToolbarOverflowButtonBackgroundForDebugger>#FFEEF5FD</ToolbarOverflowButtonBackgroundForDebugger>
+
+<!-- This is the Border Color -->
 <RunspaceBarBackground>#FF275321</RunspaceBarBackground>
+{% endhighlight %}
+
+The Button Groups by default have a very light transparent color. Here is an image of this:
+
+![Group Background Color]({{ site.urlimg }}/isesteroids/ToolbarGroupBackground.PNG)
+
+This sort of takes the default color and lightens it up slightly. You can set *ToolbarGroupBackground* to a full color for a bigger impact. You can see Red in the following image:
+
+![Group Background Color Red]({{ site.urlimg }}/isesteroids/ToolbarGroupBackgroundSolid.PNG)
+
+You will notice that there are some Group Button Backgrounds that did not change. The Run Code/Debugger section has its own set of Settings. They work the same way as the other group colors. 
+
+There is also the Overflow Buttons that can be colored. These function the same way as the Groups, but target the Overflow Buttons. You can see them set to Red in the image below:
+
+![Group Overflow Background Color]({{ site.urlimg }}/isesteroids/ToolBarOverflowBackground.PNG)
+
+There are also settings for the Code/Debugger section that function the same way. Then the last setting is the *RunspaceBarBackground* that controls the Border Color. You can see what it looks like set to Red in the image below: 
+
+![Group Border Color]({{ site.urlimg }}/isesteroids/RunSpacebarBackground.PNG)
+
+### Function Bar Settings
+
+This section has Settings for the Search and Function Bar Area under the Menu Bar at the top. Here is a list of the Settings:
+
+{% highlight xml %}
+<!-- Function/Search Area Background Color -->
+<FunctionComboCollapsedFill>#FFFFFFFF</FunctionComboCollapsedFill>
+
+<!-- Function/Search Area Text Color -->
+<FunctionComboForegroundStatic>#FFD3D3D3</FunctionComboForegroundStatic>
+
+<!-- Function/Search Area Dropdown Background Color -->
+<FunctionComboExpandedFill>#FFFFFFFF</FunctionComboExpandedFill>
+
+<!-- Function/Search Area Dropdown Text Color -->
+<FunctionComboForeground>#FF000000</FunctionComboForeground>
+{% endhighlight %}
+
+The Function/Search Bar is colored by *FunctionComboCollapsedFill* while the dropdown for your functions is colored by *FunctionComboExpandedFill*. You can also adjust the Text colors in this section as well. Here is an example of the *FunctionComboCollapsedFill* being set to Red: 
+
+![Function Background]({{ site.urlimg }}/isesteroids/FunctionComboCollapseFill.PNG)
+
+And here is a *FunctionComboExpandedFill* being set to Red: 
+
+![Function Background]({{ site.urlimg }}/isesteroids/FunctionComboExpandedFill.PNG)
+
+### Script Restore Settings
+
+These settings control a Script Expander Menu that is normally hidden. This menu is only visible when the Script Pane is hidden. The settings for this section work the same as the other menu settings that use Monochrome. Here are the settings: 
+
+{% highlight xml %}
+<!-- For Solid Color or Gradient Color Background -->
+<ScriptExpanderMonochrome>false</ScriptExpanderMonochrome>
+
+<!-- For Solid Color Background if Monochrome = True -->
+<ScriptExpanderColor1>#FFE6F0FA</ScriptExpanderColor1>
+
+<!-- For Gradient Colors if Monochrome = False -->
+<ScriptExpanderColor2>#FFE6F0FA</ScriptExpanderColor2>
+<ScriptExpanderColor3>#FFE6F0FA</ScriptExpanderColor3>
+<ScriptExpanderColor4>#FFDCE6F4</ScriptExpanderColor4>
+<ScriptExpanderColor5>#FFE1ECF9</ScriptExpanderColor5>
+<ScriptExpanderColor6>#FFF8FAFC</ScriptExpanderColor6>
+{% endhighlight %}
+
+Here is an image of the Script Expander with a Red Background: 
+
+![Function Background]({{ site.urlimg }}/isesteroids/ScriptExpander.PNG)
+
+When the Script Pane is hidden, the Script Expander Menu will be in the location of the Tab Bar. 
+
 
 
 
@@ -187,15 +261,7 @@ This is color when above selection is not focused
 
 
 
-This is the menu that is hidden unless you maximize the console
-monochrome and gradient works the same as before
-<ScriptExpanderMonochrome>false</ScriptExpanderMonochrome>
-<ScriptExpanderColor1>#FFE6F0FA</ScriptExpanderColor1>
-<ScriptExpanderColor2>#FFE6F0FA</ScriptExpanderColor2>
-<ScriptExpanderColor3>#FFE6F0FA</ScriptExpanderColor3>
-<ScriptExpanderColor4>#FFDCE6F4</ScriptExpanderColor4>
-<ScriptExpanderColor5>#FFE1ECF9</ScriptExpanderColor5>
-<ScriptExpanderColor6>#FFF8FAFC</ScriptExpanderColor6>
+
 
 
 
@@ -278,14 +344,7 @@ This is the background of the highlighted expandable text
 This is the small square that shows there is collpased text
 <CollapseSquareBackground>#FFADD8E6</CollapseSquareBackground>
 
-This sets the color of the bar where search and other items are located
-<FunctionComboCollapsedFill>#FFFFFFFF</FunctionComboCollapsedFill>
-This is the color where the function bar is
-<FunctionComboExpandedFill>#FFFFFFFF</FunctionComboExpandedFill>
-This is the text color of the function bar
-<FunctionComboForeground>#FF000000</FunctionComboForeground>
-This is the color of words like "search" in the search bar
-<FunctionComboForegroundStatic>#FFD3D3D3</FunctionComboForegroundStatic>
+
 
 
 These splitters control the borders that seperate the different sections.
