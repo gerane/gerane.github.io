@@ -42,17 +42,17 @@ You will see a Monochrone setting in several places throughout this XML. This se
 
 When *MenuBarMonochrome* is set to *true* the *MenuBarColor1* will determine the color. The image below shows the changes once applied.
 
-![Menu Bar Monochrome]({{ site.urlimg }}/isesteroids/MenuBarColor1.png)
+![Menu Bar Monochrome]({{ site.urlimg }}/isesteroids/MenuBarColor1.PNG)
 
 #### Gradient Colored Menu Bar
 
 If *MenuBarMonochrome* is set to *false* the other colors are applied. If *MenuBarMonochrome* was set to *true* and you just changed *MenuBarColor3* you can see the portion of the gradient that it changes. You can then change one at a time until you get the desired gradient.
 
-![Menu Bar Color 3]({{ site.urlimg }}/isesteroids/MenuBarColor3.png)
+![Menu Bar Color 3]({{ site.urlimg }}/isesteroids/MenuBarColor3.PNG)
 
 After a few colors are changed you can start to see the gradient take shape.
 
-![Menu Bar Gradient]({{ site.urlimg }}/isesteroids/MenuBarColorGradient.png)
+![Menu Bar Gradient]({{ site.urlimg }}/isesteroids/MenuBarColorGradient.PNG)
 
 ### Tab Settings
 
@@ -97,7 +97,7 @@ For Inactive Tabs:
 
 Tabs have a *ScriptSquareTabs* setting that if set to *true* makes the tab square. This can be seen in the following image:
 
-![Square Tab]({{ site.urlimg }}/isesteroids/SquareTab.png)
+![Square Tab]({{ site.urlimg }}/isesteroids/SquareTab.PNG)
 
 #### Active Tab Colors
 
@@ -121,7 +121,7 @@ For Inactive Tabs:
 
 If *ScriptSelectedMonochrome* is set to *false* the tab will be a gradient. The *ScriptSelectedColor1* value is not used if monochrome is set to *false*. Only the *ScriptSelectedColor2*, *ScriptSelectedColor3* and *ScriptSelectedColor4* will be used. In this example,  *ScriptSelectedColor2* is blue, *ScriptSelectedColor3* is yellow and *ScriptSelectedColor4* is pink. You can see how it makes a crazy Tab color combination in the image below.
 
-![Gradient Tab]({{ site.urlimg }}/isesteroids/ScriptSelectedColorGradient.png)
+![Gradient Tab]({{ site.urlimg }}/isesteroids/ScriptSelectedColorGradient.PNG)
 
 The Settings and Values used for Gradient Tab Colors are:
 
