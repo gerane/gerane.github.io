@@ -20,8 +20,13 @@
 
 &lt;p&gt;You will see a Monochrone setting in several places throughout this XML. This setting acts as a switch between a gradient and a solid color. If &lt;em&gt;MenuBarMonochrome&lt;/em&gt; is set to &lt;em&gt;true&lt;/em&gt;, only the first color setting will be used. The following are the settigs for the Menu Bar:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;MenuBarMonochrome&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/MenuBarMonochrome&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Solid Color or Gradient Color Background --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;MenuBarMonochrome&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/MenuBarMonochrome&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Solid Color Background with Monochrome = True --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;MenuBarColor1&amp;gt;&lt;/span&gt;#FF2B8007&lt;span class=&quot;nt&quot;&gt;&amp;lt;/MenuBarColor1&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Gradient Background Colors if Monochrome = False --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;MenuBarColor2&amp;gt;&lt;/span&gt;#FFE6F0FA&lt;span class=&quot;nt&quot;&gt;&amp;lt;/MenuBarColor2&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;MenuBarColor3&amp;gt;&lt;/span&gt;#FFE6F0FA&lt;span class=&quot;nt&quot;&gt;&amp;lt;/MenuBarColor3&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;MenuBarColor4&amp;gt;&lt;/span&gt;#FFDCE6F4&lt;span class=&quot;nt&quot;&gt;&amp;lt;/MenuBarColor4&amp;gt;&lt;/span&gt;
@@ -32,17 +37,17 @@
 
 &lt;p&gt;When &lt;em&gt;MenuBarMonochrome&lt;/em&gt; is set to &lt;em&gt;true&lt;/em&gt; the &lt;em&gt;MenuBarColor1&lt;/em&gt; will determine the color. The image below shows the changes once applied.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/isesteroids/MenuBarColor1.png&quot; alt=&quot;Menu Bar Monochrome&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/isesteroids/MenuBarColor1.png&quot; alt=&quot;Menu Bar Monochrome&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;gradient-colored-menu-bar&quot;&gt;Gradient Colored Menu Bar&lt;/h4&gt;
 
 &lt;p&gt;If &lt;em&gt;MenuBarMonochrome&lt;/em&gt; is set to &lt;em&gt;false&lt;/em&gt; the other colors are applied. If &lt;em&gt;MenuBarMonochrome&lt;/em&gt; was set to &lt;em&gt;true&lt;/em&gt; and you just changed &lt;em&gt;MenuBarColor3&lt;/em&gt; you can see the portion of the gradient that it changes. You can then change one at a time until you get the desired gradient.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/isesteroids/MenuBarColor3.png&quot; alt=&quot;Menu Bar Color 3&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/isesteroids/MenuBarColor3.png&quot; alt=&quot;Menu Bar Color 3&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;After a few colors are changed you can start to see the gradient take shape.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/isesteroids/MenuBarColorGradient.png&quot; alt=&quot;Menu Bar Gradient&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/isesteroids/MenuBarColorGradient.png&quot; alt=&quot;Menu Bar Gradient&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;tab-settings&quot;&gt;Tab Settings&lt;/h3&gt;
 
@@ -50,18 +55,33 @@
 
 &lt;p&gt;For Active Tabs:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptSquareTabs&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptSquareTabs&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Active Tabs --&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Square Tabs --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptSquareTabs&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptSquareTabs&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Solid Color or Gradient Color Background --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptSelectedMonochrome&amp;gt;&lt;/span&gt;false&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptSelectedMonochrome&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Solid Color Background if Monochrome = True --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptSelectedColor1&amp;gt;&lt;/span&gt;#FF3BF800&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptSelectedColor1&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptSelectedColor1&amp;gt;&lt;/span&gt;#FF3BF800&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptSelectedColor1&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Gradient Background Colors if Monochrome = False --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptSelectedColor2&amp;gt;&lt;/span&gt;#FFFFFFFF&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptSelectedColor2&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptSelectedColor3&amp;gt;&lt;/span&gt;#FFDFE9FC&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptSelectedColor3&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptSelectedColor4&amp;gt;&lt;/span&gt;#FFE1EEFC&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptSelectedColor4&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;For Inactive Tabs:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptUnselectedMonochrome&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptUnselectedMonochrome&amp;gt;&lt;/span&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Inactive Tabs --&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Solid Background Color or Gradient Color Brackground --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptUnselectedMonochrome&amp;gt;&lt;/span&gt;true&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptUnselectedMonochrome&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Solid Color Background if Monochrome = True --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptUnselectedColor1&amp;gt;&lt;/span&gt;#FF0F7102&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptUnselectedColor1&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- For Gradient Colors if Monochrome = False --&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptUnselectedColor2&amp;gt;&lt;/span&gt;#FFEBEBEB&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptUnselectedColor2&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptUnselectedColor3&amp;gt;&lt;/span&gt;#FFDDDDDD&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptUnselectedColor3&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScriptUnselectedColor4&amp;gt;&lt;/span&gt;#FFCDCDCD&lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScriptUnselectedColor4&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -70,7 +90,7 @@
 
 &lt;p&gt;Tabs have a &lt;em&gt;ScriptSquareTabs&lt;/em&gt; setting that if set to &lt;em&gt;true&lt;/em&gt; makes the tab square. This can be seen in the following image:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/isesteroids/SquareTab.png&quot; alt=&quot;Square Tab&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/isesteroids/SquareTab.png&quot; alt=&quot;Square Tab&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;active-tab-colors&quot;&gt;Active Tab Colors&lt;/h4&gt;
 
@@ -98,7 +118,7 @@
 
 &lt;p&gt;If &lt;em&gt;ScriptSelectedMonochrome&lt;/em&gt; is set to &lt;em&gt;false&lt;/em&gt; the tab will be a gradient. The &lt;em&gt;ScriptSelectedColor1&lt;/em&gt; value is not used if monochrome is set to &lt;em&gt;false&lt;/em&gt;. Only the &lt;em&gt;ScriptSelectedColor2&lt;/em&gt;, &lt;em&gt;ScriptSelectedColor3&lt;/em&gt; and &lt;em&gt;ScriptSelectedColor4&lt;/em&gt; will be used. In this example,  &lt;em&gt;ScriptSelectedColor2&lt;/em&gt; is blue, &lt;em&gt;ScriptSelectedColor3&lt;/em&gt; is yellow and &lt;em&gt;ScriptSelectedColor4&lt;/em&gt; is pink. You can see how it makes a crazy Tab color combination in the image below.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/isesteroids/ScriptSelectedColorGradient.png&quot; alt=&quot;Gradient Tab&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/isesteroids/ScriptSelectedColorGradient.png&quot; alt=&quot;Gradient Tab&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The Settings and Values used for Gradient Tab Colors are:&lt;/p&gt;
 

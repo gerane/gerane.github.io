@@ -24,8 +24,13 @@ I have good news and bad news. To make things easier, I used a theme that was al
 You will see a Monochrone setting in several places throughout this XML. This setting acts as a switch between a gradient and a solid color. If *MenuBarMonochrome* is set to *true*, only the first color setting will be used. The following are the settigs for the Menu Bar:
 
 {% highlight xml %}
+<!-- For Solid Color or Gradient Color Background -->
 <MenuBarMonochrome>true</MenuBarMonochrome>
+
+<!-- For Solid Color Background with Monochrome = True -->
 <MenuBarColor1>#FF2B8007</MenuBarColor1>
+
+<!-- For Gradient Background Colors if Monochrome = False -->
 <MenuBarColor2>#FFE6F0FA</MenuBarColor2>
 <MenuBarColor3>#FFE6F0FA</MenuBarColor3>
 <MenuBarColor4>#FFDCE6F4</MenuBarColor4>
@@ -37,17 +42,17 @@ You will see a Monochrone setting in several places throughout this XML. This se
 
 When *MenuBarMonochrome* is set to *true* the *MenuBarColor1* will determine the color. The image below shows the changes once applied.
 
-![Menu Bar Monochrome]({{ site.url }}/images/isesteroids/MenuBarColor1.png)
+![Menu Bar Monochrome](/images/isesteroids/MenuBarColor1.png)
 
 #### Gradient Colored Menu Bar
 
 If *MenuBarMonochrome* is set to *false* the other colors are applied. If *MenuBarMonochrome* was set to *true* and you just changed *MenuBarColor3* you can see the portion of the gradient that it changes. You can then change one at a time until you get the desired gradient.
 
-![Menu Bar Color 3]({{ site.url }}/images/isesteroids/MenuBarColor3.png)
+![Menu Bar Color 3](/images/isesteroids/MenuBarColor3.png)
 
 After a few colors are changed you can start to see the gradient take shape.
 
-![Menu Bar Gradient]({{ site.url }}/images/isesteroids/MenuBarColorGradient.png)
+![Menu Bar Gradient](/images/isesteroids/MenuBarColorGradient.png)
 
 ### Tab Settings
 
@@ -55,10 +60,18 @@ Tabs have a few settings that can be tweaked. One of the first I went hunting fo
 
 For Active Tabs:
 {% highlight xml %}
+<!-- Active Tabs -->
+
+<!-- For Square Tabs -->
 <ScriptSquareTabs>true</ScriptSquareTabs>
+
+<!-- For Solid Color or Gradient Color Background -->
 <ScriptSelectedMonochrome>false</ScriptSelectedMonochrome>
+
+<!-- For Solid Color Background if Monochrome = True -->
 <ScriptSelectedColor1>#FF3BF800</ScriptSelectedColor1>
-<ScriptSelectedColor1>#FF3BF800</ScriptSelectedColor1>
+
+<!-- For Gradient Background Colors if Monochrome = False -->
 <ScriptSelectedColor2>#FFFFFFFF</ScriptSelectedColor2>
 <ScriptSelectedColor3>#FFDFE9FC</ScriptSelectedColor3>
 <ScriptSelectedColor4>#FFE1EEFC</ScriptSelectedColor4>
@@ -66,8 +79,15 @@ For Active Tabs:
 
 For Inactive Tabs:
 {% highlight xml %}
+<!-- Inactive Tabs -->
+
+<!-- For Solid Background Color or Gradient Color Brackground -->
 <ScriptUnselectedMonochrome>true</ScriptUnselectedMonochrome>
+
+<!-- For Solid Color Background if Monochrome = True -->
 <ScriptUnselectedColor1>#FF0F7102</ScriptUnselectedColor1>
+
+<!-- For Gradient Colors if Monochrome = False -->
 <ScriptUnselectedColor2>#FFEBEBEB</ScriptUnselectedColor2>
 <ScriptUnselectedColor3>#FFDDDDDD</ScriptUnselectedColor3>
 <ScriptUnselectedColor4>#FFCDCDCD</ScriptUnselectedColor4>
@@ -77,7 +97,7 @@ For Inactive Tabs:
 
 Tabs have a *ScriptSquareTabs* setting that if set to *true* makes the tab square. This can be seen in the following image:
 
-![Square Tab]({{ site.url }}/images/isesteroids/SquareTab.png)
+![Square Tab](/images/isesteroids/SquareTab.png)
 
 #### Active Tab Colors
 
@@ -101,7 +121,7 @@ For Inactive Tabs:
 
 If *ScriptSelectedMonochrome* is set to *false* the tab will be a gradient. The *ScriptSelectedColor1* value is not used if monochrome is set to *false*. Only the *ScriptSelectedColor2*, *ScriptSelectedColor3* and *ScriptSelectedColor4* will be used. In this example,  *ScriptSelectedColor2* is blue, *ScriptSelectedColor3* is yellow and *ScriptSelectedColor4* is pink. You can see how it makes a crazy Tab color combination in the image below.
 
-![Gradient Tab]({{ site.url }}/images/isesteroids/ScriptSelectedColorGradient.png)
+![Gradient Tab](/images/isesteroids/ScriptSelectedColorGradient.png)
 
 The Settings and Values used for Gradient Tab Colors are:
 
