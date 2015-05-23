@@ -1,6 +1,6 @@
 - menu_name: "Find Me"
 
-- name: "Twitter - @BrandonPadgett"
+- name: "@BrandonPadgett"
   url: "https://twitter.com/BrandonPadgett"
   class: "twitter-footer"
   title: "@BrandonPadgett"

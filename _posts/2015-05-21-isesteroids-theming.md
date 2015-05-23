@@ -253,25 +253,24 @@ When the Script Pane is hidden, the Script Expander Menu will be in the location
 
 
 
-This is the selection color
+<!-- This is the selection color -->
 <ActiveSelection>#FFFF0000</ActiveSelection>
-This is color when above selection is not focused
+<!-- This is color when above selection is not focused -->
 <InactiveSelection>#FFBFCDDB</InactiveSelection>
 
 
 
+![finishedtheme](/images/isesteroids/finishedtheme.PNG)
 
 
-
-
-
-This controls the margin color on the left when a script has not been saved
+{% highlight xml %}
 <DebuggerMarginUnsavedScript>#FFFF0000</DebuggerMarginUnsavedScript>
 This is the color when saved
 <DebuggerMarginSavedScript>#FF083101</DebuggerMarginSavedScript>
 This controls the colors when then the debugger is active
 <DebuggerMarginDebuggerActive>#FFFF6464</DebuggerMarginDebuggerActive>
-<DebuggerMarginDebuggerActiveBackground>#FF000000</DebuggerMarginDebuggerActiveBackground>
+<DebuggerMarginDebuggerActiveBackground>#FF000000</DebuggerMarginDebuggerActiveBackground> 
+{% endhighlight %}
 
 This is the border around the arrow in the margin
 <CurrentLineAdornmentBorder>#FFFF0000</CurrentLineAdornmentBorder>

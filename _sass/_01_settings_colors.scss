@@ -72,21 +72,36 @@ $grey-16: #0B0B0B;
 /* Topbar-Navigation
 ------------------------------------------------------------------- */
 
-$topbar-bg-color: #fff;
+// White Topbar
+//$topbar-bg-color: #fff;
+//$topbar-dropdown-toggle-color: $ci-1;
+//$topbar-link-color: #000;
+//$topbar-link-color-hover: #fff; //#000;
+//$topbar-dropdown-label-color: #fff; //$ci-2;
+//$topbar-dropdown-link-bg-hover: $ci-1; //$ci-6;
+// $topbar-link-bg-hover: $ci-1; //$ci-6;
+// $topbar-link-bg-active: #fff; //$ci-6; // Active Navigation Link
+// $topbar-link-color-active: #000;
+// $topbar-link-color-active-hover: #000;
+// $topbar-link-bg-active-hover: scale-color($ci-1, $lightness: 40%); //$ci-2;
 
-$topbar-dropdown-toggle-color: $ci-1;
-
-$topbar-link-color: #000;
-$topbar-link-color-hover: #fff; //#000;
-$topbar-link-color-active: #000;
+// Blue Topbar
+$topbar-bg-color: $primary-color;
+$topbar-bg: $topbar-bg-color;
+$topbar-dropdown-toggle-color: #fff;
+$topbar-link-color: #fff;
+$topbar-link-color-hover: #000;
+$topbar-dropdown-label-color: darken($primary-color, 10%); //$ci-2;
+$topbar-dropdown-link-bg-hover: #fff; //$ci-6;
+$topbar-link-bg-hover: #fff; //$ci-6;
+$topbar-link-bg-active: $primary-color; //$ci-6; // Active Navigation Link
+$topbar-link-color-active: #fff;
 $topbar-link-color-active-hover: #000;
+$topbar-link-bg-active-hover: #fff; //$ci-2;
 
-$topbar-dropdown-label-color: #fff; //$ci-2;
-$topbar-dropdown-link-bg-hover: $ci-1; //$ci-6;
 
-$topbar-link-bg-active: #fff; //$ci-6; // Active Navigation Link
-$topbar-link-bg-hover: $ci-1; //$ci-6;
-$topbar-link-bg-active-hover: scale-color($ci-1, $lightness: 40%); //$ci-2;
+
+
 
 
 $topbar-dropdown-bg: #fff; //$ci-6; // Background Mobile Navigation
