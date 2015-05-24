@@ -84,40 +84,42 @@ $grey-16: #0B0B0B;
 // $topbar-link-color-active: #000;
 // $topbar-link-color-active-hover: #000;
 // $topbar-link-bg-active-hover: scale-color($ci-1, $lightness: 40%); //$ci-2;
-
-$topbar-menu-link-color: #000;
+// $topbar-dropdown-bg: #fff; //$ci-6; // Background Mobile Navigation
+// $topbar-menu-link-color: #000;
 // $topbar-menu-icon-color: #000;
+// $topbar-menu-link-color-toggled: $ci-1;
+// $topbar-menu-icon-color-toggled: $ci-1;
+// $topbar-dropdown-link-color: #000;
+// $topbar-dropdown-link-bg: $grey-1; //#fff; //$ci-2;
+
 
 // Blue Topbar
 $topbar-bg-color: $primary-color;
 $topbar-bg: $topbar-bg-color;
-$topbar-dropdown-toggle-color: #fff;
-$topbar-link-color: #fff;
-$topbar-link-color-hover: #000;
-$topbar-dropdown-label-color: darken($primary-color, 10%); 
-$topbar-dropdown-link-bg-hover: #fff;
-$topbar-link-bg-hover: #fff; 
-$topbar-link-bg-active: $primary-color; // Active Navigation Link
-$topbar-link-color-active: #fff;
-$topbar-link-color-active-hover: #000;
-$topbar-link-bg-active-hover: #fff;
-$topbar-menu-link-color: #000;
-$topbar-menu-icon-color: #fff;
+$topbar-dropdown-toggle-color: #fff; // This colors the menu triangle color
+$topbar-link-color: #fff; // Main Bar Text Color and Dropdown Menu Text Color
+$topbar-link-color-hover: #000; // Main Bar Hover Text Color and Dropdown Menu Hover Text Color - Both
+$topbar-dropdown-label-color: darken($primary-color, 10%); // This does not appear to be used
+$topbar-dropdown-link-bg-hover: #fff; // Hover BG Dropdown Non-Mobile
+$topbar-link-bg-hover: $grey-1; // Main Bar Hover Link BG - Both
+$topbar-link-bg-active: $primary-color; // Active Navigation Link - Both
+$topbar-link-bg-active-hover: $grey-1; // Main Link Active Hover BG - Both
+$topbar-link-color-active: #fff; // Active Text Color - Both
+$topbar-link-color-active-hover: #000; //Active Text Color Hover - Both
+$topbar-menu-link-color: #000; // Text her has been disabled
+$topbar-menu-icon-color: #fff; // Hamburger Color
+$topbar-menu-link-color-toggled: #fff; // Test here is disabled for Hamburger
+$topbar-menu-icon-color-toggled: #fff; // Hamburger Color when Active
+$topbar-dropdown-bg: $primary-color; // Background Mobile Navigation
+$topbar-dropdown-link-color: #000; // Dropdown Text Color - Non-Mobile
+$topbar-dropdown-link-bg: $grey-1; // Dropdown Background Color - Non-Mobile
 
 
 
 
 
 
-$topbar-dropdown-bg: #fff; //$ci-6; // Background Mobile Navigation
-$topbar-dropdown-link-color: #000;
-$topbar-dropdown-link-bg: $grey-1; //#fff; //$ci-2;
 
-$topbar-menu-link-color-toggled: $ci-1;
-$topbar-menu-icon-color-toggled: $ci-1;
-
-$topbar-menu-link-color-toggled: $ci-6;
-$topbar-menu-icon-color-toggled: $ci-6;
 
 
 

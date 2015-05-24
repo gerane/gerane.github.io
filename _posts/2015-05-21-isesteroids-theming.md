@@ -1,14 +1,18 @@
 ---
 layout: page
-title:  "A Detailed look at ISESteroids Theme Values"
-subheadline:  ""
-teaser: "Creating a Custom Theme for ISESteroids"
+title:  "Creating a Custom Theme for ISESteroids"
+subheadline:  "Powershell"
+teaser: "A Detailed look at ISESteroids Themes and their XML format. Each XML value is explained for easy reference."
 categories:
     - powershell
 tags:
     - powershell
     - ise
     - theme
+image:
+    thumb: "isesteroids/PoshBlogThumb.PNG"
+header:
+    image_fullwidth: "isesteroids/ISESteroids.PNG"
 ---
 I prefer creating custom themes for my text editors. I am inside a text editor for large percentages of my day, so even small adjustments can vastly improve my user experience.
 
@@ -468,7 +472,7 @@ The Palettes in the color picker are represented here.
 
 
 
-<!-- ### All Header-Styles 
+### Related Posts
 {: .t60 }
 
-{% include list-posts.html tag='header' %} -->
+{% include list-posts.html tag='powershell' %}
