@@ -11,6 +11,7 @@ tags:
     - theme
 image:
     thumb: "isesteroids/PoshBlogThumb.PNG"
+    homepage: isesteroids/ISESteroids.PNG
 header:
     image_fullwidth: "isesteroids/ISESteroids.PNG"
 ---

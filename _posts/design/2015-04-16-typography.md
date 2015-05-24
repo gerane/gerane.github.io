@@ -372,5 +372,3 @@ element</td>
 
 </div><!-- /.medium-8.columns -->
 </div><!-- /.row -->
-
-
