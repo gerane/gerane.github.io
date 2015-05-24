@@ -12,8 +12,6 @@ tags:
 image:
     thumb: "isesteroids/PoshBlogThumb.PNG"
     homepage: isesteroids/ISESteroids.PNG
-header:
-    image_fullwidth: "isesteroids/ISESteroids.PNG"
 ---
 I prefer creating custom themes for my text editors. I am inside a text editor for large percentages of my day, so even small adjustments can vastly improve my user experience.
 
@@ -65,6 +63,8 @@ Tabs have a few settings that can be tweaked. One of the first I went hunting fo
 
 For Active Tabs:
 {% highlight xml %}
+<!-- Active Tabs -->
+
 <!-- For Square Tabs -->
 <ScriptSquareTabs>true</ScriptSquareTabs>
 
@@ -82,6 +82,8 @@ For Active Tabs:
 
 For Inactive Tabs:
 {% highlight xml %}
+<!-- Inactive Tabs -->
+
 <!-- For Solid Background Color or Gradient Color Background -->
 <ScriptUnselectedMonochrome>true</ScriptUnselectedMonochrome>
 
@@ -106,13 +108,30 @@ The Tabs also use a similar Monochrome setting for single color or gradient call
 
 #### Solid Tab Color
 
-You can also see the solid Tab color in the Square Tab image above. Only the *ScriptSelectedColor1* value applies if *ScriptSelectedMonochrome* is set to *true*. 
+You can also see the solid Tab color in the Square Tab image above. Only the *ScriptSelectedColor1* value applies if *ScriptSelectedMonochrome* is set to *true*. The Settings and Values used would be:
+
+For Active Tabs:
+  
+  * **ScriptSelectedMonochrome** = **True**
+  * **ScriptSelectedColor1** = #**ColorCode**
+  
+For Inactive Tabs:
+  
+  * **ScriptUnselectedMonochrome** = **True**
+  * **ScriptUnselectedColor1** = #**ColorCode**  
 
 #### Gradient Tab Color
 
-If *ScriptSelectedMonochrome* is set to *false* the tab will be a gradient. In the example in the image below, *ScriptSelectedColor2* is blue, *ScriptSelectedColor3* is yellow and *ScriptSelectedColor4* is pink. You can see how it makes a crazy Tab color combination in the image below.
+If *ScriptSelectedMonochrome* is set to *false* the tab will be a gradient. The *ScriptSelectedColor1* value is not used if monochrome is set to *false*. Only the *ScriptSelectedColor2*, *ScriptSelectedColor3* and *ScriptSelectedColor4* will be used. In this example,  *ScriptSelectedColor2* is blue, *ScriptSelectedColor3* is yellow and *ScriptSelectedColor4* is pink. You can see how it makes a crazy Tab color combination in the image below.
 
 ![Gradient Tab]({{ site.urlimg }}/isesteroids/ScriptSelectedColorGradient.PNG)
+
+The Settings and Values used for Gradient Tab Colors are:
+
+  * **ScriptSelectedMonochrome** = **False**
+  * **ScriptSelectedColor2** = #**ColorCode**
+  * **ScriptSelectedColor3** = #**ColorCode**
+  * **ScriptSelectedColor4** = #**ColorCode**
 
 #### Tab Background Color
 
