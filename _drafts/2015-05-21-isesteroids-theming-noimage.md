@@ -10,8 +10,8 @@ tags:
     - ise
     - theme
 image:
-    thumb: "isesteroids/PoshBlogThumb.PNG"
-    homepage: isesteroids/ISESteroids.PNG
+    thumb: "2015/05/PoshBlogThumb.PNG"
+    homepage: "2015/05/ISESteroids.PNG"
 ---
 I prefer creating custom themes for my text editors. I am inside a text editor for large percentages of my day, so even small adjustments can vastly improve my user experience.
 

@@ -1,20 +1,22 @@
 ---
 layout: page
-title:  "Creating a Custom Theme for ISESteroids"
-subheadline:  "Powershell"
-teaser: "A Detailed look at ISESteroids Themes and their XML format. Each XML value is explained for easy reference."
+title: Creating a Custom Theme for ISESteroids
+subheadline: Powershell
+teaser: A Detailed look at ISESteroids Themes and their XML format. Each XML value is explained for easy reference.
 categories:
-    - powershell
+  - powershell
 tags:
-    - powershell
-    - ise
-    - theme
+  - powershell
+  - ise
+  - theme
 image:
-    thumb: "isesteroids/PoshBlogThumb.PNG"
-    homepage: isesteroids/ISESteroids.PNG
+  thumb: 2015/05/PoshBlogThumb.PNG
+  homepage: 2015/05/ISESteroids.PNG
 header:
-    image_fullwidth: "isesteroids/ISESteroids.PNG"
+  image_fullwidth: 2015/05/ISESteroids.PNG
+date: '2015-05-25 07:49'
 ---
+
 I prefer creating custom themes for my text editors. I am inside a text editor for large percentages of my day, so even small adjustments can vastly improve my user experience.
 
 When exploring the ISESteroids Theme Manager I had issues finding the values I was looking for. I quickly realized that going to the actual xml file and editing the values that was the way to go. I quickly found that trial and error was needed for finding the correct values to change. This process was actually quite time consuming, so I decided to document the process and share so others may have an easier time than I did.
@@ -47,17 +49,17 @@ You will see a Monochrone setting in several places throughout this XML. This se
 
 When *MenuBarMonochrome* is set to *true* the *MenuBarColor1* will determine the color. The image below shows the changes once applied.
 
-![Menu Bar Monochrome]({{ site.urlimg }}/isesteroids/MenuBarColor1.PNG)
+![Menu Bar Monochrome]({{ site.urlimg }}/2015/05/MenuBarColor1.PNG)
 
 #### Gradient Colored Menu Bar
 
 If *MenuBarMonochrome* is set to *false* the other colors are applied. If *MenuBarMonochrome* was set to *true* and you just changed *MenuBarColor3* you can see the portion of the gradient that it changes. You can then change one at a time until you get the desired gradient.
 
-![Menu Bar Color 3]({{ site.urlimg }}/isesteroids/MenuBarColor3.PNG)
+![Menu Bar Color 3]({{ site.urlimg }}/2015/05/MenuBarColor3.PNG)
 
 After a few colors are changed you can start to see the gradient take shape.
 
-![Menu Bar Gradient]({{ site.urlimg }}/isesteroids/MenuBarColorGradient.PNG)
+![Menu Bar Gradient]({{ site.urlimg }}/2015/05/MenuBarColorGradient.PNG)
 
 ### Tab Settings
 
@@ -98,7 +100,7 @@ For Inactive Tabs:
 
 Tabs have a *ScriptSquareTabs* setting that if set to *true* makes the tab square. This can be seen in the following image:
 
-![Square Tab]({{ site.urlimg }}/isesteroids/SquareTab.PNG)
+![Square Tab]({{ site.urlimg }}/2015/05/SquareTab.PNG)
 
 #### Active Tab Colors
 
@@ -112,7 +114,7 @@ You can also see the solid Tab color in the Square Tab image above. Only the *Sc
 
 If *ScriptSelectedMonochrome* is set to *false* the tab will be a gradient. In the example in the image below, *ScriptSelectedColor2* is blue, *ScriptSelectedColor3* is yellow and *ScriptSelectedColor4* is pink. You can see how it makes a crazy Tab color combination in the image below.
 
-![Gradient Tab]({{ site.urlimg }}/isesteroids/ScriptSelectedColorGradient.PNG)
+![Gradient Tab]({{ site.urlimg }}/2015/05/ScriptSelectedColorGradient.PNG)
 
 #### Tab Background Color
 
@@ -135,11 +137,11 @@ The colors for the Tab Background function similar to the other color settings. 
 
 You can the Background with a gradient in the following image:
 
-![Gradient Tab Background]({{ site.urlimg }}/isesteroids/EditorTabControl.PNG)
+![Gradient Tab Background]({{ site.urlimg }}/2015/05/EditorTabControl.PNG)
 
 The *EditorTabControlBackground* Setting had a somewhat confusing name. It actually seemed to control the border color of the Editor. You can see the border in the following image:
 
-![Tab Background Border Color]({{ site.urlimg }}/isesteroids/EditorTabControlBackground.PNG)
+![Tab Background Border Color]({{ site.urlimg }}/2015/05/EditorTabControlBackground.PNG)
 
 ### Toolbar Settings
 
@@ -166,21 +168,21 @@ The Toolbars are the sets of buttons in the Menu Bar. They have several options 
 
 The Button Groups by default have a very light transparent color. Here is an image of this:
 
-![Group Background Color]({{ site.urlimg }}/isesteroids/ToolbarGroupBackground.PNG)
+![Group Background Color]({{ site.urlimg }}/2015/05/ToolbarGroupBackground.PNG)
 
 This sort of takes the default color and lightens it up slightly. You can set *ToolbarGroupBackground* to a full color for a bigger impact. You can see Red in the following image:
 
-![Group Background Color Red]({{ site.urlimg }}/isesteroids/ToolbarGroupBackgroundSolid.PNG)
+![Group Background Color Red]({{ site.urlimg }}/2015/05/ToolbarGroupBackgroundSolid.PNG)
 
 You will notice that there are some Group Button Backgrounds that did not change. The Run Code/Debugger section has its own set of Settings. They work the same way as the other group colors. 
 
 There is also the Overflow Buttons that can be colored. These function the same way as the Groups, but target the Overflow Buttons. You can see them set to Red in the image below:
 
-![Group Overflow Background Color]({{ site.urlimg }}/isesteroids/ToolBarOverflowBackground.PNG)
+![Group Overflow Background Color]({{ site.urlimg }}/2015/05/ToolBarOverflowBackground.PNG)
 
 There are also settings for the Code/Debugger section that function the same way. Then the last setting is the *RunspaceBarBackground* that controls the Border Color. You can see what it looks like set to Red in the image below: 
 
-![Group Border Color]({{ site.urlimg }}/isesteroids/RunSpacebarBackground.PNG)
+![Group Border Color]({{ site.urlimg }}/2015/05/RunSpacebarBackground.PNG)
 
 ### Function Bar Settings
 
@@ -202,11 +204,11 @@ This section has Settings for the Search and Function Bar Area under the Menu Ba
 
 The Function/Search Bar is colored by *FunctionComboCollapsedFill* while the dropdown for your functions is colored by *FunctionComboExpandedFill*. You can also adjust the Text colors in this section as well. Here is an example of the *FunctionComboCollapsedFill* being set to Red: 
 
-![Function Background]({{ site.urlimg }}/isesteroids/FunctionComboCollapseFill.PNG)
+![Function Background]({{ site.urlimg }}/2015/05/FunctionComboCollapseFill.PNG)
 
 And here is a *FunctionComboExpandedFill* being set to Red: 
 
-![Function Background]({{ site.urlimg }}/isesteroids/FunctionComboExpandedFill.PNG)
+![Function Background]({{ site.urlimg }}/2015/05/FunctionComboExpandedFill.PNG)
 
 ### Script Restore Settings
 
@@ -229,7 +231,7 @@ These settings control a Script Expander Menu that is normally hidden. This menu
 
 Here is an image of the Script Expander with a Red Background: 
 
-![Function Background]({{ site.urlimg }}/isesteroids/ScriptExpander.PNG)
+![Function Background]({{ site.urlimg }}/2015/05/ScriptExpander.PNG)
 
 When the Script Pane is hidden, the Script Expander Menu will be in the location of the Tab Bar. 
 
@@ -244,7 +246,7 @@ When the Script Pane is hidden, the Script Expander Menu will be in the location
 
 
 
-![finishedtheme](/images/isesteroids/finishedtheme.PNG)
+![finishedtheme](/images/2015/05/finishedtheme.PNG)
 
 
 {% highlight xml %}
