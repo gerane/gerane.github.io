@@ -235,6 +235,90 @@ Here is an image of the Script Expander with a Red Background:
 
 When the Script Pane is hidden, the Script Expander Menu will be in the location of the Tab Bar. 
 
+### Panel Divider Settings
+
+These settings control the colors of the dividers between scripting, terminal, and other panels. They have the same coloring scheme as the other monochrome settings. There are two different sets of settings that control Vertical and Horizontal Splitters. Here are the settings: 
+
+For Vertical Dividers:
+
+{% highlight xml %}
+<!-- For Solid Color or Gradient Color Background -->
+<VerticalSplitterMonochrome>true</VerticalSplitterMonochrome>
+
+<!-- For Solid Color Background if Monochrome = True -->
+<VerticalSplitterBorder>#FF808080</VerticalSplitterBorder>
+
+<!-- For Gradient Colors if Monochrome = False -->
+<VerticalSplitterColor1>#FFFF0000</VerticalSplitterColor1>
+<VerticalSplitterColor2>#FFA2CBF3</VerticalSplitterColor2>
+<VerticalSplitterColor3>#FFB7CEF5</VerticalSplitterColor3>
+<VerticalSplitterColor4>#FFC6D2DE</VerticalSplitterColor4>
+{% endhighlight %}
+
+For Horizontal Dividers:
+
+{% highlight xml %}
+<!-- For Solid Color or Gradient Color Background -->
+<HorizontalSplitterMonochrome>true</HorizontalSplitterMonochrome>
+
+<!-- For Solid Color Background if Monochrome = True -->
+<HorizontalSplitterBorder>#FF808080</HorizontalSplitterBorder>
+
+<!-- For Gradient Colors if Monochrome = False -->
+<HorizontalSplitterColor1>#FFff0000</HorizontalSplitterColor1>
+<HorizontalSplitterColor2>#FFA2CBF3</HorizontalSplitterColor2>
+<HorizontalSplitterColor3>#FFB7CEF5</HorizontalSplitterColor3>
+<HorizontalSplitterColor4>#FFC6D2DE</HorizontalSplitterColor4>
+{% endhighlight %}
+
+The picture below shows how the dividers look when Monochrome is set to True and *VerticalSplitterColor1* and *HorizontalSplitterColor1* are set to Red.
+
+![Panel dividers](/images/2015/05/images\2015\05\splitter.PNG)
+
+### Status Bar Settings
+
+The Status Bar is the Bar at the very bottom of the ISE. You can customize the coloring of the Bar and its text. There are also options to customize the hyperlink colors. Here are are settings for the Status Bar:
+
+{% highlight xml %}
+<!-- Sets the Default Color of the Status Bar -->
+<StatusBarBackgroundInactive>#FF003A12</StatusBarBackgroundInactive>
+<!-- The Color of the Status Bar when Powershell is Actively Running -->
+<StatusBarBackgroundActive>#FFFF0000</StatusBarBackgroundActive>
+
+<!-- Sets the Color of the Status Bar Text when Powershell is Actively Running -->
+<StatusBarForegroundColorActive>#FFFFFFFF</StatusBarForegroundColorActive>
+<!-- Set the Default Color of the Status Text -->
+<StatusBarForegroundColorInactive>#FFFFFFFF</StatusBarForegroundColorInactive>
+
+<!-- Sets the Default hyperlink Color -->
+<StatusBarHyperlinkDefaultColor>#FFF5DEB3</StatusBarHyperlinkDefaultColor>
+<!-- Sets the Hover hyperlink Color -->
+<StatusBarHyperlinkHoverColor>#FFFAFAD2</StatusBarHyperlinkHoverColor>
+<!-- Sets the Underline Preference -->
+<StatusBarHyperlinkUnderlineAlways>false</StatusBarHyperlinkUnderlineAlways>
+<!-- Sets the Hover Underline Preference -->
+<StatusBarHyperlinkUnderlineOnHover>false</StatusBarHyperlinkUnderlineOnHover>
+{% endhighlight %}
+
+Here is an image of the Status Bar with *StatusBarBackgroundInactive* color set to Red, *StatusBarForegroundColorInactive* set to White, and *StatusBarHyperlinkDefaultColor* set to a tan shade of yellow:
+
+![Status Bar Background](/images/2015/05/StatusBarBackgroundInactive.PNG)
+
+### Snippet Settings
+
+This controls the name color of the snippet. In the image below, the color of the word BlockComment is controlled by this setting.
+
+<SnippetHeader>#FFADD8E6</SnippetHeader>
+<SnippetDescription>#FFADD8E6</SnippetDescription>
+<SnippetBorder>#FFFF0000</SnippetBorder>
+
+<SnippetFontFamily>Segoe UI</SnippetFontFamily>
+<SnippetFontSize>8</SnippetFontSize>
+
+This controls the color of the border of the Snippet as seen below
+
+Snippet font size and type
+
 
 
 
@@ -293,32 +377,14 @@ These control the Size and font family of the function references.
 FunctionReferenceSize>10</FunctionReferenceSize>
 <FunctionReferenceFontFamily>DIN</FunctionReferenceFontFamily>
 
-Snippet font size and type
-<SnippetFontFamily>Segoe UI</SnippetFontFamily>
-<SnippetFontSize>8</SnippetFontSize>
+
 
 These control the colors for function references. The image shows an active reference. If the function had no references the color in the inactive setting would be applied
 <FunctionReferenceInactive>#FFD3D3D3</FunctionReferenceInactive>
 <FunctionReferenceActive>#FFFF0000</FunctionReferenceActive>
 <FunctionReferenceHoverBackground>#64DCE4EB</FunctionReferenceHoverBackground>
 
-This controls the name color of the snippet. In the image below, the color of the word BlockComment is controlled by this setting.
-<SnippetHeader>#FFADD8E6</SnippetHeader>
-<SnippetDescription>#FFADD8E6</SnippetDescription>
-This controls the color of the border of the Snippet as seen below
-<SnippetBorder>#FFFF0000</SnippetBorder>
 
-Sets the colors of the background and text of the status bar when active and inactive
-<StatusBarBackgroundInactive>#FF003A12</StatusBarBackgroundInactive>
-<StatusBarBackgroundActive>#FFFF0000</StatusBarBackgroundActive>
-<StatusBarForegroundColorActive>#FFFFFFFF</StatusBarForegroundColorActive>
-<StatusBarForegroundColorInactive>#FFFFFFFF</StatusBarForegroundColorInactive>
-
-This controls the colors of hyperlinksin the Status Bar
-<StatusBarHyperlinkDefaultColor>#FFF5DEB3</StatusBarHyperlinkDefaultColor>
-<StatusBarHyperlinkHoverColor>#FFFAFAD2</StatusBarHyperlinkHoverColor>
-<StatusBarHyperlinkUnderlineAlways>false</StatusBarHyperlinkUnderlineAlways>
-<StatusBarHyperlinkUnderlineOnHover>false</StatusBarHyperlinkUnderlineOnHover>
 
 This controls the color of a collapsed block of text as seen below
 <CollapsedTextColor>#FFFF0000</CollapsedTextColor>
@@ -332,21 +398,7 @@ This is the small square that shows there is collpased text
 
 
 
-These splitters control the borders that seperate the different sections.
-They work similar the the monochrome setting above.
-<VerticalSplitterMonochrome>true</VerticalSplitterMonochrome>
-<VerticalSplitterBorder>#FF808080</VerticalSplitterBorder>
-<VerticalSplitterColor1>#FFFF0000</VerticalSplitterColor1>
-<VerticalSplitterColor2>#FFA2CBF3</VerticalSplitterColor2>
-<VerticalSplitterColor3>#FFB7CEF5</VerticalSplitterColor3>
-<VerticalSplitterColor4>#FFC6D2DE</VerticalSplitterColor4>
 
-<HorizontalSplitterMonochrome>true</HorizontalSplitterMonochrome>
-<HorizontalSplitterBorder>#FF808080</HorizontalSplitterBorder>
-<HorizontalSplitterColor1>#FFff0000</HorizontalSplitterColor1>
-<HorizontalSplitterColor2>#FFA2CBF3</HorizontalSplitterColor2>
-<HorizontalSplitterColor3>#FFB7CEF5</HorizontalSplitterColor3>
-<HorizontalSplitterColor4>#FFC6D2DE</HorizontalSplitterColor4>
 
 I wont go in depth on these settings. These you can edit via Tools => Options
 These are your syntax highlighting sections
