@@ -21,12 +21,59 @@ I prefer creating custom themes for my text editors. I am inside a text editor f
 
 When exploring the ISESteroids Theme Manager I had issues finding the values I was looking for. I quickly realized that going to the actual xml file and editing the values that was the way to go. I quickly found that trial and error was needed for finding the correct values to change. This process was actually quite time consuming, so I decided to document the process and share so others may have an easier time than I did.
 
-### Getting Started
+## Getting Started
 
 I have good news and bad news. To make things easier, I used a theme that was almost entirely green and made all changes in red. This gave a nice contrast and lets the changes really stand out. However, it may make your eyes bleed.
 
-### Menu Bar Settings
+## Console Settings
 
+The Console Window has several customizable settings that are different from the Script Panes. You can Share the Font Settings between the Console and the Script Pane by setting the *ShareFontForConsole* setting to True. The Following settings allow you to set all of the Console Pane and Script Pane Font Settings if you want them to have different values.
+
+{% highlight xml %}
+<ShareFontForConsole>false</ShareFontForConsole>
+<ScriptPaneFontFamily>ubuntumono-r.ttf#Ubuntu Mono</ScriptPaneFontFamily>
+<ScriptPaneFontSize>12</ScriptPaneFontSize>
+<ConsolePaneFontFamily>sourcecodepro-regular.ttf#Source Code Pro</ConsolePaneFontFamily>
+<ConsolePaneFontSize>10</ConsolePaneFontSize>
+<ConsolePaneForegroundColor>#FFEEEEEC</ConsolePaneForegroundColor>
+<ConsolePaneBackgroundColor>#FF212121</ConsolePaneBackgroundColor>
+<ScriptPaneBackgroundColor>#FF212121</ScriptPaneBackgroundColor>
+{% endhighlight %}
+
+The Text Error Colors can be set with the following Settings:
+
+{% highlight xml %}
+<!-- Sets the Console Text and Text Background Colors for Error Messages -->
+<ConsolePaneErrorForegroundColor>#FFEF2929</ConsolePaneErrorForegroundColor>
+<ConsolePaneErrorBackgroundColor>#00FFFFFF</ConsolePaneErrorBackgroundColor>
+
+<!-- Sets the Console Text and Text Background Colors for Warning Messages -->
+<ConsolePaneWarningForegroundColor>#FFC4A000</ConsolePaneWarningForegroundColor>
+<ConsolePaneWarningBackgroundColor>#00FFFFFF</ConsolePaneWarningBackgroundColor>
+
+<!-- Sets the Console Text and Text Background Colors for Verbose Messages -->
+<ConsolePaneVerboseForegroundColor>#FF06989A</ConsolePaneVerboseForegroundColor>
+<ConsolePaneVerboseBackgroundColor>#00FFFFFF</ConsolePaneVerboseBackgroundColor>
+{% endhighlight %}
+
+This image shows Verbose text with *ConsolePaneVerboseForegroundColor* set to Blue and *ConsolePaneVerboseBackgroundColor* Set to Transparent.
+
+![Verbose Text](\images\2015\05\Verbose.PNG)
+
+## Menu Bar Settings
+
+The Menu Header can have normal text or can be set to all caps. To set all caps you can set *CapitalizeMainMenuHeaders* to True.
+
+{% highlight xml %}
+<!-- This Sets All Caps for Menu Header -->
+<CapitalizeMainMenuHeaders>false</CapitalizeMainMenuHeaders>
+{% endhighlight %}
+
+The following image shows the Menu Header with *CapitalizeMainMenuHeaders* set to True.
+
+![Cap Headers](\images\2015\05\CapHeaders.PNG)
+
+### Menu Bar Colors
 
 You will see a Monochrone setting in several places throughout this XML. This setting acts as a switch between a gradient and a solid color. If *MenuBarMonochrome* is set to *true*, only the first color setting will be used. The following are the settigs for the Menu Bar:
 
@@ -45,13 +92,13 @@ You will see a Monochrone setting in several places throughout this XML. This se
 <MenuBarColor6>#FFF8FAFC</MenuBarColor6>
 {% endhighlight %}
 
-#### Solid Menu Bar Color
+### Solid Menu Bar Color
 
 When *MenuBarMonochrome* is set to *true* the *MenuBarColor1* will determine the color. The image below shows the changes once applied.
 
 ![Menu Bar Monochrome]({{ site.urlimg }}/2015/05/MenuBarColor1.PNG)
 
-#### Gradient Colored Menu Bar
+### Gradient Colored Menu Bar
 
 If *MenuBarMonochrome* is set to *false* the other colors are applied. If *MenuBarMonochrome* was set to *true* and you just changed *MenuBarColor3* you can see the portion of the gradient that it changes. You can then change one at a time until you get the desired gradient.
 
@@ -61,7 +108,7 @@ After a few colors are changed you can start to see the gradient take shape.
 
 ![Menu Bar Gradient]({{ site.urlimg }}/2015/05/MenuBarColorGradient.PNG)
 
-### Tab Settings
+## Tab Settings
 
 Tabs have a few settings that can be tweaked. One of the first I went hunting for was the square tab option. Here are the settings for Tabs.
 
@@ -96,27 +143,27 @@ For Inactive Tabs:
 <ScriptUnselectedColor4>#FFCDCDCD</ScriptUnselectedColor4>
 {% endhighlight %}
 
-#### Tab Borders
+### Tab Borders
 
 Tabs have a *ScriptSquareTabs* setting that if set to *true* makes the tab square. This can be seen in the following image:
 
 ![Square Tab]({{ site.urlimg }}/2015/05/SquareTab.PNG)
 
-#### Active Tab Colors
+### Active Tab Colors
 
 The Tabs also use a similar Monochrome setting for single color or gradient called *ScriptSelectedMonochrome*. This works the same as the other Elements that use Monochrome.
 
-#### Solid Tab Color
+### Solid Tab Color
 
 You can also see the solid Tab color in the Square Tab image above. Only the *ScriptSelectedColor1* value applies if *ScriptSelectedMonochrome* is set to *true*. 
 
-#### Gradient Tab Color
+### Gradient Tab Color
 
 If *ScriptSelectedMonochrome* is set to *false* the tab will be a gradient. In the example in the image below, *ScriptSelectedColor2* is blue, *ScriptSelectedColor3* is yellow and *ScriptSelectedColor4* is pink. You can see how it makes a crazy Tab color combination in the image below.
 
 ![Gradient Tab]({{ site.urlimg }}/2015/05/ScriptSelectedColorGradient.PNG)
 
-#### Tab Background Color
+### Tab Background Color
 
 The colors for the Tab Background function similar to the other color settings. Here you can find the settings that apply:
 
@@ -143,7 +190,7 @@ The *EditorTabControlBackground* Setting had a somewhat confusing name. It actua
 
 ![Tab Background Border Color]({{ site.urlimg }}/2015/05/EditorTabControlBackground.PNG)
 
-### Toolbar Settings
+## Toolbar Settings
 
 The Toolbars are the sets of buttons in the Menu Bar. They have several options that can be customized. Here is a list of the Toolbar Options:
 
@@ -184,7 +231,7 @@ There are also settings for the Code/Debugger section that function the same way
 
 ![Group Border Color]({{ site.urlimg }}/2015/05/RunSpacebarBackground.PNG)
 
-### Function Bar Settings
+## Function Bar Settings
 
 This section has Settings for the Search and Function Bar Area under the Menu Bar at the top. Here is a list of the Settings:
 
@@ -210,7 +257,7 @@ And here is a *FunctionComboExpandedFill* being set to Red:
 
 ![Function Background]({{ site.urlimg }}/2015/05/FunctionComboExpandedFill.PNG)
 
-### Script Restore Settings
+## Script Restore Settings
 
 These settings control a Script Expander Menu that is normally hidden. This menu is only visible when the Script Pane is hidden. The settings for this section work the same as the other menu settings that use Monochrome. Here are the settings: 
 
@@ -235,7 +282,7 @@ Here is an image of the Script Expander with a Red Background:
 
 When the Script Pane is hidden, the Script Expander Menu will be in the location of the Tab Bar. 
 
-### Panel Divider Settings
+## Panel Divider Settings
 
 These settings control the colors of the dividers between scripting, terminal, and other panels. They have the same coloring scheme as the other monochrome settings. There are two different sets of settings that control Vertical and Horizontal Splitters. Here are the settings: 
 
@@ -275,7 +322,7 @@ The picture below shows how the dividers look when Monochrome is set to True and
 
 ![Panel dividers](/images/2015/05/images\2015\05\splitter.PNG)
 
-### Status Bar Settings
+## Status Bar Settings
 
 The Status Bar is the Bar at the very bottom of the ISE. You can customize the coloring of the Bar and its text. There are also options to customize the hyperlink colors. Here are are settings for the Status Bar:
 
@@ -304,35 +351,34 @@ Here is an image of the Status Bar with *StatusBarBackgroundInactive* color set 
 
 ![Status Bar Background](/images/2015/05/StatusBarBackgroundInactive.PNG)
 
-### Snippet Settings
+## Snippet Settings
 
 This controls the name color of the snippet. In the image below, the color of the word BlockComment is controlled by this setting.
 
+{% highlight xml %}
+<!-- Snippet Color settings when a Snippet has been added -->
 <SnippetHeader>#FFADD8E6</SnippetHeader>
 <SnippetDescription>#FFADD8E6</SnippetDescription>
 <SnippetBorder>#FFFF0000</SnippetBorder>
 
+<!-- Snippet Font Settings -->
 <SnippetFontFamily>Segoe UI</SnippetFontFamily>
 <SnippetFontSize>8</SnippetFontSize>
 
-This controls the color of the border of the Snippet as seen below
+<!-- Color of Snippets when Typed -->
+<SnippetInsertionBorder>#FF038567</SnippetInsertionBorder>
+<SnippetInsertionFill>#C847E7C1</SnippetInsertionFill>
+{% endhighlight %}
 
-Snippet font size and type
+The *SnippetHeader*, *SnippetDescription*, and *SnippetBorder* control the color settings for the Snippet Box that opens after inserting a Snippet. In the image you can see the Snippet box with a Red Border and Light Blue Header.
 
+![Snippet Border](\images\2015\05\SnippetBorder.PNG)
 
+When a Snippet text has been typed into the ISE they will be colored to let you know a Snippet can be auto-completed. The *SnippetInsertionBorder* and *SnippetInsertionFill* Settings control these colors. In the image below, you can see the text "func1" has been highlighted. A Red background and blue border was used in this example.
 
+![Insert Snippet](\images\2015\05\SnippetInsert.PNG)
 
-
-<!-- This is the selection color -->
-<ActiveSelection>#FFFF0000</ActiveSelection>
-<!-- This is color when above selection is not focused -->
-<InactiveSelection>#FFBFCDDB</InactiveSelection>
-
-
-
-![finishedtheme](/images/2015/05/finishedtheme.PNG)
-
-
+<!-- ----------------------------------------------------------------------------------------------------- -->
 {% highlight xml %}
 <DebuggerMarginUnsavedScript>#FFFF0000</DebuggerMarginUnsavedScript>
 This is the color when saved
@@ -341,23 +387,14 @@ This controls the colors when then the debugger is active
 <DebuggerMarginDebuggerActive>#FFFF6464</DebuggerMarginDebuggerActive>
 <DebuggerMarginDebuggerActiveBackground>#FF000000</DebuggerMarginDebuggerActiveBackground> 
 {% endhighlight %}
+![Debugger Margin Color Active](\images\2015\05\DebuggerMarginActive.PNG)
+![Debugger Margin Unsaved](\images\2015\05\DebuggerMarginUnsaved.PNG)
 
 This is the border around the arrow in the margin
 <CurrentLineAdornmentBorder>#FFFF0000</CurrentLineAdornmentBorder>
 This is the color inside of the arrow
 <CurrentLineAdornmentFill>#FF0BA514</CurrentLineAdornmentFill>
-
-These set the colors of the squiggle lines under issues in your code. 
-<SquiggleSyntaxError>#FFFF0000</SquiggleSyntaxError>
-<SquiggleMinorWarning>#FF008000</SquiggleMinorWarning>
-<SquiggleCriticalWarning>#FF0000FF</SquiggleCriticalWarning>
-<SquiggleIncompatibility>#FFFEFF00</SquiggleIncompatibility>
-
-These are the gutter colors for file changes.
-<TrackChangesBeforeSave>#FFFF0000</TrackChangesBeforeSave>
-<TrackChangesAfterSave>#FF2E8B57</TrackChangesAfterSave>
-<TrackRevertedChanges>#FF0000FF</TrackRevertedChanges>
-
+![Current Line Adornment Border](\images\2015\05\CurrentLineAdornmentBorder.PNG)
 
 This setting changes the margin size of the line numbers. The above image shows a setting of 10, while the smaller image below shows 20
 <LineNumberMarginSize>10</LineNumberMarginSize>
@@ -372,19 +409,28 @@ Color of the number of the currently selected line
 <LineNumberMarginCurrentForegroundColor>#AC28DF02</LineNumberMarginCurrentForegroundColor>
 Controls the line number font family
 <LineNumberMarginFontFamily>OCR A</LineNumberMarginFontFamily>
+![Line Number Function Foreground](\images\2015\05\LineNumberMarginFuncForegroundColor.PNG)
+![Line Number Selected Color](\images\2015\05\LineNumberMarginSelectedForegroundColor.PNG)
+![Line Number Margin Size](\images\2015\05\LineNumberMarginSize.PNG)
+![Line Number Foreground Color](\images\2015\05\MarginForegroundColor.PNG)
+
+
+These are the gutter colors for file changes.
+<TrackChangesBeforeSave>#FFFF0000</TrackChangesBeforeSave>
+<TrackChangesAfterSave>#FF2E8B57</TrackChangesAfterSave>
+<TrackRevertedChanges>#FF0000FF</TrackRevertedChanges>
+![Changes Before Save](\images\2015\05\ChangesBeforeSave.PNG)
+
 
 These control the Size and font family of the function references.
 FunctionReferenceSize>10</FunctionReferenceSize>
 <FunctionReferenceFontFamily>DIN</FunctionReferenceFontFamily>
-
-
-
 These control the colors for function references. The image shows an active reference. If the function had no references the color in the inactive setting would be applied
 <FunctionReferenceInactive>#FFD3D3D3</FunctionReferenceInactive>
 <FunctionReferenceActive>#FFFF0000</FunctionReferenceActive>
 <FunctionReferenceHoverBackground>#64DCE4EB</FunctionReferenceHoverBackground>
-
-
+![Reference Actice](\images\2015\05\FunctionReferenceActive.PNG)
+![Reference Margin](\images\2015\05\FunctionReferenceMarginSize.PNG)
 
 This controls the color of a collapsed block of text as seen below
 <CollapsedTextColor>#FFFF0000</CollapsedTextColor>
@@ -394,6 +440,91 @@ This is the background of the highlighted expandable text
 <CollapseSelectionBackground>#23FFFFFF</CollapseSelectionBackground>
 This is the small square that shows there is collpased text
 <CollapseSquareBackground>#FFADD8E6</CollapseSquareBackground>
+![Collapsed Selection](\images\2015\05\CollapseBarSelection.PNG)
+![Collapsed Text](\images\2015\05\CollapsedText.PNG)
+![Collapsed Square](\images\2015\05\CollpaseSquareBackground.PNG)
+
+These set the colors of the squiggle lines under issues in your code. 
+<SquiggleSyntaxError>#FFFF0000</SquiggleSyntaxError>
+<SquiggleMinorWarning>#FF008000</SquiggleMinorWarning>
+<SquiggleCriticalWarning>#FF0000FF</SquiggleCriticalWarning>
+<SquiggleIncompatibility>#FFFEFF00</SquiggleIncompatibility>
+![Squiggles](\images\2015\05\Squiggle.PNG)
+
+The color of the background of selected matching brackets
+<BraceMatchingFill>#FFF7C96C</BraceMatchingFill>
+The outline color of selected matching brackets
+<BraceMatchingBorder>#FFFFA500</BraceMatchingBorder>
+![Brace Matching](\images\2015\05\BraceMatchingFill.PNG)
+
+
+<!-- This is the selection color -->
+<ActiveSelection>#FFFF0000</ActiveSelection>
+<!-- This is color when above selection is not focused -->
+<InactiveSelection>#FFBFCDDB</InactiveSelection>
+![Active Selection](\images\2015\05\activeselection.PNG)
+
+Color of border of selected lines as in image
+<ASTDashLineColor>#FFFFE4B5</ASTDashLineColor>
+![Dash Line](\images\2015\05\DashLineColor.PNG)
+
+These are the colors of siblings. You can see how the sibling of the selected is colored in the image.
+<ASTSiblingBorder>#FFF7C93C</ASTSiblingBorder>
+<ASTSiblingFill>#C8F0F0E6</ASTSiblingFill>
+![Sibling Color](\images\2015\05\SiblingFillColor.PNG)
+
+Sets the colorsfor the selected item
+<ASTScopeBorder>#64FFE4B5</ASTScopeBorder>
+<ASTScopeFill>#3CFFB533</ASTScopeFill>
+![Scope Border](\images\2015\05\ScopeBorder.PNG)
+
+Sets the colorsof a selected Pipeline
+<ASTPipelineBorder>#50C8C814</ASTPipelineBorder>
+<ASTPipelineFill>#00F0F0E6</ASTPipelineFill>
+![Pipeline Colors](\images\2015\05\PipelineBorderFill.PNG)
+
+
+
+
+
+The Palettes in the color picker are represented here.
+<PaletteColor1>#FFFF0000</PaletteColor1>
+<PaletteColor2>#FF00FF00</PaletteColor2>
+<PaletteColor3>#FF0000FF</PaletteColor3>
+<PaletteColor4>#FFFFFF00</PaletteColor4>
+<PaletteColor5>#FFFF00FF</PaletteColor5>
+<PaletteColor6>#FFFFFF00</PaletteColor6>
+<PaletteColor7>#FF00FFFF</PaletteColor7>
+<PaletteColor8>#FFFF00FF</PaletteColor8>
+<PaletteColor9>#FF00FFFF</PaletteColor9>
+<PaletteColor10>#FF000000</PaletteColor10>
+<PaletteColor11>#FF3C3C3C</PaletteColor11>
+<PaletteColor12>#FF6E6E6E</PaletteColor12>
+<PaletteColor13>#FFC8C8C8</PaletteColor13>
+<PaletteColor14>#FFFFFFFF</PaletteColor14>
+</ColorOptions>
+![Palettes](\images\2015\05\palettes.PNG)
+
+
+![finishedtheme](/images/2015/05/finishedtheme.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -461,48 +592,22 @@ These are your syntax highlighting sections
   <Token Name="CharacterData" Color="#FF808080" />
 </XMLToken>
 
-The color of the background of selected matching brackets
-<BraceMatchingFill>#FFF7C96C</BraceMatchingFill>
-The outline color of selected matching brackets
-<BraceMatchingBorder>#FFFFA500</BraceMatchingBorder>
 
-Color of border of selected lines as in image
-<ASTDashLineColor>#FFFFE4B5</ASTDashLineColor>
 
-These are the colors of siblings. You can see how the sibling of the selected is colored in the image.
-<ASTSiblingBorder>#FFF7C93C</ASTSiblingBorder>
-<ASTSiblingFill>#C8F0F0E6</ASTSiblingFill>
 
-Sets the colorsfor the selected item
-<ASTScopeBorder>#64FFE4B5</ASTScopeBorder>
-<ASTScopeFill>#3CFFB533</ASTScopeFill>
 
-Sets the colorsof a selected Pipeline
-<ASTPipelineBorder>#50C8C814</ASTPipelineBorder>
-<ASTPipelineFill>#00F0F0E6</ASTPipelineFill>
 
-<SnippetInsertionBorder>#FF038567</SnippetInsertionBorder>
-<SnippetInsertionFill>#C847E7C1</SnippetInsertionFill>
+
+
+
+
+
+
 <ConsoleAdminWarningColor1>#32FF9600</ConsoleAdminWarningColor1>
 <ConsoleAdminWarningColor2>#0047E7C1</ConsoleAdminWarningColor2>
 <ConsoleAdminWarningStripeOffset>5</ConsoleAdminWarningStripeOffset>
 
-The Palettes in the color picker are represented here.
-<PaletteColor1>#FFFF0000</PaletteColor1>
-<PaletteColor2>#FF00FF00</PaletteColor2>
-<PaletteColor3>#FF0000FF</PaletteColor3>
-<PaletteColor4>#FFFFFF00</PaletteColor4>
-<PaletteColor5>#FFFF00FF</PaletteColor5>
-<PaletteColor6>#FFFFFF00</PaletteColor6>
-<PaletteColor7>#FF00FFFF</PaletteColor7>
-<PaletteColor8>#FFFF00FF</PaletteColor8>
-<PaletteColor9>#FF00FFFF</PaletteColor9>
-<PaletteColor10>#FF000000</PaletteColor10>
-<PaletteColor11>#FF3C3C3C</PaletteColor11>
-<PaletteColor12>#FF6E6E6E</PaletteColor12>
-<PaletteColor13>#FFC8C8C8</PaletteColor13>
-<PaletteColor14>#FFFFFFFF</PaletteColor14>
-</ColorOptions>
+
 
 
 
