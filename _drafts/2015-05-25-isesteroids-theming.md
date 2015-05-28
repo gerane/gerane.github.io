@@ -30,13 +30,22 @@ I have good news and bad news. To make things easier, I used a theme that was al
 The Console Window has several customizable settings that are different from the Script Panes. You can Share the Font Settings between the Console and the Script Pane by setting the *ShareFontForConsole* setting to True. The Following settings allow you to set all of the Console Pane and Script Pane Font Settings if you want them to have different values.
 
 {% highlight xml %}
+<!-- Shares Console and Script Pane Settings -->
 <ShareFontForConsole>false</ShareFontForConsole>
+
+<!-- Script Pane Font Settings -->
 <ScriptPaneFontFamily>ubuntumono-r.ttf#Ubuntu Mono</ScriptPaneFontFamily>
 <ScriptPaneFontSize>12</ScriptPaneFontSize>
+
+<!-- Console Pane Font Setings -->
 <ConsolePaneFontFamily>sourcecodepro-regular.ttf#Source Code Pro</ConsolePaneFontFamily>
 <ConsolePaneFontSize>10</ConsolePaneFontSize>
+
+<!-- Console Pane Background and Text Colors -->
 <ConsolePaneForegroundColor>#FFEEEEEC</ConsolePaneForegroundColor>
 <ConsolePaneBackgroundColor>#FF212121</ConsolePaneBackgroundColor>
+
+<!-- Script Pane Background Color -->
 <ScriptPaneBackgroundColor>#FF212121</ScriptPaneBackgroundColor>
 {% endhighlight %}
 
@@ -320,7 +329,7 @@ For Horizontal Dividers:
 
 The picture below shows how the dividers look when Monochrome is set to True and *VerticalSplitterColor1* and *HorizontalSplitterColor1* are set to Red.
 
-![Panel dividers](/images/2015/05/images\2015\05\splitter.PNG)
+![Panel dividers](/images/2015/05/splitter.PNG)
 
 ## Status Bar Settings
 
@@ -378,22 +387,37 @@ When a Snippet text has been typed into the ISE they will be colored to let you 
 
 ![Insert Snippet](\images\2015\05\SnippetInsert.PNG)
 
-<!-- ----------------------------------------------------------------------------------------------------- -->
+## Gutter Settings
+
+The Gutter can be different colors based on different criteria. If a script is saved or unsaved it can have different colors, but it can also have different colors based on debugging. 
+
 {% highlight xml %}
+<!-- Script Saved State Gutter Colors -->
 <DebuggerMarginUnsavedScript>#FFFF0000</DebuggerMarginUnsavedScript>
-This is the color when saved
 <DebuggerMarginSavedScript>#FF083101</DebuggerMarginSavedScript>
-This controls the colors when then the debugger is active
+
+<!-- Script Debugger State Colors -->
 <DebuggerMarginDebuggerActive>#FFFF6464</DebuggerMarginDebuggerActive>
 <DebuggerMarginDebuggerActiveBackground>#FF000000</DebuggerMarginDebuggerActiveBackground> 
 {% endhighlight %}
+
+Here we can see the Gutter color when *DebuggerMarginSavedScript* is Colored Red
+
 ![Debugger Margin Color Active](\images\2015\05\DebuggerMarginActive.PNG)
+
+When the Debugger is active, the Gutter gets a striped pattern. In the next image we see the Gutter with *DebuggerMarginDebuggerActive* colored Red with the Debugger Active.
+
 ![Debugger Margin Unsaved](\images\2015\05\DebuggerMarginUnsaved.PNG)
 
+<!-- ----------------------------------------------------------------------------------------------------- -->
+
+
+{% highlight xml %}
 This is the border around the arrow in the margin
 <CurrentLineAdornmentBorder>#FFFF0000</CurrentLineAdornmentBorder>
 This is the color inside of the arrow
 <CurrentLineAdornmentFill>#FF0BA514</CurrentLineAdornmentFill>
+{% endhighlight %}
 ![Current Line Adornment Border](\images\2015\05\CurrentLineAdornmentBorder.PNG)
 
 This setting changes the margin size of the line numbers. The above image shows a setting of 10, while the smaller image below shows 20
