@@ -389,7 +389,7 @@ When a Snippet text has been typed into the ISE they will be colored to let you 
 
 ## Gutter Settings
 
-The Gutter can be different colors based on different criteria. If a script is saved or unsaved it can have different colors, but it can also have different colors based on debugging. 
+The Gutter can be different colors based on different criteria. If a script is saved or unsaved it can have different colors, but it can also have different colors based on debugging. There are also Gutter settings for colors when there are changes made to the current script. We can also customize the color of the current line Arrow.
 
 {% highlight xml %}
 <!-- Script Saved State Gutter Colors -->
@@ -398,7 +398,16 @@ The Gutter can be different colors based on different criteria. If a script is s
 
 <!-- Script Debugger State Colors -->
 <DebuggerMarginDebuggerActive>#FFFF6464</DebuggerMarginDebuggerActive>
-<DebuggerMarginDebuggerActiveBackground>#FF000000</DebuggerMarginDebuggerActiveBackground> 
+<DebuggerMarginDebuggerActiveBackground>#FF000000</DebuggerMarginDebuggerActiveBackground>
+
+<!-- Gutter Change Colors -->
+<TrackChangesBeforeSave>#FFFF0000</TrackChangesBeforeSave>
+<TrackChangesAfterSave>#FF2E8B57</TrackChangesAfterSave>
+<TrackRevertedChanges>#FF0000FF</TrackRevertedChanges>
+
+<!-- Current Line Arrow Colors -->
+<CurrentLineAdornmentBorder>#FFFF0000</CurrentLineAdornmentBorder>
+<CurrentLineAdornmentFill>#FF0BA514</CurrentLineAdornmentFill>
 {% endhighlight %}
 
 Here we can see the Gutter color when *DebuggerMarginSavedScript* is Colored Red
@@ -409,41 +418,65 @@ When the Debugger is active, the Gutter gets a striped pattern. In the next imag
 
 ![Debugger Margin Unsaved](\images\2015\05\DebuggerMarginUnsaved.PNG)
 
+These following image shows the Gutter Colors when something has been added, but not yet saved. In the example the *TrackChangesBeforeSave* has been set to the color Red.
+
+![Changes Before Save](\images\2015\05\ChangesBeforeSave.PNG)
+
+The Current Line Arrow can be colored with two different settings. The first determines the background color and the second determines the outline color. This can be seen in the following image.
+
+![Current Line Adornment Border](\images\2015\05\CurrentLineAdornmentBorder.PNG)
+
+## Line Number Settings
+
+The Line Numbers can be colored different ways to represent different things. These are the settings that control the Line Numbers.
+
+{% highlight xml %}
+<!-- Line Number Margin Size -->
+<LineNumberMarginSize>10</LineNumberMarginSize>
+
+<!-- Line Number Color -->
+<LineNumberMarginForegroundColor>#FFFF0000</LineNumberMarginForegroundColor>
+
+<!-- Selected Line Number Color -->
+<LineNumberMarginSelectedForegroundColor>#B4FFA500</LineNumberMarginSelectedForegroundColor>
+
+<!-- Bookmark Color -->
+<LineNumberMarginBookmarkColor>#B400DC00</LineNumberMarginBookmarkColor>
+
+<!-- Line Number Function Color -->
+<LineNumberMarginFunctionForegroundColor>#FF008000</LineNumberMarginFunctionForegroundColor>
+
+<!-- Current Line Number Color -->
+<LineNumberMarginCurrentForegroundColor>#AC28DF02</LineNumberMarginCurrentForegroundColor>
+
+<!-- Line Number Font Type -->
+<LineNumberMarginFontFamily>OCR A</LineNumberMarginFontFamily>
+{% endhighlight %}
+
+In the previous section, we saw the Track Changes image. In this image the *LineNumberMarginSize* was set to 10. In the Below image the *LineNumberMarginSize* is set to 20. You can see that it has made the margin size much smaller.
+
+![Line Number Margin Size](\images\2015\05\LineNumberMarginSize.PNG)
+
+In the following image the *LineNumberMarginFuncForegroundColor* is set to Red. This sets the line number to Red if the Line is the start of the Function.
+
+![Line Number Function Foreground](\images\2015\05\LineNumberMarginFuncForegroundColor.PNG)
+
+Here you can see where multiple lines have been selected. The *LineNumberMarginCurrentForegroundColor* has been set to Red. All lines in the selection have had their line numbers set to the color Red.
+![Line Number Selected Color](\images\2015\05\LineNumberMarginSelectedForegroundColor.PNG)
+
+This sets the default Line Number color to Red.
+![Line Number Foreground Color](\images\2015\05\MarginForegroundColor.PNG)
+
 <!-- ----------------------------------------------------------------------------------------------------- -->
 
 
-{% highlight xml %}
-This is the border around the arrow in the margin
-<CurrentLineAdornmentBorder>#FFFF0000</CurrentLineAdornmentBorder>
-This is the color inside of the arrow
-<CurrentLineAdornmentFill>#FF0BA514</CurrentLineAdornmentFill>
-{% endhighlight %}
-![Current Line Adornment Border](\images\2015\05\CurrentLineAdornmentBorder.PNG)
-
-This setting changes the margin size of the line numbers. The above image shows a setting of 10, while the smaller image below shows 20
-<LineNumberMarginSize>10</LineNumberMarginSize>
-This sets the color of the line numbers. In this image red is selected.
-<LineNumberMarginForegroundColor>#FFFF0000</LineNumberMarginForegroundColor>
-This sets the color of the line numbers for selected lines.
-<LineNumberMarginSelectedForegroundColor>#B4FFA500</LineNumberMarginSelectedForegroundColor>
-<LineNumberMarginBookmarkColor>#B400DC00</LineNumberMarginBookmarkColor>
-This controls the number color of lines with functions
-<LineNumberMarginFunctionForegroundColor>#FF008000</LineNumberMarginFunctionForegroundColor>
-Color of the number of the currently selected line
-<LineNumberMarginCurrentForegroundColor>#AC28DF02</LineNumberMarginCurrentForegroundColor>
-Controls the line number font family
-<LineNumberMarginFontFamily>OCR A</LineNumberMarginFontFamily>
-![Line Number Function Foreground](\images\2015\05\LineNumberMarginFuncForegroundColor.PNG)
-![Line Number Selected Color](\images\2015\05\LineNumberMarginSelectedForegroundColor.PNG)
-![Line Number Margin Size](\images\2015\05\LineNumberMarginSize.PNG)
-![Line Number Foreground Color](\images\2015\05\MarginForegroundColor.PNG)
 
 
-These are the gutter colors for file changes.
-<TrackChangesBeforeSave>#FFFF0000</TrackChangesBeforeSave>
-<TrackChangesAfterSave>#FF2E8B57</TrackChangesAfterSave>
-<TrackRevertedChanges>#FF0000FF</TrackRevertedChanges>
-![Changes Before Save](\images\2015\05\ChangesBeforeSave.PNG)
+
+
+
+
+
 
 
 These control the Size and font family of the function references.
@@ -635,7 +668,7 @@ These are your syntax highlighting sections
 
 
 
-### Related Posts
+## Related Posts
 {: .t60 }
 
 {% include list-posts.html tag='powershell' %}
