@@ -14,7 +14,7 @@ image:
   homepage: 2015/05/ISESteroids.PNG
 header:
   image_fullwidth: 2015/05/ISESteroids.PNG
-date: '2015-05-25 07:49'
+date: "2015-05-29 17:39"
 ---
 
 I prefer creating custom themes for my text editors. I am inside a text editor for large percentages of my day, so even small adjustments can vastly improve my user experience.
@@ -462,89 +462,145 @@ In the following image the *LineNumberMarginFuncForegroundColor* is set to Red. 
 ![Line Number Function Foreground](\images\2015\05\LineNumberMarginFuncForegroundColor.PNG)
 
 Here you can see where multiple lines have been selected. The *LineNumberMarginCurrentForegroundColor* has been set to Red. All lines in the selection have had their line numbers set to the color Red.
+
 ![Line Number Selected Color](\images\2015\05\LineNumberMarginSelectedForegroundColor.PNG)
 
-This sets the default Line Number color to Red.
+The below image shows the *LineNumberMarginForegroundColor* set to Red. This sets the Default Line Number Color.
+
 ![Line Number Foreground Color](\images\2015\05\MarginForegroundColor.PNG)
 
-<!-- ----------------------------------------------------------------------------------------------------- -->
+## Function Reference Settings
 
+Function References will show up just above the Function in your scripts. Any time those functions are referenced it will give links to the places referencing them. These settings control the Font and Color settings of those References. The following are the settings that control these.
 
-
-
-
-
-
-
-
-
-
-These control the Size and font family of the function references.
-FunctionReferenceSize>10</FunctionReferenceSize>
+{% highlight xml %}
+<!-- Function Reference Font Settings-->
+<FunctionReferenceSize>10</FunctionReferenceSize>
 <FunctionReferenceFontFamily>DIN</FunctionReferenceFontFamily>
-These control the colors for function references. The image shows an active reference. If the function had no references the color in the inactive setting would be applied
+
+<!-- Function Reference Color Settings -->
 <FunctionReferenceInactive>#FFD3D3D3</FunctionReferenceInactive>
 <FunctionReferenceActive>#FFFF0000</FunctionReferenceActive>
 <FunctionReferenceHoverBackground>#64DCE4EB</FunctionReferenceHoverBackground>
-![Reference Actice](\images\2015\05\FunctionReferenceActive.PNG)
-![Reference Margin](\images\2015\05\FunctionReferenceMarginSize.PNG)
+{% endhighlight %}
 
-This controls the color of a collapsed block of text as seen below
+The following image shows an Active Reference with 8 References. The *FunctionReferenceActive* settings is set to the color Red. 
+
+![Reference Actice](\images\2015\05\FunctionReferenceActive.PNG)
+
+## Collapsed Test Settings
+
+There are several elements of Collapsed Text that can be customized. The following settings control these elements.
+
+{% highlight xml %}
+<!-- Collapsed Text Color -->
 <CollapsedTextColor>#FFFF0000</CollapsedTextColor>
-This is the color of the bar in the margin when hovering over text that can be collapsed
+
+<!-- Bar in Margin when Hovering -->
 <CollapseBarColor>#FFF5DEB3</CollapseBarColor>
-This is the background of the highlighted expandable text
+
+<!-- Background of highlighted expandable text -->
 <CollapseSelectionBackground>#23FFFFFF</CollapseSelectionBackground>
-This is the small square that shows there is collpased text
+
+<!-- Margin Square Color -->
 <CollapseSquareBackground>#FFADD8E6</CollapseSquareBackground>
-![Collapsed Selection](\images\2015\05\CollapseBarSelection.PNG)
+{% endhighlight %}
+
+The *CollapsedTextColor* Setting controls the color of a collapsed block of text as seen below.
+
 ![Collapsed Text](\images\2015\05\CollapsedText.PNG)
+
+The following image shows the *CollapseBarSelection* and *CollapseSelectionBackground* Settings. The Brown bar in the margin is the *CollapseBarSelection*. The *CollapseSelectionBackground* is set to Red and sets the color of the background when hovering over text that can be collapsed.
+
+![Collapsed Selection](\images\2015\05\CollapseBarSelection.PNG)
+
+The next image shows the the Square in the margin colored Red. This is set by the *CollapseSquareBackground* Setting.
+
 ![Collapsed Square](\images\2015\05\CollpaseSquareBackground.PNG)
 
-These set the colors of the squiggle lines under issues in your code. 
+## Text Warning Settings
+
+These Settings set the colors of the squiggle lines under issues in your code. 
+
+{% highlight xml %}
+<!-- Squiggle Colors -->
 <SquiggleSyntaxError>#FFFF0000</SquiggleSyntaxError>
 <SquiggleMinorWarning>#FF008000</SquiggleMinorWarning>
 <SquiggleCriticalWarning>#FF0000FF</SquiggleCriticalWarning>
 <SquiggleIncompatibility>#FFFEFF00</SquiggleIncompatibility>
+{% endhighlight %}
+
+The foillowing image shows Red colored squiggles caused by a Syntax Error.
+
 ![Squiggles](\images\2015\05\Squiggle.PNG)
 
-The color of the background of selected matching brackets
+## Brace Settings
+
+These settings set the background and border of Matching Brackets.
+
+{% highlight xml %}
+<!-- Bracket Colors -->
 <BraceMatchingFill>#FFF7C96C</BraceMatchingFill>
-The outline color of selected matching brackets
 <BraceMatchingBorder>#FFFFA500</BraceMatchingBorder>
+{% endhighlight %}
+
+The following image shows the *BraceMatchingFill* Setting set to the color Red.
+
 ![Brace Matching](\images\2015\05\BraceMatchingFill.PNG)
 
+## Selection Settings
 
+The selection colors can be a little confusing at first. There are several settings that control different aspects of Selection Colors. The following are the settings that control these.
+
+{% highlight xml %}
 <!-- This is the selection color -->
 <ActiveSelection>#FFFF0000</ActiveSelection>
+
 <!-- This is color when above selection is not focused -->
 <InactiveSelection>#FFBFCDDB</InactiveSelection>
-![Active Selection](\images\2015\05\activeselection.PNG)
 
-Color of border of selected lines as in image
+<!-- Border Color of Selected Lines -->
 <ASTDashLineColor>#FFFFE4B5</ASTDashLineColor>
-![Dash Line](\images\2015\05\DashLineColor.PNG)
 
-These are the colors of siblings. You can see how the sibling of the selected is colored in the image.
+<!-- Sibling Color Settings -->
 <ASTSiblingBorder>#FFF7C93C</ASTSiblingBorder>
 <ASTSiblingFill>#C8F0F0E6</ASTSiblingFill>
-![Sibling Color](\images\2015\05\SiblingFillColor.PNG)
 
-Sets the colorsfor the selected item
+<!-- Scope Border Settings -->
 <ASTScopeBorder>#64FFE4B5</ASTScopeBorder>
 <ASTScopeFill>#3CFFB533</ASTScopeFill>
-![Scope Border](\images\2015\05\ScopeBorder.PNG)
 
-Sets the colorsof a selected Pipeline
+<!-- Pipeline Color Settings -->
 <ASTPipelineBorder>#50C8C814</ASTPipelineBorder>
 <ASTPipelineFill>#00F0F0E6</ASTPipelineFill>
+{% endhighlight %}
+
+The Actively Selected text is the text you have highlighted. In the following image you can see this set to a transparent shade of red.
+
+![Active Selection](\images\2015\05\activeselection.PNG)
+
+The *ASTDashLineColor* sets the border color of the section of lines or text you have selected. The following image shows this set to Red.
+
+![Dash Line](\images\2015\05\DashLineColor.PNG)
+
+These are the colors of siblings. Siblings are other instances of the currently selected item. In the image below you can see how multiple instances of $ArchivedOutLogFile have been colored.
+
+![Sibling Color](\images\2015\05\SiblingFillColor.PNG)
+
+The following image shows the *ASTScopeFill* setting set to Red. It is the current Scope of where you cursor is located. In this image you can see it colors the entire block of quoted text.
+
+![Scope Border](\images\2015\05\ScopeBorder.PNG)
+
+The *ASTPipelineFill* and *ASTPipelineBorder* set the colors of a selected Pipeline. In the image you can see these set to Red.
+
 ![Pipeline Colors](\images\2015\05\PipelineBorderFill.PNG)
 
+## Color Picket Palette Settings
 
+The Palettes in the color picker can be set with the following settings.
 
-
-
-The Palettes in the color picker are represented here.
+{% highlight xml %}
+<!-- Color Picker Palette Colors -->
 <PaletteColor1>#FFFF0000</PaletteColor1>
 <PaletteColor2>#FF00FF00</PaletteColor2>
 <PaletteColor3>#FF0000FF</PaletteColor3>
@@ -559,39 +615,21 @@ The Palettes in the color picker are represented here.
 <PaletteColor12>#FF6E6E6E</PaletteColor12>
 <PaletteColor13>#FFC8C8C8</PaletteColor13>
 <PaletteColor14>#FFFFFFFF</PaletteColor14>
-</ColorOptions>
+{% endhighlight %}
+
+The following image shows the palettes on the right side.
+
 ![Palettes](\images\2015\05\palettes.PNG)
 
+## Syntax Settings
 
-![finishedtheme](/images/2015/05/finishedtheme.PNG)
+I wont go in depth on these settings. These you can edit via Tools => Options. This is the same editor as in the Default ISE.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-I wont go in depth on these settings. These you can edit via Tools => Options
-These are your syntax highlighting sections
+{% highlight xml %}
+<!-- Text Color Settings -->
 <DefaultTextColor>#FF00FF00</DefaultTextColor>
 <DefaultTokenColor>#FFF5DEB3</DefaultTokenColor>
+<!-- Script Pane Syntax Settings -->
 <PowerShellScriptToken>
   <Token Name="Attribute" Color="#FF009F00" />
   <Token Name="Command" Color="#FF00BF00" />
@@ -614,6 +652,7 @@ These are your syntax highlighting sections
   <Token Name="Unknown" Color="#FF00BF00" />
   <Token Name="Variable" Color="#FF00BF00" />
 </PowerShellScriptToken>
+<!-- Console Pane Syntax Settings -->
 <PowerShellConsoleToken>
   <Token Name="Attribute" Color="#FF00FF00" />
   <Token Name="Command" Color="#FF00DF00" />
@@ -636,6 +675,7 @@ These are your syntax highlighting sections
   <Token Name="Unknown" Color="#FF00FF00" />
   <Token Name="Variable" Color="#FF00BF00" />
 </PowerShellConsoleToken>
+<!-- XML Syntax Settings -->
 <XMLToken>
   <Token Name="Comment" Color="#FF006400" />
   <Token Name="CommentDelimiter" Color="#FF008000" />
@@ -648,25 +688,27 @@ These are your syntax highlighting sections
   <Token Name="Text" Color="#FF000000" />
   <Token Name="CharacterData" Color="#FF808080" />
 </XMLToken>
+{% endhighlight %}
 
+## Unknown Settings
 
+There are a few Settings I have not figured out yet. If anyone knows what these settings do, feel free to let me know and I will update this post.
 
-
-
-
-
-
-
-
-
-
+{% highlight xml %}
 <ConsoleAdminWarningColor1>#32FF9600</ConsoleAdminWarningColor1>
 <ConsoleAdminWarningColor2>#0047E7C1</ConsoleAdminWarningColor2>
 <ConsoleAdminWarningStripeOffset>5</ConsoleAdminWarningStripeOffset>
+{% endhighlight %}
 
+## Finished Theme
 
+This is still a work in progress for me. The following image can show my first quick theme I put together. It is based on a Monokai theme but customized in a few areas for personal preference. 
 
+![finishedtheme](/images/2015/05/finishedtheme.PNG)
 
+Here is a Gist with my current theme ISESteroidsThemeXML file. 
+
+POST GIST HERE
 
 ## Related Posts
 {: .t60 }
