@@ -329,7 +329,7 @@ For Horizontal Dividers:
 
 The picture below shows how the dividers look when Monochrome is set to True and *VerticalSplitterColor1* and *HorizontalSplitterColor1* are set to Red.
 
-![Panel dividers](/images/2015/05/splitter.PNG)
+![Panel dividers](/images/2015/05/Splitter.PNG)
 
 ## Status Bar Settings
 
