@@ -26,7 +26,7 @@ Check typography variables › _3_typography_settings.scss
 a,
 a:link {
     color: lighten( $primary-color, 10%);
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 a:visited {
