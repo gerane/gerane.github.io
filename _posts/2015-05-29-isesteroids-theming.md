@@ -17,17 +17,30 @@ header:
 date: "2015-05-29 17:39"
 ---
 
-I prefer creating custom themes for my text editors. I am inside a text editor for large percentages of my day, so even small adjustments can vastly improve my user experience.
+I am a big fan of the Powershell ISE, but I have always felt it was lacking. I have never used it exclusively, but it has a set place in my toolset. Recently I was watching a talk by [Dave Wyatt][f14190f1] and saw him using [ISESteroids][06461585]. I was immediately interested and had to try it out. After playing with it I noticed it had additional theming support. I have always been unimpressed with the default ISE theming, so this excited me.
 
-When exploring the ISESteroids Theme Manager I had issues finding the values I was looking for. I quickly realized that going to the actual xml file and editing the values that was the way to go. I quickly found that trial and error was needed for finding the correct values to change. This process was actually quite time consuming, so I decided to document the process and share so others may have an easier time than I did.
+I prefer creating custom themes for my text editors. I am inside a text editor for the vast majority of my day, so even small adjustments can vastly improve my user experience. ISESteroids has really changed the way I look at the ISE. I normally have issues using dark themes with editors like Powershell ISE. I feel dark themes are easier on the eyes, but much of this is ruined when using a dark theme with a white editor. ISESteroids gives me enough control over the interface theme that a dark syntax theme is doable.
+
+  [06461585]: http://www.powertheshell.com/isesteroids/ "ISESteroids"
+  [f14190f1]: https://twitter.com/msh_dave "Dave Wyatt"
+
+When exploring the ISESteroids Theme Manager I had issues finding the values I was looking for. If you enable UI Customization it allows you to right click an element and customize the color. This is great in theory, but I could figure out where to click to change a large percentage of the values. I quickly realized that going to the actual xml file and manually editing the values was the way to go. I quickly found that trial and error was needed for finding the correct values to change. This process was actually quite time consuming, so I decided to document the process and share my results so others may have an easier time than I did. It also will make it easier to port some of my other themes over. I will be adding any themes I create to my [Github][f5a331ee].
+
+  [f5a331ee]: https://github.com/gerane "Github"
+
+## Github Gist
+
+If you just need a quick reference I have created a Theme Template Gist/Repo with comments documenting the theme xml. I go into greater detail with screenshots in this post if further documentation is needed. Feel free to Fork and/or Share any themes or theme ideas.
+
+[Click here to go directly to the Gist at the end of this post.](#Gist)
 
 ## Getting Started
 
-I have good news and bad news. To make things easier, I used a theme that was almost entirely green and made all changes in red. This gave a nice contrast and lets the changes really stand out. However, it may make your eyes bleed.
+I have good news and bad news. To make things easier, I used a theme that was almost entirely green and made all changes in red. This gave a nice contrast and lets the changes really stand out. However, it may make your eyes bleed. If you aren't sure where to find your Theme xml files, you can find a link to your theme folder in the theme dropdown. You can make changes to your theme and reload it to see the changes. If you do not have a color picker handy, you can just use the built in color picker in ISESteroids.
 
 ## Console Settings
 
-The Console Window has several customizable settings that are different from the Script Panes. You can Share the Font Settings between the Console and the Script Pane by setting the *ShareFontForConsole* setting to True. The Following settings allow you to set all of the Console Pane and Script Pane Font Settings if you want them to have different values.
+The Console Window has several customizable settings that are different from the Script Panes. You can Share the Font Settings between the Console and the Script Pane by setting the *ShareFontForConsole* setting to True. The following settings allow you to set all of the Console Pane and Script Pane Font Settings if you want them to have different values.
 
 {% highlight xml %}
 <!-- Shares Console and Script Pane Settings -->
@@ -82,9 +95,9 @@ The following image shows the Menu Header with *CapitalizeMainMenuHeaders* set t
 
 ![Cap Headers](\images\2015\05\CapHeaders.PNG)
 
-### Menu Bar Colors
+#### Menu Bar Colors
 
-You will see a Monochrone setting in several places throughout this XML. This setting acts as a switch between a gradient and a solid color. If *MenuBarMonochrome* is set to *true*, only the first color setting will be used. The following are the settigs for the Menu Bar:
+You will see a Monochrone setting in several places throughout this XML. This setting acts as a switch between a gradient and a solid color. If *MenuBarMonochrome* is set to *true*, only the first color setting will be used. The following are the settings for the Menu Bar:
 
 {% highlight xml %}
 <!-- For Solid Color or Gradient Color Background -->
@@ -101,13 +114,13 @@ You will see a Monochrone setting in several places throughout this XML. This se
 <MenuBarColor6>#FFF8FAFC</MenuBarColor6>
 {% endhighlight %}
 
-### Solid Menu Bar Color
+#### Solid Menu Bar Color
 
 When *MenuBarMonochrome* is set to *true* the *MenuBarColor1* will determine the color. The image below shows the changes once applied.
 
 ![Menu Bar Monochrome]({{ site.urlimg }}/2015/05/MenuBarColor1.PNG)
 
-### Gradient Colored Menu Bar
+#### Gradient Colored Menu Bar
 
 If *MenuBarMonochrome* is set to *false* the other colors are applied. If *MenuBarMonochrome* was set to *true* and you just changed *MenuBarColor3* you can see the portion of the gradient that it changes. You can then change one at a time until you get the desired gradient.
 
@@ -152,27 +165,27 @@ For Inactive Tabs:
 <ScriptUnselectedColor4>#FFCDCDCD</ScriptUnselectedColor4>
 {% endhighlight %}
 
-### Tab Borders
+#### Tab Borders
 
 Tabs have a *ScriptSquareTabs* setting that if set to *true* makes the tab square. This can be seen in the following image:
 
 ![Square Tab]({{ site.urlimg }}/2015/05/SquareTab.PNG)
 
-### Active Tab Colors
+#### Active Tab Colors
 
 The Tabs also use a similar Monochrome setting for single color or gradient called *ScriptSelectedMonochrome*. This works the same as the other Elements that use Monochrome.
 
-### Solid Tab Color
+#### Solid Tab Color
 
 You can also see the solid Tab color in the Square Tab image above. Only the *ScriptSelectedColor1* value applies if *ScriptSelectedMonochrome* is set to *true*. 
 
-### Gradient Tab Color
+#### Gradient Tab Color
 
-If *ScriptSelectedMonochrome* is set to *false* the tab will be a gradient. In the example in the image below, *ScriptSelectedColor2* is blue, *ScriptSelectedColor3* is yellow and *ScriptSelectedColor4* is pink. You can see how it makes a crazy Tab color combination in the image below.
+If *ScriptSelectedMonochrome* is set to *false* the tab will be a gradient. In the example in the image below, *ScriptSelectedColor2* is blue, *ScriptSelectedColor3* is yellow and *ScriptSelectedColor4* is pink. You can see how it makes a crazy Tab color combination.
 
 ![Gradient Tab]({{ site.urlimg }}/2015/05/ScriptSelectedColorGradient.PNG)
 
-### Tab Background Color
+#### Tab Background Color
 
 The colors for the Tab Background function similar to the other color settings. Here you can find the settings that apply:
 
@@ -180,11 +193,10 @@ The colors for the Tab Background function similar to the other color settings. 
 <!-- For Solid Color or Gradient Color Background -->
 <EditorTabControlMonochrome>false</EditorTabControlMonochrome>
 
-<!-- If Monochrome = True this is the Background Color -->
-<!-- If Monochrome = False this is the first Gradient Color -->
+<!-- For Solid Color Background if Monochrome = True -->
 <EditorTabControlColor1>#FF122C09</EditorTabControlColor1>
 
-<!-- Used for the second Gradient Color if Monochrome = False -->
+<!-- For Gradient Colors if Monochrome = False -->
 <EditorTabControlColor2>#FF000000</EditorTabControlColor2>
 
 <!-- Border Trim Color -->
@@ -222,17 +234,21 @@ The Toolbars are the sets of buttons in the Menu Bar. They have several options 
 <RunspaceBarBackground>#FF275321</RunspaceBarBackground>
 {% endhighlight %}
 
-The Button Groups by default have a very light transparent color. Here is an image of this:
+#### Button Groups
+
+The Button Groups by default have a very light transparent color. This will lighten the default background color and make the buttons easier to see. Here is an image of this:
 
 ![Group Background Color]({{ site.urlimg }}/2015/05/ToolbarGroupBackground.PNG)
 
-This sort of takes the default color and lightens it up slightly. You can set *ToolbarGroupBackground* to a full color for a bigger impact. You can see Red in the following image:
+ You can set *ToolbarGroupBackground* to a full color for a bigger impact. You can see Red in the following image:
 
 ![Group Background Color Red]({{ site.urlimg }}/2015/05/ToolbarGroupBackgroundSolid.PNG)
 
 You will notice that there are some Group Button Backgrounds that did not change. The Run Code/Debugger section has its own set of Settings. They work the same way as the other group colors. 
 
-There is also the Overflow Buttons that can be colored. These function the same way as the Groups, but target the Overflow Buttons. You can see them set to Red in the image below:
+#### Overflow Buttons
+
+There are also Overflow Buttons that can be colored. These function the same way as the Button Groups above, but target the Overflow Buttons. You can see them set to Red in the image below:
 
 ![Group Overflow Background Color]({{ site.urlimg }}/2015/05/ToolBarOverflowBackground.PNG)
 
@@ -258,7 +274,7 @@ This section has Settings for the Search and Function Bar Area under the Menu Ba
 <FunctionComboForeground>#FF000000</FunctionComboForeground>
 {% endhighlight %}
 
-The Function/Search Bar is colored by *FunctionComboCollapsedFill* while the dropdown for your functions is colored by *FunctionComboExpandedFill*. You can also adjust the Text colors in this section as well. Here is an example of the *FunctionComboCollapsedFill* being set to Red: 
+The Function/Search Bar is colored by *FunctionComboCollapsedFill* and the dropdown for your functions is colored by *FunctionComboExpandedFill*. You can also adjust the Text colors in this section as well. Here is an example of the *FunctionComboCollapsedFill* being set to Red: 
 
 ![Function Background]({{ site.urlimg }}/2015/05/FunctionComboCollapseFill.PNG)
 
@@ -301,11 +317,13 @@ For Vertical Dividers:
 <!-- For Solid Color or Gradient Color Background -->
 <VerticalSplitterMonochrome>true</VerticalSplitterMonochrome>
 
-<!-- For Solid Color Background if Monochrome = True -->
+<!-- Border Color -->
 <VerticalSplitterBorder>#FF808080</VerticalSplitterBorder>
 
-<!-- For Gradient Colors if Monochrome = False -->
+<!-- For Solid Color Background if Monochrome = True -->
 <VerticalSplitterColor1>#FFFF0000</VerticalSplitterColor1>
+
+<!-- For Gradient Colors if Monochrome = False -->
 <VerticalSplitterColor2>#FFA2CBF3</VerticalSplitterColor2>
 <VerticalSplitterColor3>#FFB7CEF5</VerticalSplitterColor3>
 <VerticalSplitterColor4>#FFC6D2DE</VerticalSplitterColor4>
@@ -317,11 +335,13 @@ For Horizontal Dividers:
 <!-- For Solid Color or Gradient Color Background -->
 <HorizontalSplitterMonochrome>true</HorizontalSplitterMonochrome>
 
-<!-- For Solid Color Background if Monochrome = True -->
+<!-- Border Color -->
 <HorizontalSplitterBorder>#FF808080</HorizontalSplitterBorder>
 
-<!-- For Gradient Colors if Monochrome = False -->
+<!-- For Solid Color Background if Monochrome = True -->
 <HorizontalSplitterColor1>#FFff0000</HorizontalSplitterColor1>
+
+<!-- For Gradient Colors if Monochrome = False -->
 <HorizontalSplitterColor2>#FFA2CBF3</HorizontalSplitterColor2>
 <HorizontalSplitterColor3>#FFB7CEF5</HorizontalSplitterColor3>
 <HorizontalSplitterColor4>#FFC6D2DE</HorizontalSplitterColor4>
@@ -362,7 +382,7 @@ Here is an image of the Status Bar with *StatusBarBackgroundInactive* color set 
 
 ## Snippet Settings
 
-This controls the name color of the snippet. In the image below, the color of the word BlockComment is controlled by this setting.
+This controls the name color of a snippet. In the image below, the color of the word BlockComment is controlled by this setting.
 
 {% highlight xml %}
 <!-- Snippet Color settings when a Snippet has been added -->
@@ -383,7 +403,7 @@ The *SnippetHeader*, *SnippetDescription*, and *SnippetBorder* control the color
 
 ![Snippet Border](\images\2015\05\SnippetBorder.PNG)
 
-When a Snippet text has been typed into the ISE they will be colored to let you know a Snippet can be auto-completed. The *SnippetInsertionBorder* and *SnippetInsertionFill* Settings control these colors. In the image below, you can see the text "func1" has been highlighted. A Red background and blue border was used in this example.
+When a Snippet text has been typed into the ISE they will be colored to let you know a Snippet can be auto-completed. The *SnippetInsertionBorder* and *SnippetInsertionFill* Settings control these colors. In the image below, you can see the text "func1" has been highlighted. A Red background and blue border were used in this example.
 
 ![Insert Snippet](\images\2015\05\SnippetInsert.PNG)
 
@@ -410,6 +430,7 @@ The Gutter can be different colors based on different criteria. If a script is s
 <CurrentLineAdornmentFill>#FF0BA514</CurrentLineAdornmentFill>
 {% endhighlight %}
 
+#### Debugger Margin Colors
 Here we can see the Gutter color when *DebuggerMarginSavedScript* is Colored Red
 
 ![Debugger Margin Color Active](\images\2015\05\DebuggerMarginActive.PNG)
@@ -418,9 +439,13 @@ When the Debugger is active, the Gutter gets a striped pattern. In the next imag
 
 ![Debugger Margin Unsaved](\images\2015\05\DebuggerMarginUnsaved.PNG)
 
-These following image shows the Gutter Colors when something has been added, but not yet saved. In the example the *TrackChangesBeforeSave* has been set to the color Red.
+#### File Change Colors
+
+When a file is edited the ISE tracks those changes in the gutter using different colors for changes made before a save, after a save, and any changes reverted. The following image shows the Gutter Colors when something has been added, but not yet saved. In the example the *TrackChangesBeforeSave* has been set to the color Red.
 
 ![Changes Before Save](\images\2015\05\ChangesBeforeSave.PNG)
+
+#### Current Line Arrow
 
 The Current Line Arrow can be colored with two different settings. The first determines the background color and the second determines the outline color. This can be seen in the following image.
 
@@ -428,7 +453,7 @@ The Current Line Arrow can be colored with two different settings. The first det
 
 ## Line Number Settings
 
-The Line Numbers can be colored different ways to represent different things. These are the settings that control the Line Numbers.
+Line Numbers have several settings that can change their color depending on certain criteria. These are the settings that control the Line Numbers:
 
 {% highlight xml %}
 <!-- Line Number Margin Size -->
@@ -457,7 +482,7 @@ In the previous section, we saw the Track Changes image. In this image the *Line
 
 ![Line Number Margin Size](\images\2015\05\LineNumberMarginSize.PNG)
 
-In the following image the *LineNumberMarginFuncForegroundColor* is set to Red. This sets the line number to Red if the Line is the start of the Function.
+Functions can be set to always have a unique line number color. In the following image the *LineNumberMarginFuncForegroundColor* is set to Red. This sets the line number to Red if the Line is the start of the Function.
 
 ![Line Number Function Foreground](\images\2015\05\LineNumberMarginFuncForegroundColor.PNG)
 
@@ -471,7 +496,7 @@ The below image shows the *LineNumberMarginForegroundColor* set to Red. This set
 
 ## Function Reference Settings
 
-Function References will show up just above the Function in your scripts. Any time those functions are referenced it will give links to the places referencing them. These settings control the Font and Color settings of those References. The following are the settings that control these.
+Function References will show up just above Functions in your scripts. Any time those functions are referenced it will give links to the places referencing them. These settings control the Font and Color settings of those References:
 
 {% highlight xml %}
 <!-- Function Reference Font Settings-->
@@ -484,13 +509,13 @@ Function References will show up just above the Function in your scripts. Any ti
 <FunctionReferenceHoverBackground>#64DCE4EB</FunctionReferenceHoverBackground>
 {% endhighlight %}
 
-The following image shows an Active Reference with 8 References. The *FunctionReferenceActive* settings is set to the color Red. 
+The following image shows an active Reference with 8 References. The *FunctionReferenceActive* settings is set to the color Red. 
 
 ![Reference Actice](\images\2015\05\FunctionReferenceActive.PNG)
 
 ## Collapsed Test Settings
 
-There are several elements of Collapsed Text that can be customized. The following settings control these elements.
+There are several elements of Collapsed Text that can be customized. The following settings control these elements:
 
 {% highlight xml %}
 <!-- Collapsed Text Color -->
@@ -556,7 +581,7 @@ The selection colors can be a little confusing at first. There are several setti
 <!-- This is the selection color -->
 <ActiveSelection>#FFFF0000</ActiveSelection>
 
-<!-- This is color when above selection is not focused -->
+<!-- This is the color when above selection is not focused -->
 <InactiveSelection>#FFBFCDDB</InactiveSelection>
 
 <!-- Border Color of Selected Lines -->
@@ -575,29 +600,39 @@ The selection colors can be a little confusing at first. There are several setti
 <ASTPipelineFill>#00F0F0E6</ASTPipelineFill>
 {% endhighlight %}
 
+#### Highlighted Text
+
 The Actively Selected text is the text you have highlighted. In the following image you can see this set to a transparent shade of red.
 
 ![Active Selection](\images\2015\05\activeselection.PNG)
+
+#### Text Section Border
 
 The *ASTDashLineColor* sets the border color of the section of lines or text you have selected. The following image shows this set to Red.
 
 ![Dash Line](\images\2015\05\DashLineColor.PNG)
 
+#### Sibling Colors
+
 These are the colors of siblings. Siblings are other instances of the currently selected item. In the image below you can see how multiple instances of $ArchivedOutLogFile have been colored.
 
 ![Sibling Color](\images\2015\05\SiblingFillColor.PNG)
+
+#### Scope Colors
 
 The following image shows the *ASTScopeFill* setting set to Red. It is the current Scope of where you cursor is located. In this image you can see it colors the entire block of quoted text.
 
 ![Scope Border](\images\2015\05\ScopeBorder.PNG)
 
+#### Pipeline Colors
+
 The *ASTPipelineFill* and *ASTPipelineBorder* set the colors of a selected Pipeline. In the image you can see these set to Red.
 
 ![Pipeline Colors](\images\2015\05\PipelineBorderFill.PNG)
 
-## Color Picket Palette Settings
+## Color Picker Palette Settings
 
-The Palettes in the color picker can be set with the following settings.
+The Color Picker has a section of easy to select colors called Palettes. The Palettes in the color picker can be set with the following settings:
 
 {% highlight xml %}
 <!-- Color Picker Palette Colors -->
@@ -623,12 +658,13 @@ The following image shows the palettes on the right side.
 
 ## Syntax Settings
 
-I wont go in depth on these settings. These you can edit via Tools => Options. This is the same editor as in the Default ISE.
+I wont go in depth on these settings. These you can edit via Tools => Options in the ISE. This is the same editor as in the Default ISE.
 
 {% highlight xml %}
 <!-- Text Color Settings -->
 <DefaultTextColor>#FF00FF00</DefaultTextColor>
 <DefaultTokenColor>#FFF5DEB3</DefaultTokenColor>
+
 <!-- Script Pane Syntax Settings -->
 <PowerShellScriptToken>
   <Token Name="Attribute" Color="#FF009F00" />
@@ -652,6 +688,7 @@ I wont go in depth on these settings. These you can edit via Tools => Options. T
   <Token Name="Unknown" Color="#FF00BF00" />
   <Token Name="Variable" Color="#FF00BF00" />
 </PowerShellScriptToken>
+
 <!-- Console Pane Syntax Settings -->
 <PowerShellConsoleToken>
   <Token Name="Attribute" Color="#FF00FF00" />
@@ -675,6 +712,7 @@ I wont go in depth on these settings. These you can edit via Tools => Options. T
   <Token Name="Unknown" Color="#FF00FF00" />
   <Token Name="Variable" Color="#FF00BF00" />
 </PowerShellConsoleToken>
+
 <!-- XML Syntax Settings -->
 <XMLToken>
   <Token Name="Comment" Color="#FF006400" />
@@ -695,6 +733,7 @@ I wont go in depth on these settings. These you can edit via Tools => Options. T
 There are a few Settings I have not figured out yet. If anyone knows what these settings do, feel free to let me know and I will update this post.
 
 {% highlight xml %}
+<!-- Unknown Settings -->
 <ConsoleAdminWarningColor1>#32FF9600</ConsoleAdminWarningColor1>
 <ConsoleAdminWarningColor2>#0047E7C1</ConsoleAdminWarningColor2>
 <ConsoleAdminWarningStripeOffset>5</ConsoleAdminWarningStripeOffset>
@@ -702,13 +741,13 @@ There are a few Settings I have not figured out yet. If anyone knows what these 
 
 ## Finished Theme
 
-This is still a work in progress for me. The following image can show my first quick theme I put together. It is based on a Monokai theme but customized in a few areas for personal preference. 
+This is still a work in progress, and I am still making minor tweaks as I go. This theme is based on a Monokai theme and customized in a few areas for personal preference. 
 
 ![finishedtheme](/images/2015/05/finishedtheme.PNG)
 
-Here is a Gist with my current theme ISESteroidsThemeXML file. 
+## <a name="Gist"></a>Gist
 
-POST GIST HERE
+{% gist gerane/6206dd9755fd365c3887 %}
 
 ## Related Posts
 {: .t60 }

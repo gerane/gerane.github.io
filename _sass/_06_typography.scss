@@ -24,22 +24,25 @@ Check typography variables › _3_typography_settings.scss
 ------------------------------------------------------------------- */
 
 a,
-a:link {}
+a:link {
+    color: lighten( $primary-color, 10%);
+    text-decoration: underline;
+}
 
 a:visited {
-        border-bottom: $grey-2;
+        border-bottom: $grey-1;
 }
 
 a:hover {
-        color: darken( $ci-1, 10% );
+        color: darken( $ci-6, 10% );
 }
 
 a:focus {
-        color: lighten( $ci-1, 20% );
+        color: lighten( $ci-6, 20% );
 }
 
 a:active {
-        color: darken( $ci-1, 20% );
+        color: darken( $ci-6, 20% );
 }
 
 
@@ -180,6 +183,11 @@ pre code {
 code {
     font-size: rem-calc(13);
     line-height: 1.5;
+}
+
+// Corrects Gist Line Number Spacing
+.highlight .line-numbers, .gist-file .line-numbers {
+    line-height: 1.125rem !important;
 }
 
 
