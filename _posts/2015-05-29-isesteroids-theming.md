@@ -632,6 +632,21 @@ The *ASTPipelineFill* and *ASTPipelineBorder* set the colors of a selected Pipel
 
 ![Pipeline Colors](\images\2015\05\PipelineBorderFill.PNG)
 
+## Console Admin Warning Settings
+
+If you right click the left margin in the console, you can turn on *Show Admin Warning*. If this is enabled and the ISE is launched with Admin privileges, there will be a Bar in the left margin letting you know the ISE has been ran as Admin. This is an added visual feature to help notify ensure the user has ran ISE as admin. If ISE is ran as Admin you will also notice the ISE icon is red. Here are the settings:
+
+{% highlight xml %}
+<!-- Console Admin Warning Settings -->
+<ConsoleAdminWarningColor1>#32FF9600</ConsoleAdminWarningColor1>
+<ConsoleAdminWarningColor2>#0047E7C1</ConsoleAdminWarningColor2>
+<ConsoleAdminWarningStripeOffset>5</ConsoleAdminWarningStripeOffset>
+{% endhighlight %}
+
+The below image shows the Admin Console Warning in the left margin.
+
+![Admin Warnings](/images/2015/05/consoleadmin.PNG)
+
 ## Color Picker Palette Settings
 
 The Color Picker has a section of easy to select colors called Palettes. The Palettes in the color picker can be set with the following settings:
@@ -728,17 +743,6 @@ I wont go in depth on these settings. These you can edit via Tools => Options in
   <Token Name="Text" Color="#FF000000" />
   <Token Name="CharacterData" Color="#FF808080" />
 </XMLToken>
-{% endhighlight %}
-
-## Unknown Settings
-
-There are a few Settings I have not figured out yet. If anyone knows what these settings do, feel free to let me know and I will update this post.
-
-{% highlight xml %}
-<!-- Unknown Settings -->
-<ConsoleAdminWarningColor1>#32FF9600</ConsoleAdminWarningColor1>
-<ConsoleAdminWarningColor2>#0047E7C1</ConsoleAdminWarningColor2>
-<ConsoleAdminWarningStripeOffset>5</ConsoleAdminWarningStripeOffset>
 {% endhighlight %}
 
 ## Finished Theme
