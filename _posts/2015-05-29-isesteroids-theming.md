@@ -36,7 +36,9 @@ If you just need a quick reference I have created a Theme Template Gist/Repo wit
 
 ## Getting Started
 
-I have good news and bad news. To make things easier, I used a theme that was almost entirely green and made all changes in red. This gave a nice contrast and lets the changes really stand out. However, it may make your eyes bleed. If you aren't sure where to find your Theme xml files, you can find a link to your theme folder in the theme dropdown. You can make changes to your theme and reload it to see the changes. If you do not have a color picker handy, you can just use the built in color picker in ISESteroids.
+I have good news and bad news. To make things easier, I used a theme that was almost entirely green and made all changes in red. This gave a nice contrast and lets the changes really stand out. However, it may make your eyes bleed. If you aren't sure where to find your Theme xml files, you can find a link to your theme folder in the theme dropdown. You can make changes to your theme and reload it to see the changes. If you do not have a color picker handy, you can just use the built in color picker in ISESteroids. 
+
+The default color picker has a nice feature that lets you steal colors from other applications or windows. You can move the color picker window over an application with colors you want. When you have the color picker focused you can move your mouse pointer over a color you want to steal and press <kbd>ctrl</kbd>. This will steal the color under the cursor and insert into the color picker. This is an easy way to get colors from other applications.
 
 ## Console Settings
 
