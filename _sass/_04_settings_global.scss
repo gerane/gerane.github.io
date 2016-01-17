@@ -1279,7 +1279,8 @@ $side-nav-divider-color: $grey-1;
 
 // These control the background color for the table and even rows
 // $table-bg: $white;
-$table-even-row-bg: $grey-1;
+// Changed Even Row BG to White for Better Gist Table Vieweing
+$table-even-row-bg: $body-bg;
 
 // These control the table cell border style
 // $table-border-style: solid;
