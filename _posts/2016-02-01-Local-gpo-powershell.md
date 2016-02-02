@@ -12,7 +12,7 @@ image:
     thumb: "2016/02/gpeditthumb.PNG"
     homepage: "2016/02/gpedit.PNG"
 header:
-    image_fullwidth: 2016/02/polbanner.PNG
+    image_fullwidth: 2016/02/templatepolbanner.PNG
 ---
 I have always encountered issues managing Local Group Policy Objects efficiently through automation. There are many situations where GPO through AD is not feasible or possible. I then found a module by [Dave Wyatt][cc843970] called [PolicyFileEditor][44b3b01a]. I use this module far more often than I ever thought I would and wanted to share this with others.
 
