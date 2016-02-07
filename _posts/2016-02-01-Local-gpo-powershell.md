@@ -60,7 +60,13 @@ foreach ($UserPol in $UserPols)
 }
 {% endhighlight %}
 
-This should get you started and I hope others find this as useful as I have. There are a number of great uses for this module and it even has DSC Resources. It can be found on [Github][ad3d46ea] and the PSGallery. I would suggest using the Github version. I found a bug early on that was fixed in the one on Github, but I am currently not 100% sure if Dave has pushed that change to the PSGallery or not. If I find out I will update this post.
+This should get you started and I hope others find this as useful as I have. There are a number of great uses for this module and it even has DSC Resources. It can be found on [Github][ad3d46ea] and the [PSGallery][a31b913c].
+
+  [a31b913c]: https://www.powershellgallery.com/packages/PolicyFileEditor "PSGallery"
+
+**UPDATE: 2/6/2016**
+
+Dave Wyatt updated the PSGallery version to 2.0.1 and it contains the bug fix for the User GUID bug I encountered, so it should be fine to use either version.
 
   [cc843970]: https://twitter.com/msh_dave "Dave Wyatt"
   [44b3b01a]: https://github.com/dlwyatt/PolicyFileEditor "PolicyFileEditor"
