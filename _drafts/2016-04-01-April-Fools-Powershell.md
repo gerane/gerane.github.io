@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "PowerShell, PowerShell Gallery, NPM, Aprils Fools, and Rick Rolls"
+title:  "Having some fun with Dynamic Parameters and Rick Rolls"
 subheadline:  "Powershell"
-teaser: "Oh My"
+teaser: "PowerShell, PowerShell Gallery, NPM, Aprils Fools, and Rick Rolls"
 categories:
     - powershell
 tags:
