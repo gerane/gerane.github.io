@@ -17,7 +17,7 @@ A little while ago I found out that intellisense didn't quite function the way I
 
 ## PowerShell HTML5 Demo
 
-I was amazed when I first saw [Lee Holmes][6a5d6173] original April Fools joke where he used a fake Powershell and HTLM5 demo to Rick Roll people. You can find his original post here: [Powershell and HTML5][5c4b4685]. What he did in that had a lasting impression on me, and I learned a lot when I went through the code he wrote. I have actually used a few of the things that I learned from that Rick Roll in my day to day work. As a salute to Lee, I am using his Rick Roll one liner in my example.
+I was amazed when I first saw [Lee Holmes][6a5d6173] original April Fools joke where he used a fake Powershell and HTLM5 demo to Rick Roll people. You can find his original post here: [Powershell and HTML5][5c4b4685]. What he did in that had a lasting impression on me, and I learned a lot when I went through the code he wrote. I have actually used a few of the things that I learned from that Rick Roll in my day to day work. As a salute to Lee, I am using his Rick Roll one liner in my example. My hope is that I can make an impression on others that leaves a similar impression on them about security awareness.
 
 ## Dynamic Parameters
 
