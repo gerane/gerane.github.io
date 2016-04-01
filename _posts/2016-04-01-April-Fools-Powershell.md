@@ -21,7 +21,7 @@ I was amazed when I first saw [Lee Holmes][6a5d6173] original April Fools joke w
 
 ## Dynamic Parameters
 
-I love using dynamic params in my modules and scripts. If you aren't familiar, a Dynamic Param lets you populate the autocomplete list dynamically. This works similar to the built in cmdlets. An example is when you type **Get-Process -Name** and a list of currently running Processes populates into your autocomplete. Ed Wilson has a few great [Ed Wilson][774eaec8] blog posts on these. A great one can be found here: [Use Dynamic Parameters to Populate List of Printer Names][e1883aa4]
+I love using dynamic params in my modules and scripts. If you aren't familiar, a Dynamic Param lets you populate the autocomplete list dynamically. This works similar to the built in cmdlets. An example is when you type **Get-Process -Name** and a list of currently running Processes populates into your autocomplete. [Ed Wilson][774eaec8] has a few great blog posts on these. A great one can be found here: [Use Dynamic Parameters to Populate List of Printer Names][e1883aa4]
 
 I had a few instances where I was wanting to be able to use a Dynamic Param, but also select more than one. I started testing a few ideas just to see how it worked out. One idea I had was to use **Out-Gridview** where the options in the grid were dynamic, and then pass back my selections as an array. This sort of worked... but had an interesting side effect I wasn't expecting. When the script or module was loaded or in memory, intellisense is evaluating Dynamic Params way earlier than what I was expecting.
 
