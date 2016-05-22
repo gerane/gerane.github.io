@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Creating a Custom Theme for ISESteroids
-subheadline: Powershell
+subheadline: PowerShell
 teaser: A Detailed look at ISESteroids Themes and their XML format. Each XML value is explained for easy reference.
 categories:
   - powershell
@@ -36,7 +36,7 @@ If you just need a quick reference I have created a Theme Template Gist/Repo wit
 
 ## Getting Started
 
-I have good news and bad news. To make things easier, I used a theme that was almost entirely green and made all changes in red. This gave a nice contrast and lets the changes really stand out. However, it may make your eyes bleed. If you aren't sure where to find your Theme xml files, you can find a link to your theme folder in the theme dropdown. You can make changes to your theme and reload it to see the changes. If you do not have a color picker handy, you can just use the built in color picker in ISESteroids. 
+I have good news and bad news. To make things easier, I used a theme that was almost entirely green and made all changes in red. This gave a nice contrast and lets the changes really stand out. However, it may make your eyes bleed. If you aren't sure where to find your Theme xml files, you can find a link to your theme folder in the theme dropdown. You can make changes to your theme and reload it to see the changes. If you do not have a color picker handy, you can just use the built in color picker in ISESteroids.
 
 The default color picker has a nice feature that lets you steal colors from other applications or windows. You can move the color picker window over an application with colors you want. When you have the color picker focused you can move your mouse pointer over a color you want to steal and press <kbd>ctrl</kbd>. This will steal the color under the cursor and insert into the color picker. This is an easy way to get colors from other applications.
 
@@ -179,7 +179,7 @@ The Tabs also use a similar Monochrome setting for single color or gradient call
 
 #### Solid Tab Color
 
-You can also see the solid Tab color in the Square Tab image above. Only the *ScriptSelectedColor1* value applies if *ScriptSelectedMonochrome* is set to *true*. 
+You can also see the solid Tab color in the Square Tab image above. Only the *ScriptSelectedColor1* value applies if *ScriptSelectedMonochrome* is set to *true*.
 
 #### Gradient Tab Color
 
@@ -246,7 +246,7 @@ The Button Groups by default have a very light transparent color. This will ligh
 
 ![Group Background Color Red]({{ site.urlimg }}/2015/05/ToolbarGroupBackgroundSolid.PNG)
 
-You will notice that there are some Group Button Backgrounds that did not change. The Run Code/Debugger section has its own set of Settings. They work the same way as the other group colors. 
+You will notice that there are some Group Button Backgrounds that did not change. The Run Code/Debugger section has its own set of Settings. They work the same way as the other group colors.
 
 #### Overflow Buttons
 
@@ -254,7 +254,7 @@ There are also Overflow Buttons that can be colored. These function the same way
 
 ![Group Overflow Background Color]({{ site.urlimg }}/2015/05/ToolBarOverflowBackground.PNG)
 
-There are also settings for the Code/Debugger section that function the same way. Then the last setting is the *RunspaceBarBackground* that controls the Border Color. You can see what it looks like set to Red in the image below: 
+There are also settings for the Code/Debugger section that function the same way. Then the last setting is the *RunspaceBarBackground* that controls the Border Color. You can see what it looks like set to Red in the image below:
 
 ![Group Border Color]({{ site.urlimg }}/2015/05/RunSpacebarBackground.PNG)
 
@@ -276,17 +276,17 @@ This section has Settings for the Search and Function Bar Area under the Menu Ba
 <FunctionComboForeground>#FF000000</FunctionComboForeground>
 {% endhighlight %}
 
-The Function/Search Bar is colored by *FunctionComboCollapsedFill* and the dropdown for your functions is colored by *FunctionComboExpandedFill*. You can also adjust the Text colors in this section as well. Here is an example of the *FunctionComboCollapsedFill* being set to Red: 
+The Function/Search Bar is colored by *FunctionComboCollapsedFill* and the dropdown for your functions is colored by *FunctionComboExpandedFill*. You can also adjust the Text colors in this section as well. Here is an example of the *FunctionComboCollapsedFill* being set to Red:
 
 ![Function Background]({{ site.urlimg }}/2015/05/FunctionComboCollapseFill.PNG)
 
-And here is a *FunctionComboExpandedFill* being set to Red: 
+And here is a *FunctionComboExpandedFill* being set to Red:
 
 ![Function Background]({{ site.urlimg }}/2015/05/FunctionComboExpandedFill.PNG)
 
 ## Script Restore Settings
 
-These settings control a Script Expander Menu that is normally hidden. This menu is only visible when the Script Pane is hidden. The settings for this section work the same as the other menu settings that use Monochrome. Here are the settings: 
+These settings control a Script Expander Menu that is normally hidden. This menu is only visible when the Script Pane is hidden. The settings for this section work the same as the other menu settings that use Monochrome. Here are the settings:
 
 {% highlight xml %}
 <!-- For Solid Color or Gradient Color Background -->
@@ -303,15 +303,15 @@ These settings control a Script Expander Menu that is normally hidden. This menu
 <ScriptExpanderColor6>#FFF8FAFC</ScriptExpanderColor6>
 {% endhighlight %}
 
-Here is an image of the Script Expander with a Red Background: 
+Here is an image of the Script Expander with a Red Background:
 
 ![Function Background]({{ site.urlimg }}/2015/05/ScriptExpander.PNG)
 
-When the Script Pane is hidden, the Script Expander Menu will be in the location of the Tab Bar. 
+When the Script Pane is hidden, the Script Expander Menu will be in the location of the Tab Bar.
 
 ## Panel Divider Settings
 
-These settings control the colors of the dividers between scripting, terminal, and other panels. They have the same coloring scheme as the other monochrome settings. There are two different sets of settings that control Vertical and Horizontal Splitters. Here are the settings: 
+These settings control the colors of the dividers between scripting, terminal, and other panels. They have the same coloring scheme as the other monochrome settings. There are two different sets of settings that control Vertical and Horizontal Splitters. Here are the settings:
 
 For Vertical Dividers:
 
@@ -511,7 +511,7 @@ Function References will show up just above Functions in your scripts. Any time 
 <FunctionReferenceHoverBackground>#64DCE4EB</FunctionReferenceHoverBackground>
 {% endhighlight %}
 
-The following image shows an active Reference with 8 References. The *FunctionReferenceActive* settings is set to the color Red. 
+The following image shows an active Reference with 8 References. The *FunctionReferenceActive* settings is set to the color Red.
 
 ![Reference Actice](\images\2015\05\FunctionReferenceActive.PNG)
 
@@ -547,7 +547,7 @@ The next image shows the the Square in the margin colored Red. This is set by th
 
 ## Text Warning Settings
 
-These Settings set the colors of the squiggle lines under issues in your code. 
+These Settings set the colors of the squiggle lines under issues in your code.
 
 {% highlight xml %}
 <!-- Squiggle Colors -->
@@ -747,7 +747,7 @@ I wont go in depth on these settings. These you can edit via Tools => Options in
 
 ## Finished Theme
 
-This is still a work in progress, and I am still making minor tweaks as I go. This theme is based on a Monokai theme and customized in a few areas for personal preference. 
+This is still a work in progress, and I am still making minor tweaks as I go. This theme is based on a Monokai theme and customized in a few areas for personal preference.
 
 ![finishedtheme](/images/2015/05/finishedtheme.PNG)
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "How to manage Local Group Policy with Powershell"
-subheadline:  "Powershell"
+subheadline:  "PowerShell"
 teaser: "Using Powershell to easily manage individual Local Group Policy Objects."
 categories:
     - powershell
@@ -9,7 +9,7 @@ tags:
     - powershell
     - GPO
 image:
-    thumb: "2016/02/gpeditthumb.PNG"
+    thumb: "2016/02/gpeditthumb.png"
     homepage: "2016/02/gpedit.PNG"
 header:
     image_fullwidth: 2016/02/templatepolbanner.PNG
