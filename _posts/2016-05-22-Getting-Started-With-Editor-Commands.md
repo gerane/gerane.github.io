@@ -258,6 +258,10 @@ This example uses a second parameter that uses Read-Host to get the Modules Name
 
 This project is new and needs people to give feedback. Don't be afraid to submit issues, enhancements, ideas, suggestions, examples, code or anything like that to the Github Issues pages for the [Visual Studio Code PowerShell Extension](https://github.com/PowerShell/vscode-powershell) or the [PowerShellEditorServives](https://github.com/PowerShell/PowerShellEditorServices) Page. I have had nothing but great experiences with the community and want to encourage even those who have never contributed to an Open Source project to give feedback. These projects or even the [Plaster](https://github.com/PowerShell/Plaster) one in my Example would be an awesome place to start because you can be sure that you will have a great experience. If you need help learning Git or Github and how to submit feedback or issues, the people in the community would be happy to help and walk you through it. The great thing about these Editor Commands, is they are written in pure PowerShell, so if you know PowerShell, you can write your own Editor Extensions.
 
+I have added the example profile I used in this post to a gist for anyone interested in playing around with it.
+
+{% gist gerane/c87a640337a9739da746a18e1b62682f %}
+
 
 ### Related Posts
 {: .t60 }
