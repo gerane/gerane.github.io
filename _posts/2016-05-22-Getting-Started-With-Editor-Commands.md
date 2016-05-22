@@ -165,7 +165,7 @@ You can see this in action in **Figure 4**
 
 ### Example 2
 
-In my second example I am adding a second Emoji command that works a little differently. Currently there is a little bit of an issue with timeout and selecting a command. It could be a little longer for big lists. This is what I added for my second example.
+In my second example I am adding a second Emoji command that works a little differently. Currently there is a little bit of an issue with timeout and selecting a command. This should be addressed and there is an [issue open](https://github.com/PowerShell/PowerShellEditorServices/issues/242) looking for feedback on how this should be handled if anyone wants to give their feedback. It could be a little longer for big lists. This is what I added for my second example.
 
 {% highlight powershell %}
 function Invoke-EmojiList
