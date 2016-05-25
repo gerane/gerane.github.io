@@ -120,7 +120,7 @@ At line:1 char:1
 
 
 ## Conclusions
-I am going to start using Variable Validations whenever possible, and I encourage others to start doing so as well. If you find this useful, please try to inform others.
+I am going to start using Variable Validations whenever possible, and I encourage others to start doing so as well. If you find this useful, please try to spread the word.
 
 
 ### Related Posts
