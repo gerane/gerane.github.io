@@ -18,7 +18,11 @@ PowerShell added a lot of great features in Version 3. PSCustomObjects, Passing 
 
 Everyone knows about Validation Attributes for Advanced Function Parameters. Using these has been a best practice since I started writing PowerShell. However, what I have not seen mentioned as a Best Practice or rarely if ever seen used by others is a little feature added in PowerShell Version 3. The feature allows Validation Attributes on **ANY** Variable. You can see here in a blog post about the new features being released for Version 3: [New V3 Language Features](https://blogs.msdn.microsoft.com/powershell/2012/06/13/new-v3-language-features/).
 
-I am just going to quickly show a few example outputs.
+Below you can see what the Variable Validations looks like in a PowerShell Console. Each line is being ran via <kbd>f8</kbd> in the PowerShell ISE.
+
+![Variable Validation](/images/2016/05/VarValidation.gif)
+
+Below is the Console output from above for each Validation.
 
 ## ValidateRange
 
@@ -94,7 +98,7 @@ At line:1 char:1
 ## ValidatePattern
 {% highlight powershell %}
 PS> [ValidatePattern('^\d{3}[-.]?\d{3}[-.]?\d{4}$')][string]$ValidatePattern = '800-123-4567'
-PS> $ValidatePattern = '000-000-0000
+PS> $ValidatePattern = '000-000-0000'
 PS> $ValidatePattern = '000-000-00000'
 The variable cannot be validated because the value 000-000-00000 is not a valid value for the ValidatePattern variable.
 At line:1 char:1
