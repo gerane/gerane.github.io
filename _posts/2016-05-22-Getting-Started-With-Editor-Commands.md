@@ -48,21 +48,15 @@ There are a few things you will need to get started.
         * <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>
         * <kbd>f1</kbd>
     * The **Command Palette** is a box at the top of the Editor that you can use to execute Editor specific commands.
-    * In **Figure 1** you can see a picture of the **Command Palette**.
+    * In the first image below you can see a picture of the **Command Palette**.
     * Now that you have the **Command Palette** open, type `ext install` then hit <kbd>Enter</kbd>. Then wait for the list to load and type `Powershell` and hit <kbd>Enter</kbd>.
     * After Code restarts the PowerShell Extension is installed.
-    * You can see the installation process in **Figure 2**
+    * You can see the installation process below.
 
 
 ![Command Palette](/images/2016/05/CommandPalette.png)
 
-**Figure 1** Command Palette
-
-
 ![Install PowerShell Extension](/images/2016/05/PSExt.gif)
-
-**Figure 2** Installing PowerShell Extension.
-
 
 3. Setup the Debugger for PowerShell.
     * This can be done by hitting <kbd>f5</kbd> and Selecting *PowerShell*
@@ -72,7 +66,6 @@ There are a few things you will need to get started.
 ![Debugger](/images/2016/05/Debugger.gif)
 
 **Figure 3** Setting up the Debugger
-
 
 # New Features
 
@@ -84,11 +77,10 @@ You can find some additional information for these new features at the [PowerShe
 
 Users can now have a profile specific to VS Code. This is significant for some of the other new changes discussed later. The profile does not exist by default, so now is a good time to go ahead and create your profile and add anything to it that you might find beneficial. The profile now allows users to load modules and other scripts and functions automatically which allows PSES to provide IntelliSense for those commands. This makes writing scripts and debugging much easier. Prior to this change it was easiest to create a little helper script that loaded everything you needed and ran the scripts you were debugging.
 
-
 ## $psEditor Variable
 This is one of my favorite additions to PSES and VS Code. The ability to extend functions, scripts and modules to extend into any editor that supports PSES has so much potential. Module creators can build support directly into their modules, and you won't even have to do anything special to get it working. All the module author has to do is add a little bit of code to their psm1.
 
-{% highlight powershell %}
+```powershell
 if ($psEditor) {
     Register-EditorCommand `
         -Name "MyModule.MyEditorCommand" `
@@ -96,7 +88,7 @@ if ($psEditor) {
         -Function Invoke-MyEditorCommand `
         -SuppressOutput
 }
-{% endhighlight %}
+```
 
 All that needs to be done is check for the `$psEditor` variable and then launch the `Register-EditorCommand` command that registers their commands in the Editor. This allows you to add modules into your VSCode profile to have these modules with Editor commands to load by default. Users can also create their own editor commands and put those directly into their VSCode profiles.
 
@@ -106,15 +98,14 @@ All that needs to be done is check for the `$psEditor` variable and then launch 
 
 This is the feature that I am most excited about. You can create commands to alter parts of the editor or you can create commands that extend your own modules. I am going to show a few examples of how you can extend your own modules with these Editor Commands. One thing that I have done to make working with these editor commands easier, is I have added a KeyBinding in my Keybindings.json file that launches the ShowAdditionalCommands prompt. You can edit this file by **File=>Preferences=>Keyboard Shortcuts**. I used <kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>alt</kbd> + <kbd>p</kbd> because I knew it was available and I wanted to use "P" because it was easy for me to remember. You might not have to worry about this in a future release of the Extension. We are looking for feedback on how this should be handle and would love people to give their feedback on the [PowerShell Extensions Issue](https://github.com/PowerShell/vscode-powershell/issues/196) for it.
 
-{% highlight json %}
+```json
 [
     { "key": "ctrl+shift+alt+p",      "command": "PowerShell.ShowAdditionalCommands",
                                          "when": "editorTextFocus && editorLangId == 'powershell'" }
 ]
-{% endhighlight %}
+```
 
 This is up to you, but just check and make sure the keybinding isn't used by another command. Now when I hit this keybinding my list of Editor Commands drops down for easy access. This KeyBinding is only available if the Editor text has focus and the editor language is set to PowerShell. You might potentially want to change this if using a module like the one in the next example and would be interested to have the altered text to work on any file type, but right now this doesn't work properly and there is an [issue open](https://github.com/PowerShell/vscode-powershell/issues/195) to improve this.
-
 
 ### Example 1
 
@@ -122,7 +113,7 @@ I chose a fun module by [Trevor Sullivan](https://twitter.com/pcgeek86) called [
 
 I started off by adding the Module Import and initial function that will be my editor command to my VSCode profile.
 
-{% highlight powershell %}
+```powershell
 Import-Module Emojis
 
 function Invoke-EmojiSelection
@@ -145,7 +136,7 @@ Register-EditorCommand `
     -DisplayName "Replace selected text with emoji" `
     -Function Invoke-EmojiSelection `
     -SuppressOutput
-{% endhighlight %}
+```
 
 In order for PSES to hook into an Editor command, it passes the function the variable `$context` so we first set this parameter.
 
@@ -156,18 +147,15 @@ In this function I am doing the following:
 * If it found a matching Emoji, it is then replaces the currently selected text for the Emoji.
 * The `Register-EditorCommand` is then used to register the command when VSCode starts.
 
-You can see this in action in **Figure 4**
-
+You can see this in action in the image below.
 
 ![Convert Selection to Emoji](/images/2016/05/selection.gif)
-
-**Figure 4** Convert Selection to Emoji.
 
 ### Example 2
 
 In my second example I am adding a second Emoji command that works a little differently. Currently there is a little bit of an issue with timeout and selecting a command. This should be addressed and there is an [issue open](https://github.com/PowerShell/PowerShellEditorServices/issues/242) looking for feedback on how this should be handled if anyone wants to give their feedback. It could be a little longer for big lists. This is what I added for my second example.
 
-{% highlight powershell %}
+```powershell
 function Invoke-EmojiList
 {
     [Cmdletbinding()]
@@ -191,7 +179,7 @@ Register-EditorCommand `
     -DisplayName "Inserts an Emoji from List" `
     -Function Invoke-EmojiList `
     -SuppressOutput
-{% endhighlight %}
+```
 
 In this example I am doing the following:
 
@@ -200,12 +188,9 @@ In this example I am doing the following:
 * When the user selects an item from the list it is passed to the `Get-Emoji` command.
 * The Emoji is then inserted where the current Cursor position is using the `$context` variable.
 
-Here is an example of it in **Figure 5**
-
+Below is an example.
 
 ![Insert Emoji from List](/images/2016/05/list.gif)
-
-**Figure 5** Insert Emoji from List.
 
 ### Example 3
 
@@ -217,7 +202,7 @@ Plaster is a template generator similar to Yeoman. You can create a template sca
 
 The following is the function and editor command.
 
-{% highlight powershell %}
+```powershell
 Import-Module Plaster
 
 function Invoke-PlasterTemplate
@@ -245,14 +230,11 @@ Register-EditorCommand `
     -DisplayName "Start Plaster Template" `
     -Function Invoke-PlasterTemplate `
     -SuppressOutput
-{% endhighlight %}
+```
 
 This example uses a second parameter that uses Read-Host to get the Modules Name. It then just passes some Path variables to the `Invoke-Plaster` command and let's the Template handle the rest of the prompts. You can see the results below.
 
-
 ![Plaster Editor Command](/images/2016/05/Plaster.gif)
-
-**Figure 6** Plaster Editor Command.
 
 ## Contribute!
 

@@ -25,8 +25,7 @@ Below you can see what the Variable Validations looks like in a PowerShell Conso
 Below is the Console output from above for each Validation.
 
 ## ValidateRange
-
-{% highlight powershell %}
+```powershell
 PS> [ValidateRange(1,10)][int]$ValidateRange = 1
 PS> $ValidateRange = 3
 PS> $ValidateRange = 11
@@ -36,11 +35,10 @@ At line:1 char:1
 + ~~~~~~~
     + CategoryInfo          : MetadataError: (:) [], ValidationMetadataException
     + FullyQualifiedErrorId : ValidateSetFailure
-{% endhighlight %}
-
+```
 
 ## ValidateSet
-{% highlight powershell %}
+```powershell
 PS> [ValidateSet('Test1','Test2','Test3')][string]$ValidateSet = 'Test1'
 PS> $ValidateSet = 'Test2'
 PS> $ValidateSet = 'Test4'
@@ -50,11 +48,10 @@ At line:1 char:1
 + ~~~~~~~~~~~~
     + CategoryInfo          : MetadataError: (:) [], ValidationMetadataException
     + FullyQualifiedErrorId : ValidateSetFailure
-{% endhighlight %}
-
+```
 
 ## ValidateNotNullOrEmpty
-{% highlight powershell %}
+```powershell
 PS> [ValidateNotNullOrEmpty()][string]$ValidateNotNullOrEmpty = 'Test1'
 PS> $ValidateNotNullOrEmpty = 'Test'
 PS> $ValidateNotNullOrEmpty = ''
@@ -64,11 +61,10 @@ At line:1 char:1
 + ~~~~~~~
     + CategoryInfo          : MetadataError: (:) [], ValidationMetadataException
     + FullyQualifiedErrorId : ValidateSetFailure
-{% endhighlight %}
-
+```
 
 ## ValidateCount
-{% highlight powershell %}
+```powershell
 PS> [ValidateCount(1,10)][array]$ValidateCount = @(1..9)
 PS> $ValidateCount += 'test'
 PS> $ValidateCount += 'test2'
@@ -78,11 +74,10 @@ At line:1 char:1
 + ~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : MetadataError: (:) [], ValidationMetadataException
     + FullyQualifiedErrorId : ValidateSetFailure
-{% endhighlight %}
-
+```
 
 ## ValidateLength
-{% highlight powershell %}
+```powershell
 PS> [ValidateCount(1,10)][string]$ValidateLength = 'Test1'
 PS> $ValidateLength = 'Testing2'
 PS> $ValidateLength = 'TestOverTen'
@@ -92,11 +87,10 @@ At line:1 char:1
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : MetadataError: (:) [], ValidationMetadataException
     + FullyQualifiedErrorId : ValidateSetFailure
-{% endhighlight %}
-
+```
 
 ## ValidatePattern
-{% highlight powershell %}
+```powershell
 PS> [ValidatePattern('^\d{3}[-.]?\d{3}[-.]?\d{4}$')][string]$ValidatePattern = '800-123-4567'
 PS> $ValidatePattern = '000-000-0000'
 PS> $ValidatePattern = '000-000-00000'
@@ -106,11 +100,10 @@ At line:1 char:1
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : MetadataError: (:) [], ValidationMetadataException
     + FullyQualifiedErrorId : ValidateSetFailure
-{% endhighlight %}
-
+```
 
 ## ValidateScript
-{% highlight powershell %}
+```powershell
 PS> [ValidateScript({Test-Path $_})][string]$ValidateScript = 'C:\Windows\System32\cmd.exe'
 PS> $ValidateScript = 'C:\Windows\System32\powercfg.exe'
 PS> $ValidateScript = 'C:\Windows\System32\DoesNotExist.exe'
@@ -120,8 +113,7 @@ At line:1 char:1
 + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : MetadataError: (:) [], ValidationMetadataException
     + FullyQualifiedErrorId : ValidateSetFailure
-{% endhighlight %}
-
+```
 
 ## Conclusions
 I am going to start using Variable Validations whenever possible, and I encourage others to start doing so as well. If you find this useful, please try to spread the word.

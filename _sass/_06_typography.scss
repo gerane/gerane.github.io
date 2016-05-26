@@ -1,4 +1,4 @@
-/* TOC – Typography 
+/* TOC – Typography
 
 Check typography variables › _3_typography_settings.scss
 
@@ -50,7 +50,7 @@ a:active {
 /* Customize Foundation Typography
 ------------------------------------------------------------------- */
 
-p { 
+p {
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
@@ -91,17 +91,18 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: $font-size-h1;
     margin-top: 0;
+    margin-bottom: .75em;
 }
 h2 {
     font-size: $font-size-h2;
-    margin: 1.563em 0 0 0;
+    margin: 1.563em 0 .75em 0;
 }
     .blog-index h2 {
         margin-top: 0;
     }
 h3 {
     font-size: $font-size-h3;
-    margin: 1.152em 0 0 0;
+    margin: 1.563em 0 .75em 0;
 }
 h4 {
     font-size: $font-size-h4;
@@ -117,13 +118,13 @@ h5 {
 /* Images
 ------------------------------------------------------------------- */
 
-img { border-radius: $global-radius;}
+img { border-radius: $global-radius; margin:50px 0 50px 0 ; }
     img.alignleft,
     img.left        { float: left; margin:5px 15px 5px 0; }
     img.alignright,
     img.right       { float: right; margin:5px 0 5px 15px; }
     img.aligncenter,
-    img.center      { display: block; margin:0 auto 10px; }
+    img.center      { display: block; margin:50px 0 50px 0 ; }
 
 figure {
     margin: 0 0 rem-calc(30) 0;
@@ -167,28 +168,50 @@ td {
 
 /* Code
 ------------------------------------------------------------------- */
+.highlight
+{
+    font-family: Menlo, Monaco, Consolas, "Lucida Console", monospace;
+	font-size: 0.8em;
+	margin-bottom: 13px;
+    padding: 20px; /*border-radius: 6px;*/
+}
 
-pre {
+ pre {
     overflow: auto;
-    margin-bottom: rem-calc(20);
+    background-color: transparent;
+    border: none;
     padding: 5px;
-    background-color: $code-background-color;
-    border-radius: $global-radius;
-}
-pre code {
-    padding: rem-calc(2) rem-calc(5) rem-calc(1) rem-calc(0);
-    border: 0;
+ }
+
+ code {
+   font-family: Menlo, Monaco, Consolas, "Lucida Console", monospace;
+   padding: 0 .25em;
+   border-radius:2px;
+ }
+
+ pre code {
+   border: none;
+   background-color: transparent;
+   padding: 0;
+   color: inherit;
 }
 
-code {
-    font-size: rem-calc(13);
-    line-height: 1.5;
-}
+//pre code {
+//    background-color: transparent;
+//    padding: rem-calc(2) rem-calc(5) rem-calc(1) rem-calc(0);
+//    border: 0;
+//}
+//
+//code {
+//    background-color: #002b36;
+//    font-size: rem-calc(13);
+//    line-height: 1.5;
+//}
 
 // Corrects Gist Line Number Spacing
-.highlight .line-numbers, .gist-file .line-numbers {
-    line-height: 1.125rem !important;
-}
+//.highlight .line-numbers, .gist-file .line-numbers {
+//    line-height: 1.125rem !important;
+//}
 
 
 
@@ -197,7 +220,7 @@ code {
 
 ul, ol {
     margin-left: 20px;
-    padding: 0;
+    padding: 30;
 }
 li {
     margin-left: 0;
@@ -242,9 +265,9 @@ blockquote {
     margin: 0 30px 30px 30px;
     color: #4b4b4d
 }
- 
+
     blockquote p {font-style: italic; color: $grey-10; }
- 
+
     blockquote:before {
         display:block;content:"\00BB";
         font-size:80px;
@@ -335,7 +358,7 @@ mark {
 .footnotes {
     margin-top: 60px;
 }
-.footnotes ol { 
+.footnotes ol {
     font-size: $font-size-small;
 }
 
