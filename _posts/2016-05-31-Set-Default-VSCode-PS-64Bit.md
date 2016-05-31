@@ -15,6 +15,7 @@ image:
 header:
   image_fullwidth: 2016/05/settings2.png
 ---
+![New Terminal](/images/2016/05/term.png)
 
 The Latest Insider's build of [Visual Studio Code](https://code.visualstudio.com/insiders) added an Integrated Terminal. It is still early and isn't perfect, but this is a step in the right direction. By default, VS Code has cmd.exe set to it's default Terminal on Windows. Even worse, it is the 32 Bit version of cmd.exe on 64 Bit machines. This can be very problematic and cause some major headaches in the long run, so I hope they change this in a future release.
 
