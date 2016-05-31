@@ -19,7 +19,7 @@ header:
 
 The Latest Insider's build `(v1.2.0-insider)` of [Visual Studio Code](https://code.visualstudio.com/insiders) added an Integrated Terminal. It is still early and isn't perfect, but this is a step in the right direction. By default, VS Code has cmd.exe set to it's default Terminal on Windows. Even worse, it is the 32 Bit version of cmd.exe on 64 Bit machines. This can be very problematic and cause some major headaches in the long run, so I hope they change this in a future release.
 
-Right now, there is no integration between the PowerShell Extension and the Integrated terminal. I know this is something [David Wilson](https://twitter.com/daviwil), who is over the PowerShell Extension, is trying to make happen. This means the new VSCode profile that was added in the last Extension will currently only apply to the Extensions PowerShell session, which runs in 64 Bit by default. This might be a little confusing to users in it's current state.
+Right now, there is no integration between the PowerShell Extension and the Integrated terminal. I know this is something [David Wilson](https://twitter.com/daviwil), who is over the [PowerShell Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell), is trying to make happen. This means the new [VSCode profile](http://brandonpadgett.com/powershell/Getting-Started-With-Editor-Commands/) that was added in the latest PowerShell Extension Update will currently only apply to the PowerShell session that the Extension uses, which runs in 64 Bit by default. This might be a little confusing to users in it's current state.
 
 The terminal can be accessed by using the keyboard shortcut <kbd>ctrl</kbd> + <kbd>`</kbd>. To set the 64 Bit version of PowerShell as the default Editor we are going to use Sysnative path for PowerShell. We can do this in the Workspace Settings that can be accessed from the menu by **File > Preferences > Workspace Settings**. We want to add the following setting override to the **Settings.json**:
 
@@ -40,7 +40,7 @@ Your **Settings.json** should look similar to the below example if you don't hav
 }
 ```
 
-I hope others find this helpful.
+I hope others find this helpful and hopefully this won't be an issue as the terminal matures.
 
 
 ### Related Posts
