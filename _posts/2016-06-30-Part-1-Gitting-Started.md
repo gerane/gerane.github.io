@@ -3,7 +3,7 @@ layout: page
 title: Part 1 - Gitting Started
 teaser: Building a Release Pipeline
 subheadline: Release Pipeline
-date: "2016-06-30 8:0"
+date: "2016-06-30 8:00"
 categories:
   - ReleasePipeline
 tags:
