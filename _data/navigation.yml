@@ -73,7 +73,7 @@
   side: left
   dropdown:
   - title: Release Pipeline
-    url: "/ReleasePipeline/Building-a-Release-Pipeline"
+    url: "/releasepipeline/Building-a-Release-Pipeline"
 
 - title: "Search"
   url: "/search/"
