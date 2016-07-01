@@ -49,7 +49,7 @@
 #     url: "/design/no-header/"
 #   - title: "No Header but Image"
 #     url: "/design/no-header-but-image/"
-# 
+#
 # - title: Documentation
 #   url: "/documentation/"
 #   side: left
@@ -65,10 +65,15 @@
   url: "/blog/"
   side: left
   dropdown:
-  - title: Blog
+  - title: Powershell
     url: "/blog/"
-  - title: "Blog Archive"
-    url: "/blog/archive/"
+
+- title: Series
+  url:
+  side: left
+  dropdown:
+  - title: Release Pipeline
+    url: "/ReleasePipeline/Building-a-Release-Pipeline"
 
 - title: "Search"
   url: "/search/"
