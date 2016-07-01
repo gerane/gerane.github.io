@@ -126,5 +126,5 @@ Part 2 will start bringing in many of the other tools covered in the series. You
 
 ## Release Pipeline Series
 
-- [Release Pipline Landing Page]({{ site.url }}/ReleasePipeline/Building-a-Release-Pipeline)
-- [Part 1: Gitting Started]({{ site.url }}/ReleasePipeline/Part-1-Gitting-Started)
+- [Release Pipline Landing Page]({{ site.url }}/releasepipeline/Building-a-Release-Pipeline)
+- [Part 1: Gitting Started]({{ site.url }}/releasepipeline/Part-1-Gitting-Started)
