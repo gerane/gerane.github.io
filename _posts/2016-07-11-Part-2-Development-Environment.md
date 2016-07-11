@@ -27,9 +27,11 @@ The line between Text Editors and Integrated Development Environments (IDE) has 
 
 ## Which Editor is Right for You?
 
-Before I get started, I want to make sure people understand my intentions in this series in regards to Editors. I am in no way saying one editor is better than another. Most of the topics I will be discussing in this series can be adopted to other editors. My goal is to give people ideas that improve their development environments. I advocate people finding what feels right for them and using that. There is no "best" text editor or IDE for everyone, but what is "best" for your own personal preferences. Experiment and see what other editors have to offer, and use what improves your productivity or feels right for you. I used the Full, Light, and Console categories because I feel they offer a good representation of preferences people tend to have wit. Find the type that feels right for you and try to take the topics in this series and adopt them to your editor.
+Before I get started, I want to make sure people understand my intentions in this series in regards to Editors. I am in no way saying one editor is better than another. Most of the topics I will be discussing in this series can be adopted to other editors. My goal is to give people ideas that improve their development environments. I advocate people finding what feels right for them and using that. There is no "best" text editor or IDE for everyone, but what is "best" for your own personal preferences. Experiment and see what other editors have to offer, and use what improves your productivity or feels right for you. I used the Full, Light, and Console categories because I feel they offer a good representation of editor preferences people tend to have. Find the type that feels right for you and try to take the topics in this series and adopt them to your editor.
 
-People take their development environments seriously. Just put a group of Vim and Emacs people in a room together and watch the fireworks. You can bet there are some that would point out that I should have listed Emacs before Vim in the previous sentence and others that would have rubbed in the fact that I listed Vim first. When we spend so much time in an environment it starts to become personal. When we have a personal attachment like this, it is easy for us to take a simple differing opinion as an attack. It is similar to religion and politics in many ways, and I want to encourage the PowerShell community to look past this, and to try to focus on improving the community as a whole. The more great editors the better if you ask me.
+![Xkcd Real Programmers](http://imgs.xkcd.com/comics/real_programmers.png)
+
+People take their development environments seriously. Just put a group of Vim and Emacs people in a room together and watch the fireworks. The xkcd comic above is poking fun of this. You can bet there are some that would point out that I should have listed Emacs before Vim in the previous sentence and others that would have rubbed in the fact that I listed Vim first. When we spend so much time in an environment it starts to become personal. When we have a personal attachment like this, it is easy for us to take a simple differing opinion as an attack. It is similar to religion and politics in many ways, and I want to encourage the PowerShell community to look past this, and to try to focus on improving the community as a whole. The more great editors the better if you ask me.
 
 ## Where Editors are Headed
 
@@ -69,11 +71,11 @@ PowerShell ISE (ISE) is the obvious choice here. I highly recommend using [ISESt
 
 ## Conclusion
 
-Part 2 was about explaining how the rest of the series is going to work in regards to Editors. While I would love to cover how every editor can be used to improve productivity and integrate into a Pipeline, I need to narrow it down to a single editor for lenth sake. Even if you don't ever plan on using **VSCode**, I still recommend trying to take what is discussed and applying it to your own editor of choice.
+Part 2 was about explaining how the rest of the series is going to work in regards to Editors. While I would love to cover how every editor can be used to improve productivity and integrate into a Pipeline, I need to narrow it down to a single editor for lenth sake. Even if you don't plan on using **VSCode**, I still recommend trying to take what is discussed and applying it to your own editor of choice.
 
 ## What's Next?
 
-Part 3 we will start discussing how to extend **VSCode** and use it within out pipeline. The Command Palette, Task Runners, Extensions, Integrated Terminal, Snippets, and Editor Commands are some examples of some of the topics that will be covered. After we discuss those we will start getting into using community modules to start bringing everything together.
+Part 3 we will start discussing how to extend **VSCode** and use it within our pipeline. The command palette, task runners, extensions, integrated terminal, snippets, and editor commands are examples of some of the topics that will be covered. After we discuss those we will start getting into using community modules to start bringing everything together.
 
 ## Release Pipeline Series
 
