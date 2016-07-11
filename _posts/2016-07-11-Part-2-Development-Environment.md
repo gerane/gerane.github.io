@@ -20,7 +20,7 @@ image:
   thumb: 2016/07/pspipelinethumb.png
   homepage: 2016/07/vscode.png
 header:
-  image_fullwidth: 2016/06/part2banner.png
+  image_fullwidth: 2016/07/part2banner.png
 ---
 
 The line between Text Editors and Integrated Development Environments (IDE) has certainly blurred, and many light text editors now have full blown debugging environments and some of the other features that used to only be in full IDE type editors. I tend to categorize Editors as light, full or console because of this. Light Editors are ones like Sublime Text, Atom, Visual Studio Code, Notepad++, etc. These tend to be more lightweight with less emphasis on GUIs/panes and support a large number of languages. Full Editors are ones like Visual Studio, PowerShell Studio, Eclipse, etc. These often specialize in a single language and might offer more functionality for that specific language than others. The Console category are the editors that place an emphasis on the console or are ran inside of a console. I tend to put PowerShell ISE in this category along with editors like Vim, Emacs, Nano, etc. There are great options in all of these categories for PowerShell.
