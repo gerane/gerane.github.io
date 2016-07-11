@@ -19,7 +19,7 @@ tags:
   - AppVeyor
   - Slack
 image:
-  thumb:
+  thumb: 2016/07/pspipelinethumb.png
   homepage: 2016/06/GitBranches.PNG
 header:
   image_fullwidth: 2016/06/GitBanner.png
