@@ -3,7 +3,7 @@ layout: page
 title: Part 2 - Development Environment
 teaser: Building a Release Pipeline
 subheadline: Release Pipeline
-date: "2016-06-30 8:00"
+date: "2016-07-11 8:00"
 categories:
   - ReleasePipeline
 tags:
@@ -17,10 +17,10 @@ tags:
   - Modules
   - ReleasePipeline
 image:
-  thumb:
-  homepage: 2016/06/GitBranches.PNG
+  thumb: 2016/07/pspipelinethumb.png
+  homepage: 2016/07/vscode.png
 header:
-  image_fullwidth: 2016/06/GitBanner.png
+  image_fullwidth: 2016/06/part2banner.png
 ---
 
 The line between Text Editors and Integrated Development Environments (IDE) has certainly blurred, and many light text editors now have full blown debugging environments and some of the other features that used to only be in full IDE type editors. I tend to categorize Editors as light, full or console because of this. Light Editors are ones like Sublime Text, Atom, Visual Studio Code, Notepad++, etc. These tend to be more lightweight with less emphasis on GUIs/panes and support a large number of languages. Full Editors are ones like Visual Studio, PowerShell Studio, Eclipse, etc. These often specialize in a single language and might offer more functionality for that specific language than others. The Console category are the editors that place an emphasis on the console or are ran inside of a console. I tend to put PowerShell ISE in this category along with editors like Vim, Emacs, Nano, etc. There are great options in all of these categories for PowerShell.
@@ -69,25 +69,14 @@ PowerShell ISE (ISE) is the obvious choice here. I highly recommend using [ISESt
 
 ## Conclusion
 
-While I would love to cover how every editor can be used to improve productivity and integrate into a Pipeline, it doesn't make sense for this series.
-I wanted to make sure people understand that the topics discussed related to Editors is still helpful even if they don't use *VSCode*.
+Part 2 was about explaining how the rest of the series is going to work in regards to Editors. While I would love to cover how every editor can be used to improve productivity and integrate into a Pipeline, I need to narrow it down to a single editor for lenth sake. Even if you don't ever plan on using *VSCode*, I still recommend trying to take what is discussed and applying it to your own editor of choice.
 
 ## What's Next?
 
-Part 2 will start bringing in many of the other tools covered in the series. You will start to get an understanding of how all of the pieces work together. After that we will start going into detail about how to configure and use each of the pieces of the Pipeline.
+Part 3 we will start discussing how to extend *VSCode* and use it within out pipeline. The Command Palette, Task Runners, Extensions, Integrated Terminal, Snippets, and Editor Commands are some examples of some of the topics that will be covered. After we discuss those we will start getting into using community modules to start bringing everything together.
 
 ## Release Pipeline Series
 
 - [Release Pipline Landing Page]({{ site.url }}/releasepipeline/Building-a-Release-Pipeline)
 - [Part 1: Gitting Started]({{ site.url }}/releasepipeline/Part-1-Gitting-Started)
-- [Part 2: Development Environment]({{ site.url }})
-
-
-My goal is to inspire people with ideas to help improve their own development environment. I am always looking to improve my own editor experience, and try to learn as many or educate myself to as many of them as I can.
-
-
-As an example, I immediately started using [Atom](https://atom.io/) the first time I heard about the beta. I even got an awesome badge and thank you letter mailed to me by Github as thanks for contributing to the beta, which you can see below. Let me just say, more companies should do this sort of surprise thank you to their contributors, it made my week when I got it. I
-
-
-
-A Development Environment is far more than just a text editor that we use to write code. If properly utilized an Editor can drastically improve productivity and the code the we write. Part 2 is dedicated to highlighting some of these Editor features and explaining how they can enhance a Release Pipeline. This is a topic I have always been very interested in, and I hope some of my excitement might rub off on others.
+- [Part 2: Development Environment]({{ site.url }}/releasepipeline/Part-2-Development-Environment)
