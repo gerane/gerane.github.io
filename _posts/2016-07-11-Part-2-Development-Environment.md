@@ -71,7 +71,7 @@ PowerShell ISE (ISE) is the obvious choice here. I highly recommend using [ISESt
 
 ## Conclusion
 
-Part 2 was about explaining how the rest of the series is going to work in regards to Editors. While I would love to cover how every editor can be used to improve productivity and integrate into a Pipeline, I need to narrow it down to a single editor for lenth sake. Even if you don't plan on using **VSCode**, I still recommend trying to take what is discussed and applying it to your own editor of choice.
+Part 2 was about explaining how the rest of the series is going to work in regards to Editors. While I would love to cover how every editor can be used to improve productivity and integrate into a Pipeline, I need to narrow it down to a single editor for length sake. Even if you don't plan on using **VSCode**, I still recommend trying to take what is discussed and applying it to your own editor of choice.
 
 ## What's Next?
 
