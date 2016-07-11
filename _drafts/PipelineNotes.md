@@ -23,6 +23,9 @@ it is often beneficial to have a Test script in the root of your module. This is
     * VS Code
         * Editor Commands
         * Task Runners
+        * Command Palette
+        * Extensions
+        * 
 * PSake
 * PSDeploy
 * Pester

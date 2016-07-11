@@ -19,7 +19,7 @@ tags:
   - AppVeyor
   - Slack
 image:
-  thumb:
+  thumb: 2016/07/pspipelinethumb.png
   homepage: 2016/06/GitBranches.PNG
 header:
   image_fullwidth: 2016/06/GitBanner.png
@@ -63,3 +63,4 @@ To give you a good understanding of what is going to be covered, the following i
 ## Release Pipeline Series
 
 - [Part 1: Gitting Started]({{ site.url }}/releasepipeline/Part-1-Gitting-Started)
+- [Part 2: Development Environment]({{ site.url }}/releasepipeline/Part-2-Development-Environment)
