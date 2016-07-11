@@ -45,7 +45,7 @@ The next interesting project is called [Monaco Editor](https://github.com/Micros
 
 I have given some brief examples of Editors above, and I wish I could go more into details on all of them. Due to the length, I am going to briefly discuss one editor from each of the categories. I will be using *VSCode* as my example for the rest of the series starting with Part 3. The other two editors I have chosen are *PowerShell Studio* and *PowerShell ISE*. When discussing *VSCode* I will try to offer references back to these and briefly mention how they can achieve the same or similar.
 
-#### Full Editor
+### Full Editor
 
 [PowerShell Studio (PSS)](https://www.sapien.com/software/powershell_studio) is a great full editor that is packed with features. If you like editors in this category, I highly recommend the trial of *PSS*. It really has too many features to mention here. The advanced function builder is one of my favorite features. You can see the Function Builder below.
 
@@ -55,13 +55,13 @@ You can achieve similar with digging down really deep into snippets, but that is
 
 ![PSS](/images/2016/07/PSES.png)
 
-#### Console Editor
+### Console Editor
 
 PowerShell ISE (ISE) is the obvious choice here. I highly recommend using [ISESteroids](http://www.powertheshell.com/isesteroids/) with *ISE* since it almost makes it a completely different editor with all of the features it adds. There are some tasks that just seem made for the *ISE*, and given the fact that it comes stock in Windows makes it a very popular choice. There are many who advocate Microsoft to drop development of *ISE* in favor of *VSCode*, but I am not totally on board with that. As I was explaining earlier, people have different preferences for editors, and some are going to love *ISE* while hate *VSCode*. Killing the *ISE* off just does not make sense to me. What other editors have tried to replicate is the *ISE's* integration with the terminal. In my own opinion, none of the other options are even in the same ballpark yet. I still feel *ISE* is the most productive environment in those instances where you need to actually figure out how to write a particular piece of code. You can see screenshot *ISE* with ISESteroids below.
 
 ![ISE](/images/2016/07/ISE.png)
 
-#### Light Editor
+### Light Editor
 
 *VSCode* is the light editor I have chosen and is also the Editor I will be focusing on when discussing integrations with the Pipeline. *VSCode* is improving at a rapid rate and has gained impressive amounts of adoption. I will be the first to admit there are areas where *VSCode* needs improvement, but I like the fact that I can help with that improvement process via Github. One advantage of a Light editor like *VSCode* is that it gives you a single editor to work with any type of file. *VSCode* also offers some great features like its debugger, Task Runners, Extensions, and Command Palette, but the features I am most excited about are the ones that are a part of the *PSES* and can potentially work in any editor that adopts it. You can see a screenshot of *VSCode* below.
 
