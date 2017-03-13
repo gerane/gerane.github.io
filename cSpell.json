@@ -1,0 +1,59 @@
+// cSpell Settings
+{
+    // Version of the setting file.  Always 0.1
+    "version": "0.1",
+    // language - current active spelling language
+    "language": "en",
+    // words - list of words to be always considered correct
+    "words": [
+        "subheadline",
+        "permalink",
+        "endfor",
+        "urlimg",
+        "fullwidth",
+        "releasepipeline",
+        "Gitting",
+        "Aand",
+        "refdef",
+        "psprojs",
+        "psproj",
+        "psbuild",
+        "icns",
+        "fseventsd",
+        "ehthumbs",
+        "preloaded",
+        "pspipelinethumb",
+        "finishedtheme",
+        "Monokai",
+        "consoleadmin",
+        "ISE's",
+        "Codenvy",
+        "embeddable",
+        "Sfunctionbuilder",
+        "sourcecodepro",
+        "ubuntumono",
+        "endhighlight",
+        "Toolbars",
+        "Runspace",
+        "theming",
+        "toolset",
+        "Dropdown",
+        "Segoe",
+        "activeselection",
+        "Collpase",
+        "Spacebar",
+        "whitepaper",
+        "Murawski",
+        "MAML",
+        "GPOs",
+        "Technet",
+        "logpath",
+        "OEM's"
+    ],
+    // flagWords - list of words to be always considered incorrect
+    // This is useful for offensive words and common spelling errors.
+    // For example "hte" should be "the"
+    "flagWords": [
+        "hte"
+    ]
+}

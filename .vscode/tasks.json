@@ -1,0 +1,57 @@
+{
+	"version": "0.1.0",
+	"command": "jekyll",
+	"isShellCommand": true,
+	"showOutput": "always",
+    "args": [
+        "serve", "--config","_config.yml,_config_dev.yml","--verbose"
+    ],
+    "tasks": [
+        {
+            "taskName": "Build",
+            "isBuildCommand": true,
+            "suppressTaskName": true,
+            "args": [],
+            "isBackground": true,
+            "problemMatcher": [
+                {
+                    "owner": "Jekyll",
+                    "fileLocation": "absolute",
+                    "pattern": [
+                        {
+                            "regexp": "^\\s*Liquid\\s(Warning|Error):.*\\(line\\s(\\d+)\\):\\s(.*)\\sin\\s(\\w:.*)$",
+                            "severity": 1,
+                            "line": 2,
+                            "message": 3,
+                            "file": 4
+                        }
+                    ],
+                    "watching": {
+                        "activeOnStart": true,
+                        "beginsPattern": "^\\s+Generating\\.\\.\\.|\\s*Regenerating:.*$",
+                        "endsPattern": "^.*\\.\\.\\.done.*$"
+                    }
+                },
+                {
+
+                    "owner": "Jekyll",
+                    "fileLocation": "relative",
+                    "pattern": [
+                        {
+                            "regexp": "^\\s*Liquid\\s(Warning|Error):.*\\(line\\s(\\d+)\\):\\s(.*)\\sin\\s(\\w+\/.*|\/_\\w+\/.*|\\w+\\.\\w+)$",
+                            "severity": 1,
+                            "line": 2,
+                            "message": 3,
+                            "file": 4
+                        }
+                    ],
+                    "watching": {
+                        "activeOnStart": true,
+                        "beginsPattern": "^\\s+Generating\\.\\.\\.|\\s*Regenerating:.*$",
+                        "endsPattern": "^.*\\.\\.\\.done.*$"
+                    }
+                }
+            ]
+        }
+    ]
+}
