@@ -100,7 +100,7 @@ $topbar-dropdown-toggle-color: #fff; // This colors the menu triangle color
 $topbar-link-color: #fff; // Main Bar Text Color and Dropdown Menu Text Color
 $topbar-link-color-hover: #000; // Main Bar Hover Text Color and Dropdown Menu Hover Text Color - Both
 $topbar-dropdown-label-color: darken($primary-color, 10%); // This does not appear to be used
-$topbar-dropdown-link-bg-hover: #fff; // Hover BG Dropdown Non-Mobile
+$topbar-dropdown-link-bg-hover: darken(#f2f2f2, 10%); // Hover BG Dropdown Non-Mobile
 $topbar-link-bg-hover: $grey-1; // Main Bar Hover Link BG - Both
 $topbar-link-bg-active: $primary-color; // Active Navigation Link - Both
 $topbar-link-bg-active-hover: $grey-1; // Main Link Active Hover BG - Both
