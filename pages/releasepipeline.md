@@ -1,14 +1,14 @@
 ---
 layout: page
 show_meta: false
-title: "Powershell all the things!"
+title: "Release Pipeline"
 subheadline: ""
 header:
 
-permalink: "/powershell/"
+permalink: "/releasepipeline/"
 ---
 <ul>
-    {% for post in site.tags.powershell %}
+    {% for post in site.tags.ReleasePipeline %}
     <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
