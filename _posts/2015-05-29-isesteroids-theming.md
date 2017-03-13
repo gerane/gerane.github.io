@@ -36,7 +36,7 @@ If you just need a quick reference I have created a Theme Template Gist/Repo wit
 
 ## Getting Started
 
-I have good news and bad news. To make things easier, I used a theme that was almost entirely green and made all changes in red. This gave a nice contrast and lets the changes really stand out. However, it may make your eyes bleed. If you aren't sure where to find your Theme xml files, you can find a link to your theme folder in the theme dropdown. You can make changes to your theme and reload it to see the changes. If you do not have a color picker handy, you can just use the built in color picker in ISESteroids.
+I have good news and bad news. To make things easier, I used a theme that was almost entirely green and made all changes in red. This gave a nice contrast and lets the changes really stand out. However, it may make your eyes bleed. If you aren't sure where to find your Theme xml files, you can find a link to your theme folder in the theme drop down. You can make changes to your theme and reload it to see the changes. If you do not have a color picker handy, you can just use the built in color picker in ISESteroids.
 
 The default color picker has a nice feature that lets you steal colors from other applications or windows. You can move the color picker window over an application with colors you want. When you have the color picker focused you can move your mouse pointer over a color you want to steal and press <kbd>ctrl</kbd>. This will steal the color under the cursor and insert into the color picker. This is an easy way to get colors from other applications.
 
@@ -52,7 +52,7 @@ The Console Window has several customizable settings that are different from the
 <ScriptPaneFontFamily>ubuntumono-r.ttf#Ubuntu Mono</ScriptPaneFontFamily>
 <ScriptPaneFontSize>12</ScriptPaneFontSize>
 
-<!-- Console Pane Font Setings -->
+<!-- Console Pane Font Settings -->
 <ConsolePaneFontFamily>sourcecodepro-regular.ttf#Source Code Pro</ConsolePaneFontFamily>
 <ConsolePaneFontSize>10</ConsolePaneFontSize>
 
@@ -82,7 +82,7 @@ The Text Error Colors can be set with the following Settings:
 
 This image shows Verbose text with *ConsolePaneVerboseForegroundColor* set to Blue and *ConsolePaneVerboseBackgroundColor* Set to Transparent.
 
-![Verbose Text]({{site.urlimg}}/2015/05/Verbose.PNG)
+![Verbose Text]({{ site.urlimg }}/2015/05/Verbose.PNG)
 
 ## Menu Bar Settings
 
@@ -95,11 +95,11 @@ The Menu Header can have normal text or can be set to all caps. To set all caps 
 
 The following image shows the Menu Header with *CapitalizeMainMenuHeaders* set to True.
 
-![Cap Headers]({{site.urlimg}}/2015/05/CapHeaders.PNG)
+![Cap Headers]({{ site.urlimg }}/2015/05/CapHeaders.PNG)
 
 #### Menu Bar Colors
 
-You will see a Monochrone setting in several places throughout this XML. This setting acts as a switch between a gradient and a solid color. If *MenuBarMonochrome* is set to *true*, only the first color setting will be used. The following are the settings for the Menu Bar:
+You will see a Monochrome setting in several places throughout this XML. This setting acts as a switch between a gradient and a solid color. If *MenuBarMonochrome* is set to *true*, only the first color setting will be used. The following are the settings for the Menu Bar:
 
 {% highlight xml %}
 <!-- For Solid Color or Gradient Color Background -->
@@ -120,17 +120,17 @@ You will see a Monochrone setting in several places throughout this XML. This se
 
 When *MenuBarMonochrome* is set to *true* the *MenuBarColor1* will determine the color. The image below shows the changes once applied.
 
-![Menu Bar Monochrome]({{site.urlimg}}/2015/05/MenuBarColor1.PNG)
+![Menu Bar Monochrome]({{ site.urlimg }}/2015/05/MenuBarColor1.PNG)
 
 #### Gradient Colored Menu Bar
 
 If *MenuBarMonochrome* is set to *false* the other colors are applied. If *MenuBarMonochrome* was set to *true* and you just changed *MenuBarColor3* you can see the portion of the gradient that it changes. You can then change one at a time until you get the desired gradient.
 
-![Menu Bar Color 3]({{site.urlimg}}/2015/05/MenuBarColor3.PNG)
+![Menu Bar Color 3]({{ site.urlimg }}/2015/05/MenuBarColor3.PNG)
 
 After a few colors are changed you can start to see the gradient take shape.
 
-![Menu Bar Gradient]({{site.urlimg}}/2015/05/MenuBarColorGradient.PNG)
+![Menu Bar Gradient]({{ site.urlimg }}/2015/05/MenuBarColorGradient.PNG)
 
 ## Tab Settings
 
@@ -171,7 +171,7 @@ For Inactive Tabs:
 
 Tabs have a *ScriptSquareTabs* setting that if set to *true* makes the tab square. This can be seen in the following image:
 
-![Square Tab]({{site.urlimg}}/2015/05/SquareTab.PNG)
+![Square Tab]({{ site.urlimg }}/2015/05/SquareTab.PNG)
 
 #### Active Tab Colors
 
@@ -185,7 +185,7 @@ You can also see the solid Tab color in the Square Tab image above. Only the *Sc
 
 If *ScriptSelectedMonochrome* is set to *false* the tab will be a gradient. In the example in the image below, *ScriptSelectedColor2* is blue, *ScriptSelectedColor3* is yellow and *ScriptSelectedColor4* is pink. You can see how it makes a crazy Tab color combination.
 
-![Gradient Tab]({{site.urlimg}}/2015/05/ScriptSelectedColorGradient.PNG)
+![Gradient Tab]({{ site.urlimg }}/2015/05/ScriptSelectedColorGradient.PNG)
 
 #### Tab Background Color
 
@@ -207,11 +207,11 @@ The colors for the Tab Background function similar to the other color settings. 
 
 You can the Background with a gradient in the following image:
 
-![Gradient Tab Background]({{site.urlimg}}/2015/05/EditorTabControl.PNG)
+![Gradient Tab Background]({{ site.urlimg }}/2015/05/EditorTabControl.PNG)
 
 The *EditorTabControlBackground* Setting had a somewhat confusing name. It actually seemed to control the border color of the Editor. You can see the border in the following image:
 
-![Tab Background Border Color]({{site.urlimg}}/2015/05/EditorTabControlBackground.PNG)
+![Tab Background Border Color]({{ site.urlimg }}/2015/05/EditorTabControlBackground.PNG)
 
 ## Toolbar Settings
 
@@ -240,11 +240,11 @@ The Toolbars are the sets of buttons in the Menu Bar. They have several options 
 
 The Button Groups by default have a very light transparent color. This will lighten the default background color and make the buttons easier to see. Here is an image of this:
 
-![Group Background Color]({{site.urlimg}}/2015/05/ToolbarGroupBackground.PNG)
+![Group Background Color]({{ site.urlimg }}/2015/05/ToolbarGroupBackground.PNG)
 
  You can set *ToolbarGroupBackground* to a full color for a bigger impact. You can see Red in the following image:
 
-![Group Background Color Red]({{site.urlimg}}/2015/05/ToolbarGroupBackgroundSolid.PNG)
+![Group Background Color Red]({{ site.urlimg }}/2015/05/ToolbarGroupBackgroundSolid.PNG)
 
 You will notice that there are some Group Button Backgrounds that did not change. The Run Code/Debugger section has its own set of Settings. They work the same way as the other group colors.
 
@@ -252,11 +252,11 @@ You will notice that there are some Group Button Backgrounds that did not change
 
 There are also Overflow Buttons that can be colored. These function the same way as the Button Groups above, but target the Overflow Buttons. You can see them set to Red in the image below:
 
-![Group Overflow Background Color]({{site.urlimg}}/2015/05/ToolBarOverflowBackground.PNG)
+![Group Overflow Background Color]({{ site.urlimg }}/2015/05/ToolBarOverflowBackground.PNG)
 
 There are also settings for the Code/Debugger section that function the same way. Then the last setting is the *RunspaceBarBackground* that controls the Border Color. You can see what it looks like set to Red in the image below:
 
-![Group Border Color]({{site.urlimg}}/2015/05/RunSpacebarBackground.PNG)
+![Group Border Color]({{ site.urlimg }}/2015/05/RunSpacebarBackground.PNG)
 
 ## Function Bar Settings
 
@@ -278,11 +278,11 @@ This section has Settings for the Search and Function Bar Area under the Menu Ba
 
 The Function/Search Bar is colored by *FunctionComboCollapsedFill* and the dropdown for your functions is colored by *FunctionComboExpandedFill*. You can also adjust the Text colors in this section as well. Here is an example of the *FunctionComboCollapsedFill* being set to Red:
 
-![Function Background]({{site.urlimg}}/2015/05/FunctionComboCollapseFill.PNG)
+![Function Background]({{ site.urlimg }}/2015/05/FunctionComboCollapseFill.PNG)
 
 And here is a *FunctionComboExpandedFill* being set to Red:
 
-![Function Background]({{site.urlimg}}/2015/05/FunctionComboExpandedFill.PNG)
+![Function Background]({{ site.urlimg }}/2015/05/FunctionComboExpandedFill.PNG)
 
 ## Script Restore Settings
 
@@ -305,7 +305,7 @@ These settings control a Script Expander Menu that is normally hidden. This menu
 
 Here is an image of the Script Expander with a Red Background:
 
-![Function Background]({{site.urlimg}}/2015/05/ScriptExpander.PNG)
+![Function Background]({{ site.urlimg }}/2015/05/ScriptExpander.PNG)
 
 When the Script Pane is hidden, the Script Expander Menu will be in the location of the Tab Bar.
 
@@ -513,7 +513,7 @@ Function References will show up just above Functions in your scripts. Any time 
 
 The following image shows an active Reference with 8 References. The *FunctionReferenceActive* settings is set to the color Red.
 
-![Reference Actice](\images\2015\05\FunctionReferenceActive.PNG)
+![Reference Active](\images\2015\05\FunctionReferenceActive.PNG)
 
 ## Collapsed Test Settings
 
@@ -557,7 +557,7 @@ These Settings set the colors of the squiggle lines under issues in your code.
 <SquiggleIncompatibility>#FFFEFF00</SquiggleIncompatibility>
 {% endhighlight %}
 
-The foillowing image shows Red colored squiggles caused by a Syntax Error.
+The following image shows Red colored squiggles caused by a Syntax Error.
 
 ![Squiggles](\images\2015\05\Squiggle.PNG)
 

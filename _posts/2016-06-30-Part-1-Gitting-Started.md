@@ -31,12 +31,12 @@ There are several good Git Clients to choose from. If you are just learning, it 
 ![Github Client Image](/images/2016/06/Github.png)
 
 ### SourceTree
-The client I got started with was [SourceTree](https://www.sourcetreeapp.com/). It has a lot of features and gets the job done. Sourcetree has a busier interface, but that might not be an issue. Some may prefer this over the flatter metro sort of style of the Github Desktop client. It may not be quite as easy to use if you are just getting started.
+The client I got started with was [SourceTree](https://www.sourcetreeapp.com/). It has a lot of features and gets the job done. SourceTree has a busier interface, but that might not be an issue. Some may prefer this over the flatter metro sort of style of the Github Desktop client. It may not be quite as easy to use if you are just getting started.
 
 ![SourceTree Image](/images/2016/06/SourceTree.png)
 
 ### GitKraken
-The client that I am using now is [GitKraken](https://www.gitkraken.com/) and it is by far my favorite. I try to use the commandline interface for git as much as I can, but sometimes I just need a good client when working with something more complicated. It might be a little harder to use if you are just getting started, but it just outperforms the other clients I have used. It has a great merge and diff tool built in for resolving conflicts that is very nice. It really starts to outperform the other clients when you start getting more into collaborating and using branching. Below is an image of GitKraken in a white theme.
+The client that I am using now is [GitKraken](https://www.gitkraken.com/) and it is by far my favorite. I try to use the command line interface for git as much as I can, but sometimes I just need a good client when working with something more complicated. It might be a little harder to use if you are just getting started, but it just outperforms the other clients I have used. It has a great merge and diff tool built in for resolving conflicts that is very nice. It really starts to outperform the other clients when you start getting more into collaborating and using branching. Below is an image of GitKraken in a white theme.
 
 ![GitKraken](/images/2016/06/GitKrakenLight.png)
 
@@ -102,7 +102,7 @@ Branching is also utilized later in this Series when git starts integrating with
 ## Pull Requests
 Now that you have started using branching, you should start practicing Pull Requests on your own projects too. You will see the benefits when you start integrating in with Continuous Integration and Deployment tools. It is also important to understand that a Pull Request is not final. While the Pull Request is still open, you can take feedback or suggestions and add those changes in. When you add additional commits to an open Pull Request, the Pull Request will detect those changes and update them in. It creates a great opportunity for collaborating with the others from the project.
 
-![Pull Reuquest](/images/2016/06/PullRequest.png)
+![Pull Request](/images/2016/06/PullRequest.png)
 
 Above you can see back and forth collaboration on a Pull Request. If it helps you can always ask or open an issue about your potential pull request to get feedback.
 
@@ -126,6 +126,6 @@ Part 2 will start bringing in many of the other tools covered in the series. You
 
 ## Release Pipeline Series
 
-- [Release Pipline Landing Page]({{ site.url }}/releasepipeline/Building-a-Release-Pipeline)
-- [Part 1: Gitting Started]({{ site.url }}/releasepipeline/Part-1-Gitting-Started)
-- [Part 2: Development Environment]({{ site.url }}/releasepipeline/Part-2-Development-Environment)
+- [Release Pipeline Landing Page]({{ site.url }}/releasepipeline/Building-a-Release-Pipeline)
+- [Part 1: Gitting Started]({{ site.url }}/releasepipeline/Part-1-Gitting-Started)
+- [Part 2: Development Environment]({{ site.url }}/releasepipeline/Part-2-Development-Environment)

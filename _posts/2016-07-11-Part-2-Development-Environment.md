@@ -22,8 +22,7 @@ image:
 header:
   image_fullwidth: 2016/07/part2banner.png
 ---
-
-The line between Text Editors and Integrated Development Environments (IDE) has certainly blurred, and many light text editors now have full blown debugging environments and some of the other features that used to only be in full IDE type editors. I tend to categorize Editors as light, full or console because of this. Light Editors are ones like Sublime Text, Atom, Visual Studio Code, Notepad++, etc. These tend to be more lightweight with less emphasis on GUIs/panes and support a large number of languages. Full Editors are ones like Visual Studio, PowerShell Studio, Eclipse, etc. These often specialize in a single language and might offer more functionality for that specific language than others. The Console category are the editors that place an emphasis on the console or are ran inside of a console. I tend to put PowerShell ISE in this category along with editors like Vim, Emacs, Nano, etc. There are great options in all of these categories for PowerShell.
+The line between Text Editors and Integrated Development Environments (IDE) has certainly blurred, and many light text editors now have full blown debugging environments and some of the other features that used to only be in full IDE type editors. I tend to categorize Editors as light, full or console because of this. Light Editors are ones like Sublime Text, Atom, Visual Studio Code, Notepad++, etc. These tend to be more lightweight with less emphasis on GUI/panes and support a large number of languages. Full Editors are ones like Visual Studio, PowerShell Studio, Eclipse, etc. These often specialize in a single language and might offer more functionality for that specific language than others. The Console category are the editors that place an emphasis on the console or are ran inside of a console. I tend to put PowerShell ISE in this category along with editors like Vim, Emacs, Nano, etc. There are great options in all of these categories for PowerShell.
 
 ## Which Editor is Right for You?
 
@@ -37,7 +36,7 @@ People take their development environments seriously. Just put a group of Vim an
 
 I am really excited about the options that are available for PowerShell right now. What is even more exciting is that I think the options are only going to get even better in the near future. I first want to go over some very important changes and projects that are happening right now that should lead to great things for the PowerShell community and other communities as well.
 
-The first important topic is what is behind the PowerShell Extension for Visual Studio Code (VSCode) called [PowerShell Editor Services (PSES)](https://github.com/PowerShell/PowerShellEditorServices). **PSES** uses a new Open Source protocol that Microsoft is behind called *Language Server Protocol (LPS)*. You can read more about Microsoft's partnership with Codenvy and Red Hat [here](http://www.zdnet.com/article/open-source-microsoft-protocol-aims-to-be-a-programming-standard/). **LPS** aims to be a standard way for Code Editors to integrate with Languages. What does this mean for PowerShell? Well, it means that any Editor that implements **LPS** should be able to easily add support for other languages and give users the same experience in any editor. This means that every editor could potentially have the same PowerShell experience in terms of Intellisense and all of the other features we have come to love. I previously mentioned that Full IDE Editors typically focused on a single language and were written with that language in mind, the **PSES** is attempting to  
+The first important topic is what is behind the PowerShell Extension for Visual Studio Code (VSCode) called [PowerShell Editor Services (PSES)](https://github.com/PowerShell/PowerShellEditorServices). **PSES** uses a new Open Source protocol that Microsoft is behind called *Language Server Protocol (LPS)*. You can read more about Microsoft's partnership with Codenvy and Red Hat [here](http://www.zdnet.com/article/open-source-microsoft-protocol-aims-to-be-a-programming-standard/). **LPS** aims to be a standard way for Code Editors to integrate with Languages. What does this mean for PowerShell? Well, it means that any Editor that implements **LPS** should be able to easily add support for other languages and give users the same experience in any editor. This means that every editor could potentially have the same PowerShell experience in terms of Intellisense and all of the other features we have come to love. I previously mentioned that Full IDE Editors typically focused on a single language and were written with that language in mind, the **PSES** is attempting to
 
 The other amazing benefit, is this opens up the possibility of cross platform PowerShell support. This will eventually allow Linux and MacOS users to get the same benefits in the editor as Windows users by utilizing a Windows VM or external Windows device.
 
@@ -79,6 +78,6 @@ Part 3 we will start discussing how to extend **VSCode** and use it within our p
 
 ## Release Pipeline Series
 
-- [Release Pipline Landing Page]({{ site.url }}/releasepipeline/Building-a-Release-Pipeline)
-- [Part 1: Gitting Started]({{ site.url }}/releasepipeline/Part-1-Gitting-Started)
-- [Part 2: Development Environment]({{ site.url }}/releasepipeline/Part-2-Development-Environment)
+- [Release Pipeline Landing Page]({{ site.url }}/releasepipeline/Building-a-Release-Pipeline)
+- [Part 1: Gitting Started]({{ site.url }}/releasepipeline/Part-1-Gitting-Started)
+- [Part 2: Development Environment]({{ site.url }}/releasepipeline/Part-2-Development-Environment)
