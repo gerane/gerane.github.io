@@ -17,8 +17,8 @@ tags:
 image:
   thumb: 2018/3/thumbnail.png
   homepage: 2018/3/Demo.gif
-header:
-  image_fullwidth: 2018/3/Demo.gif
+# header:
+#   image_fullwidth: 2018/3/Demo.gif
 ---
 
 
