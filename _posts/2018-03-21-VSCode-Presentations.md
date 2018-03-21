@@ -313,6 +313,8 @@ This command does the following:
 * Prompts for **DisplayName**
 * Prompts for **SupressOutput** (Yes or No) Choice
 * Creates a file name **Name.ps1** in the current Project under the **EditorCommands** directory, which can be easily altered.
+* Opens the new Editor Command File in VSCode
+* Sets Cursor to location where ScriptBlock goes
 
 ```powershell
 Register-EditorCommand `
@@ -341,6 +343,7 @@ Register-EditorCommand ``
         param([Microsoft.PowerShell.EditorServices.Extensions.EditorContext]`$context)
 
         # Enter Code Here
+        
     }
 "@
         }
@@ -354,13 +357,19 @@ Register-EditorCommand ``
         param([Microsoft.PowerShell.EditorServices.Extensions.EditorContext]`$context)
 
         # Enter Code Here
+        
     }
 "@
         }
 
         $Command | Out-File -FilePath "$($psEditor.Workspace.path)\EditorCommands\$($Name).ps1"
+
+        Open-EditorFile "$($psEditor.Workspace.path)\EditorCommands\$($Name).ps1"
+        $context.SetSelection(9,9,9,9)
     }
 ```
+
+![New Editor Command]({{ site.urlimg }}/2018/3/CreateCommand.gif)
 
 I have added these example Editor Command to the Demo Module I linked to earlier. These commands also serve as more examples of how you can easily integrate into VSCode.
 
