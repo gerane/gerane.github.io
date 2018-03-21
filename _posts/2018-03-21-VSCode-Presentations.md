@@ -371,6 +371,75 @@ Register-EditorCommand ``
 
 ![New Editor Command]({{ site.urlimg }}/2018/3/CreateCommand.gif)
 
+### EditorCommand.NewEditorCommandWithSelectedText
+
+This command does the following:
+
+* Prompts for **Name**
+* Prompts for **DisplayName**
+* Prompts for **SupressOutput** (Yes or No) Choice
+* Creates a file name **Name.ps1** in the current Project under the **EditorCommands** directory, which can be easily altered.
+* Opens the new Editor Command File in VSCode
+* Adds the Currently Selected text to the ScriptBlock
+
+```powershell
+Register-EditorCommand `
+    -Name 'EditorCommand.NewEditorCommandWithSelectedText' `
+    -DisplayName 'New Editor Command File with Selected Text' `
+    -SuppressOutput `
+    -ScriptBlock {
+        param([Microsoft.PowerShell.EditorServices.Extensions.EditorContext]$context)
+        
+        $Name = ReadInputPrompt 'Please Type the Name of the Editor Command. Ex: Module.Command'
+        $DisplayName = ReadInputPrompt 'Please Type the DisplayName of the Editor Command'
+
+        $List = @('Yes', 'No')
+        $Choices = [System.Management.Automation.Host.ChoiceDescription[]] @($List)
+        $Selection = ReadChoicePrompt -Prompt "Do you want to Suppress Output?" -Choices $Choices
+        $SuppressOutput = $List[$Selection]
+        
+        $Block = AddIndent -Source $($context.CurrentFile.GetText($context.SelectedRange)) -Amount 8 -ExcludeFirstLine
+
+        if ($SuppressOutput -eq 'Yes')
+        {
+            $Command = @"
+Register-EditorCommand ``
+    -Name "$Name" ``
+    -DisplayName "$DisplayName" ``
+    -SuppressOutput ``
+    -ScriptBlock {
+        param([Microsoft.PowerShell.EditorServices.Extensions.EditorContext]`$context)
+
+        # Enter Code Here
+        $Block
+    }
+"@
+        }
+        else
+        {
+            $Command = @"
+Register-EditorCommand ``
+    -Name "$Name" ``
+    -DisplayName "$DisplayName" ``
+    -ScriptBlock {
+        param([Microsoft.PowerShell.EditorServices.Extensions.EditorContext]`$context)
+
+        # Enter Code Here
+        $Block
+    }
+"@
+        }
+
+        $Command | Out-File -FilePath "$($psEditor.Workspace.path)\EditorCommands\$($Name).ps1"
+
+        Open-EditorFile "$($psEditor.Workspace.path)\EditorCommands\$($Name).ps1"
+    }
+```
+
+![Selected Text]({{ site.urlimg }}/2018/3/SelectedText.gif)
+
+This command allows you to take text you have selected and inject that into the ScriptBlock of the Editor Command. This should make the transition to VSCode very easy. You could even migrate ISE demos to VSCode very quickly using this method.
+
 I have added these example Editor Command to the Demo Module I linked to earlier. These commands also serve as more examples of how you can easily integrate into VSCode.
 
 I have also been throwing around the idea of making a Plaster Template for VSCode Presentations. There are several ways you could do this, and I would need to play around with it some. I would love some feedback on this, or maybe this could be something the community could work on together.
